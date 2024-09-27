@@ -34,7 +34,7 @@ const SlideTabs = ({ data, isActive, setIsActive }) => {
                     opacity: 0,
                 }));
             }}
-            className="relative flex flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal md:bg-white md:justify-start md:items-center md:flex-row w-max font-libreCaslonDisplay"
+            className="relative flex flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal md:justify-start md:items-center md:flex-row w-max font-libreCaslonDisplay"
         >
             {data.map((list, idx) => (
                 <Link key={idx} href={list.ref} onClick={() => setIsActive(list.menu)}>
@@ -68,7 +68,7 @@ const Tab = ({
                     opacity: 1,
                 });
             }}
-            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase text-black xl:px-10 xl:py-3 lg:text-lg  ${isActive === list.menu ? "rounded-full bg-secondary h-7 md:h-12" : ""}`}
+            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase text-white font-semibold xl:px-10 xl:py-3 lg:text-lg  ${isActive === list.menu ? "rounded-full bg-secondary h-7 md:h-12" : ""}`}
         >
             {children}
         </li>
@@ -81,7 +81,7 @@ const Cursor = ({ position }) => {
             animate={{
                 ...position,
             }}
-            className={`absolute z-0 rounded-full bg-secondary h-7 md:h-12`}
+            className={`absolute z-0 rounded-full bg-primary h-7 md:h-12`}
         />
     );
 };

@@ -2,16 +2,19 @@
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 
-const RevealCards = () => {
+const RevealCards = ({ data }) => {
     return (
-        <div className="grid grid-cols-1 gap-4 max-w-7xl sm:grid-cols-2 lg:grid-cols-3" >
-            <Card
-                title="Silk/Woolen"
-                description="Wool is not just a fiber, it’s a lifestyle."
-                imgSrc="https://ik.imagekit.io/webibee/Rasim-Exports/cards/card%201.jpg?updatedAt=1727336415020"
-                ListRef="#"
-            />
-            <Card
+        <div className="grid grid-cols-1 gap-4 max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
+            {data.map((list, idx) => (
+                <Card
+                    key={idx}
+                    title={list.title}
+                    description={list.desc}
+                    imgSrc={list.img}
+                    ListRef={list.ref}
+                />
+            ))}
+            {/* <Card
                 title="Denim Jeans"
                 description="Denim is a love that never fades."
                 imgSrc="https://ik.imagekit.io/webibee/Rasim-Exports/cards/card%202.jpg?updatedAt=1727336415200"
@@ -22,7 +25,7 @@ const RevealCards = () => {
                 description="Cotton is the fabric of our lives."
                 imgSrc="https://ik.imagekit.io/webibee/Rasim-Exports/cards/card%203.jpg?updatedAt=1727336415271"
                 ListRef="#"
-            />
+            /> */}
         </div >
     );
 };
@@ -38,7 +41,7 @@ const Card = ({
     ListRef
 }) => {
     return (
-        <motion.div whileHover="hover" className="w-full h-[300px] relative group md:last:col-span-2 lg:last:col-span-1">
+        <motion.div whileHover="hover" className="w-full h-[300px] relative group md:last:col-span-2 lg:last:col-span-1 shadow-lg">
             <div className="flex flex-col justify-center p-6 bg-primary h-1/2 rounded-tl-[20px]">
                 <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
                 <p className="text-sm font-light text-slate-300">{description}</p>

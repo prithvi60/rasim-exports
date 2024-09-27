@@ -1,13 +1,13 @@
 import React from 'react'
 import RevealCards from './RevealCards'
-import { fabricTypes } from '@/libs/data'
+import { certification } from '@/libs/data'
 
-const FabricTypes = () => {
+const Certifications = () => {
     return (
         <section className='w-full px-6 py-10 md:px-14 xl:px-32'>
-            <RevealCards data={fabricTypes} />
+            <RevealCards data={certification} />
         </section>
     )
 }
 
-export default FabricTypes
+export default Certifications
