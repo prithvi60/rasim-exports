@@ -1,11 +1,10 @@
 "use client"
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const RevealCards = () => {
     return (
-        <div div className="grid grid-cols-1 gap-4 max-w-7xl sm:grid-cols-2 lg:grid-cols-3" >
+        <div className="grid grid-cols-1 gap-4 max-w-7xl sm:grid-cols-2 lg:grid-cols-3" >
             <Card
                 title="Silk/Woolen"
                 description="Wool is not just a fiber, it’s a lifestyle."

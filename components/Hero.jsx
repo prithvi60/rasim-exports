@@ -23,7 +23,7 @@ const Hero = () => {
         //         <p className='text-xl font-bold text-white capitalize font-libreCaslonDisplay'>Quality you can Feel, sustainability you can trust</p>
         //     </div>
         // </div>
-        <section className="relative w-full h-[90vh] mt-[52px] md:mt-[65px] xl:mt-[75px] overflow-hidden slider-container">
+        <section className="relative w-full h-[90vh] mt-[45px] md:mt-[52px] xl:mt-[75px] overflow-hidden slider-container">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max  flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold rounded-md py-2 px-3.5 z-10">
                 <div className='block w-full py-2 mx-auto space-y-5 text-center bg-white/20  backdrop-blur-[4px] rounded-md'>
                     <h1 style={{ backgroundImage: "url('https://ik.imagekit.io/webibee/Rasim-Exports/fabric.jpg?updatedAt=1727343133229')" }} className='font-bold tracking-widest text-transparent uppercase bg-no-repeat bg-cover select-none text-7xl sm:text-[160px] font-playFair bg-clip-text'>Rasim</h1>
