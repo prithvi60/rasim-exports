@@ -1,10 +1,11 @@
 import React from 'react'
 import { GridCards } from './GridCards'
+import { variousProducts } from "@/libs/data";
 
 const VariousTypesOfProducts = () => {
     return (
         <section>
-            <GridCards />
+            <GridCards data={variousProducts} />
         </section>
     )
 }

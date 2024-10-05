@@ -72,3 +72,13 @@ export const variousProducts = [
 //     {value: "90", desc: "LEAD TIME", subText: "days approx"},
 //     {value: "India&china", desc: "FABRIC SOURCING", subText: ""},
 // ]
+
+
+export const logos = [
+    { alt: "Hinano Life", src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%201.png?updatedAt=1727336427367" },
+    { alt: "Petrol", src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%204.png?updatedAt=1727336427284" },
+    { alt: "Ryan Michael", src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%206.png?updatedAt=1727336427256" },
+    { alt: "Ayacucha", src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%202.png?updatedAt=1727336427279" },
+    { alt: "kuhl", src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%205.png?updatedAt=1727336426938" },
+    { alt: "ariat", src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%203.png?updatedAt=1727336426818" },
+]

@@ -1,14 +1,14 @@
-import { variousProducts } from "@/libs/data";
+
 import React from "react";
 import { FiBookOpen } from "react-icons/fi";
 import { FiArrowUpRight } from "react-icons/fi";
 import { LuArrowDownRightFromCircle } from "react-icons/lu";
 
-export const GridCards = () => {
+export const GridCards = ({ data }) => {
     return (
         <div className="p-4 md:p-12">
             <div className="grid max-w-5xl grid-cols-2 mx-auto rounded-tl-[20px] md:grid-cols-3 lg:grid-cols-4 md:divide-x md:divide-y-0">
-                {variousProducts.map((item, idx) => (
+                {data.map((item, idx) => (
                     <Card
                         key={idx}
                         href={item.ref}
@@ -32,17 +32,19 @@ const Card = ({
         <a
             href={href}
             target="_blank"
-            className="relative flex flex-col justify-end h-56 p-6 overflow-hidden transition-colors shadow-lg group md:h-80 md:p-5 md:last:col-span-3 lg:last:col-span-1"
+            className="relative flex flex-col justify-end h-56 px-2 overflow-hidden transition-colors shadow-lg group md:h-80 md:px-2 md:last:col-span-3 lg:last:col-span-1"
         >
-            <h2 className="relative z-10 font-libreCaslonDisplay text-[32px] md:text-[60px] leading-tight transition-transform duration-500 group-hover:-translate-y-3 text-secondary">
-                {title}
-            </h2>
+            <div className="flex justify-between items-center gap-3 !bg-primary p-2.5 z-10 rounded-t-lg">
+                <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight transition-transform duration-500 group-hover:-translate-y-2 text-secondary">
+                    {title}
+                </h2>
 
-            <ul className="z-10 space-y-1.5 md:space-y-3 font-semibold tracking-wide text-white list-disc font-figtree">
-                {lists.map((list, idx) => (
-                    <li key={idx}>{list}</li>
-                ))}
-            </ul>
+                <ul className="space-y-1.5 font-semibold tracking-wide text-white list-disc font-figtree">
+                    {lists.map((list, idx) => (
+                        <li className="text-sm sm:text-base" key={idx}>{list}</li>
+                    ))}
+                </ul>
+            </div>
 
             <div className="bg-primary p-1.5 rounded-full absolute z-10 right-3 top-4">
                 <LuArrowDownRightFromCircle className="text-xl text-white transition-colors -rotate-90 group-hover:text-secondary group-hover:scale-110" />

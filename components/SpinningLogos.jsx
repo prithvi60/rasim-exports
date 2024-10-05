@@ -11,10 +11,12 @@ import {
     SiYoutube,
 } from "react-icons/si";
 import SpinningBox from "./SpinningBox";
+import Image from "next/image";
+import { logos } from "@/libs/data";
 
 const Spinning = () => {
     return (
-        <div className="grid px-4 py-12 overflow-hidden bg-white place-content-center">
+        <div className="grid w-full px-4 py-12 overflow-hidden bg-white place-content-center">
             <SpinningLogos />
         </div>
     );
@@ -58,7 +60,7 @@ const SpinningLogos = () => {
     }, [width]);
 
     return (
-        <div className="p-4 rounded-full bg-[#38A3A580] relative">
+        <div className="p-2 md:p-4 rounded-full bg-[#38A3A580] relative w-full shrink-0 shadow-lg">
             <div
                 style={{
                     width:
@@ -73,7 +75,7 @@ const SpinningLogos = () => {
                 className="grid rounded-full shadow-inner place-content-center bg-primary"
             >
                 <SpinningBox />
-                <div className="p-4 rounded-full bg-[#38A3A580]">
+                <div className="p-1 md:p-4 rounded-full bg-[#38A3A580] w-full">
                     <motion.div
                         initial={{ rotate: 0 }}
                         animate={{ rotate: 360 }}
@@ -100,8 +102,8 @@ const SpinningLogos = () => {
 
                         </motion.div>
 
-                        {ICON_DATA.map((icon, idx) => {
-                            const degrees = (360 / ICON_DATA.length) * idx;
+                        {logos.map((logo, idx) => {
+                            const degrees = (360 / logos.length) * idx;
                             return (
                                 <motion.div
                                     key={idx}
@@ -118,13 +120,14 @@ const SpinningLogos = () => {
                                     initial={{ rotate: 0 }}
                                     animate={{ rotate: -360 }}
                                     transition={TRANSITION}
-                                    className={`absolute grid place-content-center rounded-full shadow-lg ${icon.className}`}
+                                    className={`absolute grid place-content-center rounded-full shadow-lg overflow-hidden bg-white`}
                                 >
-                                    <icon.Icon
+                                    {/* <icon.Icon
                                         style={{
                                             fontSize: sizes.logoFontSize,
                                         }}
-                                    />
+                                    /> */}
+                                    <Image src={logo.src} alt={logo.alt} width={80} height={80} />
                                 </motion.div>
                             );
                         })}
@@ -170,53 +173,22 @@ const degreesToRadians = (degrees) => {
     return degrees * (Math.PI / 180);
 };
 
-const ICON_DATA = [
-    {
-        Icon: SiFacebook,
-        className: "bg-[#FFFFFF] text-primary",
-    },
-    {
-        Icon: SiYoutube,
-        className: "bg-[#FFFFFF]  text-primary",
-    },
-    {
-        Icon: SiAccenture,
-        className: "bg-[#FFFFFF]  text-primary",
-    },
-    {
-        Icon: SiAdobe,
-        className: "bg-[#FFFFFF]  text-primary",
-    },
-    {
-        Icon: SiReddit,
-        className: "bg-[#FFFFFF] text-primary",
-    },
-    {
-        Icon: SiCoinbase,
-        className: "bg-[#FFFFFF] text-primary",
-    },
-    {
-        Icon: SiPatreon,
-        className: "bg-[#FFFFFF]  text-primary",
-    },
-];
-
 // Defines the distance from the center of the circle to the center
 // of the icons
 const RADIUS_TO_CENTER_OF_ICONS = {
-    sm: 200,
+    sm: 230,
     md: 325,
-    lg: 425,
+    lg: 525,
 };
 // Defines the width of the icon circles
 const ICON_WRAPPER_WIDTH = {
     sm: 40,
     md: 65,
-    lg: 80,
+    lg: 100,
 };
 // Defines the padding between the icon circles and the inner and outer rings
 const RING_PADDING = {
-    sm: 4,
+    sm: 8,
     md: 8,
     lg: 12,
 };
