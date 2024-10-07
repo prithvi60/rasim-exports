@@ -31,7 +31,7 @@ const Card = ({
     return (
         <a
             href={href}
-            target="_blank"
+            // target="_blank"
             className="relative flex flex-col justify-end h-56 px-2 overflow-hidden transition-colors shadow-lg group md:h-80 md:px-2 md:last:col-span-3 lg:last:col-span-1"
         >
             <div className="flex justify-between items-center gap-3 !bg-primary p-2.5 z-10 rounded-t-lg">

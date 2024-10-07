@@ -19,20 +19,23 @@ export const fabricTypes = [
     {
         title: "Silk/Woolen",
         desc: "Wool is not just a fiber, it’s a lifestyle.",
-        ref: "/products",
+        ref: "/products#fabric",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/cards/card%201.jpg?updatedAt=1727336415020",
+        link: "More",
     },
     {
         title: "Denim Jeans",
         desc: "Denim is a love that never fades.",
-        ref: "/products",
+        ref: "/products#fabric",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/cards/card%202.jpg?updatedAt=1727336415200",
+        link: "More",
     },
     {
         title: "Cotton",
         desc: "Cotton is the fabric of our lives.",
-        ref: "/products",
+        ref: "/products#fabric",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/cards/card%203.jpg?updatedAt=1727336415271",
+        link: "More",
     },
 ];
 
@@ -40,21 +43,21 @@ export const certification = [
     {
         title: "sedex",
         desc: "",
-        ref: "/certifications",
+        ref: "/certifications#certificate",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/certification%20logo/certification-logo%201.png?updatedAt=1727336381675",
         link: "More",
     },
     {
         title: "ECCC",
         desc: "",
-        ref: "/certifications",
+        ref: "/certifications#certificate",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/certification%20logo/certification-logo%202.png?updatedAt=1727336381886",
         link: "More",
     },
     {
         title: "GOTS",
         desc: "",
-        ref: "/certifications",
+        ref: "/certifications#certificate",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/certification%20logo/certification-logo%203.png?updatedAt=1727336381788",
         link: "More",
     },
@@ -63,25 +66,25 @@ export const certification = [
 export const variousProducts = [
     {
         title: "Men",
-        ref: "/products",
+        ref: "/products#types",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/gender%20cards/gender-card%201.png?updatedAt=1727336399725",
         lists: ["Shirts", "Shorts"],
     },
     {
         title: "Women",
-        ref: "/products",
+        ref: "/products#types",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/gender%20cards/gender-card%202.png?updatedAt=1727336399571",
         lists: ["Shirts", "Skirts"],
     },
     {
         title: "Children",
-        ref: "/products",
+        ref: "/products#types",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/gender%20cards/gender-card%203.jpg?updatedAt=1727336399438",
         lists: ["Top", "bottom"],
     },
     {
         title: "Infants",
-        ref: "/products",
+        ref: "/products#types",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/gender%20cards/gender-card%204.jpg?updatedAt=1727336399563",
         lists: ["Shirts", "Shorts"],
     },

@@ -2,83 +2,87 @@ import React from "react";
 import { GridCards } from "../GridCards";
 import { variousProducts } from "@/libs/data";
 import Image from "next/image";
+import ScrollToSection from "../ScrollToSection ";
 
 const ProductRange = () => {
     return (
-        <section className="px-6 py-10 space-y-8 md:px-14 xl:px-32">
-            <h2 className="text-2xl md:text-3xl lg:text-[48px] uppercase font-libreCaslonDisplay font-medium tracking-wider text-center w-full ">
-                Our range of products
-            </h2>
-            <GridCards data={variousProducts} />
-            <div className="block space-y-8">
-                <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
-                    Men
-                </h4>
-                <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-                    {men.map((list, idx) => (
-                        <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
-                            <Image
-                                alt="image"
-                                src={list}
-                                fill
-                                className="object-cover object-bottom"
-                            />
-                        </div>
-                    ))}
+        <>
+            <ScrollToSection offset={-120} duration={600} />
+            <section id="types" className="px-6 py-10 space-y-8 md:px-14 xl:px-32">
+                <h2 className="text-2xl md:text-3xl lg:text-[48px] uppercase font-libreCaslonDisplay font-medium tracking-wider text-center w-full ">
+                    Our range of products
+                </h2>
+                <GridCards data={variousProducts} />
+                <div className="block space-y-8">
+                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
+                        Men
+                    </h4>
+                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                        {men.map((list, idx) => (
+                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
+                                <Image
+                                    alt="image"
+                                    src={list}
+                                    fill
+                                    className="object-cover object-bottom"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="block space-y-8">
-                <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
-                    women
-                </h4>
-                <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-                    {women.map((list, idx) => (
-                        <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
-                            <Image
-                                alt="image"
-                                src={list}
-                                fill
-                                className="object-cover object-center"
-                            />
-                        </div>
-                    ))}
+                <div className="block space-y-8">
+                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
+                        women
+                    </h4>
+                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                        {women.map((list, idx) => (
+                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
+                                <Image
+                                    alt="image"
+                                    src={list}
+                                    fill
+                                    className="object-cover object-center"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="block space-y-8">
-                <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
-                    children
-                </h4>
-                <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-                    {children.map((list, idx) => (
-                        <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
-                            <Image
-                                alt="image"
-                                src={list}
-                                fill
-                                className="object-cover object-bottom"
-                            />
-                        </div>
-                    ))}
+                <div className="block space-y-8">
+                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
+                        children
+                    </h4>
+                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                        {children.map((list, idx) => (
+                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
+                                <Image
+                                    alt="image"
+                                    src={list}
+                                    fill
+                                    className="object-cover object-bottom"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="block space-y-8">
-                <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
-                    Infant
-                </h4>
-                <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-                    {infant.map((list, idx) => (
-                        <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
-                            <Image
-                                alt="image"
-                                src={list}
-                                fill
-                                className="object-cover object-center"
-                            />
-                        </div>
-                    ))}
+                <div className="block space-y-8">
+                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
+                        Infant
+                    </h4>
+                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                        {infant.map((list, idx) => (
+                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
+                                <Image
+                                    alt="image"
+                                    src={list}
+                                    fill
+                                    className="object-cover object-center"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 

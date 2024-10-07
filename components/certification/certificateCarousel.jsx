@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Slider from "react-slick";
+import ScrollToSection from '../ScrollToSection ';
 
 const CertificateCarousel = () => {
     const settings = {
@@ -34,36 +35,39 @@ const CertificateCarousel = () => {
     };
 
     return (
-        <section className="px-6 py-10 mt-20 space-y-6 text-center md:px-14 xl:px-32">
-            <h2 className="text-xl md:text-2xl lg:text-[40px] !leading-snug uppercase font-libreCaslonDisplay font-medium tracking-wider w-full">
-                Outstanding with unwavering focus and dedication
-            </h2>
-            <p className="text-base font-normal sm:text-lg font-figtree">
-                Take a look at our certification!
-            </p>
-            <div className=" py-4 md:p-5 bg-secondary rounded-tl-[20px] slider-container max-w-6xl mx-auto">
-                <Slider {...settings}>
-                    <div className="relative w-full h-[460px]">
-                        <Image alt="Certificate 1" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%201.png?updatedAt=1728093529344"} fill className="object-contain" />
-                    </div>
-                    <div className="relative w-full h-[460px]">
-                        <Image alt="Certificate 2" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%202.png?updatedAt=1728093529250"} fill className="object-contain" />
-                    </div>
-                    <div className="relative w-full h-[460px]">
-                        <Image alt="Certificate 3" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%203.png?updatedAt=1728093529142"} fill className="object-contain" />
-                    </div>
-                    <div className="relative w-full h-[460px]">
-                        <Image alt="Certificate 1" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%201.png?updatedAt=1728093529344"} fill className="object-contain" />
-                    </div>
-                    <div className="relative w-full h-[460px]">
-                        <Image alt="Certificate 2" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%202.png?updatedAt=1728093529250"} fill className="object-contain" />
-                    </div>
-                    <div className="relative w-full h-[460px]">
-                        <Image alt="Certificate 3" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%203.png?updatedAt=1728093529142"} fill className="object-contain" />
-                    </div>
-                </Slider>
-            </div>
-        </section>
+        <>
+            <ScrollToSection offset={-50} duration={600} />
+            <section id='certificate' className="px-6 py-10 mt-20 space-y-6 text-center md:px-14 xl:px-32">
+                <h2 className="text-xl md:text-2xl lg:text-[40px] !leading-snug uppercase font-libreCaslonDisplay font-medium tracking-wider w-full">
+                    Outstanding with unwavering focus and dedication
+                </h2>
+                <p className="text-base font-normal sm:text-lg font-figtree">
+                    Take a look at our certification!
+                </p>
+                <div className=" py-4 md:p-5 bg-secondary rounded-tl-[20px] slider-container max-w-6xl mx-auto">
+                    <Slider {...settings}>
+                        <div className="relative w-full h-[460px]">
+                            <Image alt="Certificate 1" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%201.png?updatedAt=1728093529344"} fill className="object-contain" />
+                        </div>
+                        <div className="relative w-full h-[460px]">
+                            <Image alt="Certificate 2" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%202.png?updatedAt=1728093529250"} fill className="object-contain" />
+                        </div>
+                        <div className="relative w-full h-[460px]">
+                            <Image alt="Certificate 3" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%203.png?updatedAt=1728093529142"} fill className="object-contain" />
+                        </div>
+                        <div className="relative w-full h-[460px]">
+                            <Image alt="Certificate 1" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%201.png?updatedAt=1728093529344"} fill className="object-contain" />
+                        </div>
+                        <div className="relative w-full h-[460px]">
+                            <Image alt="Certificate 2" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%202.png?updatedAt=1728093529250"} fill className="object-contain" />
+                        </div>
+                        <div className="relative w-full h-[460px]">
+                            <Image alt="Certificate 3" src={"https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/certificates/certificate%203.png?updatedAt=1728093529142"} fill className="object-contain" />
+                        </div>
+                    </Slider>
+                </div>
+            </section>
+        </>
     );
 }
 

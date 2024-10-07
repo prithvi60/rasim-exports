@@ -15,7 +15,7 @@ const OurVision_Mission = () => {
                 </div>
                 <div className='relative w-full lg:w-3/5'>
                     <p className='w-full px-6 py-8 text-base font-medium leading-7 tracking-wide text-justify sm:text-lg text-secondary bg-primary rounded-tl-[20px] font-figtree indent-7'>We stand for quality, sustainability, and a commitment to excellence in <span className='text-lg italic font-medium sm:text-xl font-libreCaslonDisplay'>apparel manufacturing</span>. From the careful selection of materials to the expertise of our designers and textile developers, we ensure that every piece is crafted with meticulous <span className='text-lg italic font-medium sm:text-xl font-libreCaslonDisplay'>attention to detail</span>. Our focus on strict quality control and durability reflects our dedication to delivering clothing that meets the highest standards.</p>
-                    <Link href={"/about"} className='absolute flex gap-2 right-2 1items-center -top-7 lg:-top-10 font-figtree group'>
+                    <Link href={"/about#vision"} className='absolute flex gap-2 right-2 1items-center -top-7 lg:-top-10 font-figtree group'>
                         <h4 className='group-hover:underline group-hover:underline-offset-4 decoration-primary'>More about us</h4>
                         <span className='w-5 h-5 rounded-full shadow-lg bg-primary'></span>
                     </Link>
