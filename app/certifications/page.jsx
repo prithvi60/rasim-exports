@@ -1,10 +1,13 @@
+import CertificateCarousel from '@/components/certification/certificateCarousel'
+import CertificateSpinningLogo from '@/components/certification/CertificateSpinningLogo'
 import React from 'react'
 
 const page = () => {
     return (
-        <div>
-            Certifications
-        </div>
+        <main>
+            <CertificateCarousel />
+            <CertificateSpinningLogo />
+        </main>
     )
 }
 

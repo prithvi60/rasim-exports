@@ -4,6 +4,7 @@ import { SlideTabsExample, SlideTabsMobile } from './SlideTabs'
 import { navbarLinks } from '@/libs/data'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseLargeLine } from "react-icons/ri";
+import Link from 'next/link';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isActive, setIsActive] = useState("");
@@ -11,9 +12,9 @@ const Navbar = () => {
 
     return (
         <nav className='w-full h-full mx-auto '>
-            <div className="flex items-center justify-between md:justify-center gap-2.5 px-5 py-2 lg:px-16 z-[999] shadow-lg fixed top-0 rounded-full left-0 w-full  backdrop-blur-md bg-white/20 ">
+            <div className="flex items-center justify-between md:justify-center gap-2.5 px-5 py-2 lg:px-16 z-[999] shadow-lg fixed top-0 rounded-full left-0 w-full  backdrop-blur-md bg-black/50 ">
                 <SlideTabsExample data={navbarLinks.slice(0, 3)} isActive={isActive} setIsActive={setIsActive} />
-                <h1 className="text-2xl text-white font-playFair md:text-3xl w-max ">RE</h1>
+                <Link href={"/"} className="text-2xl text-white cursor-pointer font-playFair md:text-3xl w-max">RE</Link>
                 {/* py-0.5 md:py-1.5 px-3.5 md:px-5 rounded-full bg-secondary  */}
                 <SlideTabsExample data={navbarLinks.slice(3, 6)} isActive={isActive} setIsActive={setIsActive} />
                 <div className={`block p-1 rounded-lg cursor-pointer md:hidden bg-primary  ${isMenuOpen ? "opacity-0" : "opacity-100"}`} onClick={() => setIsMenuOpen(true)}>

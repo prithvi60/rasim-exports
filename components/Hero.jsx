@@ -16,13 +16,6 @@ const Hero = () => {
         });
     }, []);
     return (
-        // <div className='flex justify-between items-center w-full h-[75vh] shadow-lg p-5 mt-24 border-2' style={{backgroundImage: "url(../)"}}>
-        //     <div className='block w-full mx-auto space-y-5 text-center'>
-        //         <h1 className='font-semibold uppercase text-9xl font-playFair'>Rasim</h1>
-        //         <p className='text-xl font-bold capitalize font-libreCaslonDisplay text-primary'>Rasim Exports pvt limited</p>
-        //         <p className='text-xl font-bold text-white capitalize font-libreCaslonDisplay'>Quality you can Feel, sustainability you can trust</p>
-        //     </div>
-        // </div>
         <section className="relative w-full h-screen overflow-hidden slider-container">
             {/* mt-[45px] md:mt-[52px] xl:mt-[75px] */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max  flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold rounded-md py-2 px-3.5 z-10">
@@ -39,7 +32,7 @@ const Hero = () => {
                         priority
                         loading={"eager"}
                         alt="bg image"
-                        src={"https://ik.imagekit.io/webibee/Rasim-Exports/sample-video-img.png?updatedAt=1727341219710"}
+                        src={"https://ik.imagekit.io/webibee/Rasim-Exports/sample-2.png?updatedAt=1728292923188"}
                         style={{ objectFit: "cover", objectPosition: "center" }}
                         fill
                         className="brightness-[0.45]"
@@ -56,7 +49,7 @@ const Hero = () => {
             >
                 <source
                     src={
-                        "https://ik.imagekit.io/webibee/Rasim-Exports/sample-video.mp4?updatedAt=1727335810255"
+                        "https://ik.imagekit.io/webibee/Rasim-Exports/bg-video.mp4?updatedAt=1728292775504"
                     }
                     type="video/mp4"
                 />

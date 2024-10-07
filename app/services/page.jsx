@@ -1,10 +1,13 @@
+import ServiceHero from '@/components/services/ServiceHero'
+import ServiceVideo from '@/components/services/ServiceVideo'
 import React from 'react'
 
 const page = () => {
     return (
-        <div>
-            Services
-        </div>
+        <main>
+            <ServiceHero />
+            <ServiceVideo />
+        </main>
     )
 }
 

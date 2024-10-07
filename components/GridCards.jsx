@@ -6,19 +6,19 @@ import { LuArrowDownRightFromCircle } from "react-icons/lu";
 
 export const GridCards = ({ data }) => {
     return (
-        <div className="p-4 md:p-12">
-            <div className="grid max-w-5xl grid-cols-2 mx-auto rounded-tl-[20px] md:grid-cols-3 lg:grid-cols-4 md:divide-x md:divide-y-0">
-                {data.map((item, idx) => (
-                    <Card
-                        key={idx}
-                        href={item.ref}
-                        title={item.title}
-                        src={item.img}
-                        lists={item.lists}
-                    />
-                ))}
-            </div>
+        // <div className="p-4 md:p-12">
+        <div className="grid grid-cols-2 rounded-tl-[20px] md:grid-cols-3 lg:grid-cols-4 divide-secondary md:divide-x md:divide-y-0">
+            {data.map((item, idx) => (
+                <Card
+                    key={idx}
+                    href={item.ref}
+                    title={item.title}
+                    src={item.img}
+                    lists={item.lists}
+                />
+            ))}
         </div>
+        // {/* </div> */}
     );
 };
 
@@ -59,7 +59,7 @@ const Card = ({
                 }}
             />
 
-            <Corners />
+            {/* <Corners /> */}
         </a>
     );
 };

@@ -1,28 +1,19 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import { AnimationProps, motion } from "framer-motion";
-import {
-    SiAccenture,
-    SiAdobe,
-    SiCoinbase,
-    SiFacebook,
-    SiPatreon,
-    SiReddit,
-    SiYoutube,
-} from "react-icons/si";
+import { motion } from "framer-motion";
 import SpinningBox from "./SpinningBox";
 import Image from "next/image";
-import { logos } from "@/libs/data";
 
-const Spinning = () => {
+
+const Spinning = ({ logos }) => {
     return (
         <div className="grid w-full px-4 py-12 overflow-hidden bg-white place-content-center">
-            <SpinningLogos />
+            <SpinningLogos logos={logos} />
         </div>
     );
 };
 
-const SpinningLogos = () => {
+const SpinningLogos = ({ logos }) => {
     const { width } = useWindowSize();
 
     const [sizes, setSizes] = useState({

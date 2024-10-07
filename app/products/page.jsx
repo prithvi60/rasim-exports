@@ -1,10 +1,15 @@
+import FabricCollections from '@/components/products/FabricCollections'
+import ProductHero from '@/components/products/ProductHero'
+import ProductRange from '@/components/products/ProductRange'
 import React from 'react'
 
 const page = () => {
     return (
-        <div>
-            Products
-        </div>
+        <main>
+            <ProductHero />
+            {/* <FabricCollections /> */}
+            <ProductRange />
+        </main>
     )
 }
 

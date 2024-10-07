@@ -68,7 +68,7 @@ const Tab = ({
                     opacity: 1,
                 });
             }}
-            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase text-white font-semibold xl:px-10 xl:py-3 lg:text-lg  ${isActive === list.menu ? "rounded-full bg-secondary h-7 md:h-12" : ""}`}
+            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase  font-semibold xl:px-10 xl:py-3 lg:text-lg  ${isActive === list.menu ? "rounded-full bg-secondary h-7 md:h-12 text-primary" : "text-white"}`}
         >
             {children}
         </li>
