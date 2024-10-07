@@ -119,37 +119,37 @@ export const fabricCollections = [
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%201.jpeg?updatedAt=1728093008059",
         title: "fabric name",
-        span: "aspect-square",
+        span: "320px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%202.jpeg?updatedAt=1728092998646",
         title: "fabric name",
-        span: "aspect-video",
+        span: "200px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%203.jpeg?updatedAt=1728093006684",
         title: "fabric name",
-        span: "aspect-video",
+        span: "200px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%204.jpeg?updatedAt=1728093008011",
         title: "fabric name",
-        span: "aspect-square",
+        span: "320px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%205.jpeg?updatedAt=1728093004809",
         title: "fabric name",
-        span: "aspect-square",
+        span: "320px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%206.jpeg?updatedAt=1728093006041",
         title: "fabric name",
-        span: "aspect-video",
+        span: "200px",
     },
 ];
 

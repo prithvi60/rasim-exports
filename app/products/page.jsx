@@ -7,7 +7,7 @@ const page = () => {
     return (
         <main>
             <ProductHero />
-            {/* <FabricCollections /> */}
+            <FabricCollections />
             <ProductRange />
         </main>
     )

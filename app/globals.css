@@ -10,13 +10,17 @@
   display: none;
 }
 
+/* .columGap {
+  column-gap: 10px;
+} */
+
 /* .imageWrapper {
-  margin: 0 10px; 
+  margin: 0 10px;
   transition: transform 0.5s ease;
 }
 
 .slick-center .imageWrapper {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .image {
