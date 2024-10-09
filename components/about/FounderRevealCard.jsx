@@ -1,12 +1,17 @@
 import React from 'react'
 import { AboutRevealCards } from '../RevealCards'
 import { founderData } from '@/libs/data'
+import { RevealCardMobile } from '../RevealCardMobile'
+import { ReactMarquee } from '../ReactMarquee'
 
 const FounderRevealCard = () => {
     return (
-        <section className='w-full px-6 py-10 space-y-5 sm:space-y-8 md:px-14 xl:px-32'>
-            <AboutRevealCards data={founderData} />
-            <h1 className='font-libreCaslonDisplay text-lg text-center font-medium sm:text-2xl lg:text-[40px] xl:text-[48px] uppercase tracking-wide'>Pillars of Rasim exports pvt limited</h1>
+        <section className='w-full h-auto py-2.5 sm:py-5'>
+            <div className='w-full space-y-5 sm:space-y-8 px-6 py-2.5 sm:py-5 md:px-14 xl:px-32'>
+                <AboutRevealCards data={founderData} />
+                <RevealCardMobile data={founderData} styles={"grid-cols-1 sm:grid-cols-2"} />
+            </div>
+            <ReactMarquee data={"Pillars of Rasim exports pvt limited"} direction={"right"} />
         </section>
     )
 }

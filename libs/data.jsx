@@ -1,15 +1,15 @@
 export const navbarLinks = [
-    { menu: "About Us", ref: "/about" },
-    { menu: "Services", ref: "/services" },
-    { menu: "Products", ref: "/products" },
-    { menu: "Certifications", ref: "/certifications" },
-    { menu: "Initiatives", ref: "/initiatives" },
-    { menu: "Contact us", ref: "/contact" },
+    { menu: "About Us", ref: "/about", path: "about" },
+    { menu: "Services", ref: "/services", path: "services" },
+    { menu: "Products", ref: "/products", path: "products" },
+    { menu: "Certifications", ref: "/certifications", path: "certifications" },
+    { menu: "Initiatives", ref: "/initiatives", path: "initiatives" },
+    { menu: "Contact us", ref: "/contact", path: "contact" },
 ];
 
 export const footerLinks = [
-    { menu: "Home", ref: "#" },
-    { menu: "People of rasims", ref: "/peopleOfRasims" },
+    { menu: "Home", ref: "/" },
+    { menu: "People of rasims", ref: "/initiatives#founder" },
     { menu: "Catalogue", ref: "/catalogue" },
     { menu: "T&C", ref: "/termsAndConditions" },
     { menu: "Policy", ref: "/policy" },
@@ -198,7 +198,7 @@ export const founderData = [
     {
         title: "Founder",
         desc: "Unknown Name",
-        ref: "/contact  ",
+        ref: "/contact",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/aboutUs_page/about%20page%20founder%202.jpeg?updatedAt=1728299397544",
         link: "Contact",
     },

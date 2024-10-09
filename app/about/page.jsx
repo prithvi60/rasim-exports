@@ -13,6 +13,7 @@ const page = () => {
             <VisionMission />
             <WorldDistributors />
             <FounderRevealCard />
+            
         </main>
     )
 }

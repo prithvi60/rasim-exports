@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const RevealCards = ({ data }) => {
     return (
-        <div className="grid grid-cols-1 gap-4 max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
+        <div className="hidden grid-cols-1 gap-4 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
             {data.map((list, idx) => (
                 <Card
                     key={idx}
@@ -21,7 +21,7 @@ const RevealCards = ({ data }) => {
 
 export const AboutRevealCards = ({ data }) => {
     return (
-        <div className="grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="hidden max-w-6xl grid-cols-1 gap-4 lg:grid sm:grid-cols-2">
             {data.map((list, idx) => (
                 <AboutCard
                     key={idx}

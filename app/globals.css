@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
-  scroll-behavior: smooth;
-}
-
-body {
-  scroll-behavior: smooth;
-} */
-
 .slick-slide > div {
   padding: 0px 20px;
 }
@@ -18,19 +10,7 @@ body {
   display: none;
 }
 
-/* .columGap {
-  column-gap: 10px;
-} */
-
-/* .imageWrapper {
-  margin: 0 10px;
+.slick-center .object-contain {
+  transform: scale(1.2);
   transition: transform 0.5s ease;
 }
-
-.slick-center .imageWrapper {
-  transform: scale(1.1);
-}
-
-.image {
-  transition: transform 0.5s ease;
-} */

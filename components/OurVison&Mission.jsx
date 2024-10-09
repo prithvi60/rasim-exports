@@ -2,14 +2,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { VelocityHero } from './VelocitScroll'
+import { ReactMarquee } from './ReactMarquee'
 
 const OurVision_Mission = () => {
     return (
         // <VelocityHero />
         <section
-            className='flex flex-col items-center justify-center w-full h-full gap-6 px-6 py-10 md:px-14 xl:px-32 bg-secondary'
+            className='flex flex-col items-center justify-center w-full h-full py-2.5 sm:py-5 bg-secondary'
         >
-            <div className='relative flex flex-col items-center justify-center gap-10 lg:gap-5 jus lg:flex-row lg:justify-center lg:items-end'>
+            <div className='relative flex flex-col items-center justify-center gap-10 lg:gap-5 px-6 py-2.5 sm:py-5 md:px-14 xl:px-32  jus lg:flex-row lg:justify-center lg:items-end'>
                 <div className='w-full h-[320px] lg:w-[340px] lg:h-[430px] xl:h-[290px] overflow-hidden relative rounded-tl-[20px] cursor-pointer shadow-lg'>
                     <Image fill src={"https://ik.imagekit.io/webibee/Rasim-Exports/sample%202.png?updatedAt=1727336458438"} alt="textile image" className='object-cover object-center transition-all ease-in-out hover:scale-110 duration-400' />
                 </div>
@@ -21,8 +22,7 @@ const OurVision_Mission = () => {
                     </Link>
                 </div>
             </div>
-            <h1 className='font-libreCaslonDisplay text-lg text-center font-semibold sm:text-2xl lg:text-[40px] xl:text-[48px] uppercase tracking-wide'>Guided by deep commitment to ethical</h1>
-
+            <ReactMarquee data={"Guided by deep commitment to ethical"} direction={"right"} />
         </section>
     )
 }

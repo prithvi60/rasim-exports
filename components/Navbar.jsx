@@ -5,10 +5,14 @@ import { navbarLinks } from '@/libs/data'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseLargeLine } from "react-icons/ri";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 const Navbar = () => {
+    const pathname = usePathname()
+    const path = pathname.split('/');
+    console.log(path[1]);
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isActive, setIsActive] = useState("");
-    console.log(isActive);
+    const [isActive, setIsActive] = useState(path[0]);
 
     return (
         <nav className='w-full h-full mx-auto '>
