@@ -5,9 +5,9 @@ import { ReactMarquee } from '../ReactMarquee'
 const AboutCompany = () => {
     return (
         <section
-            className='flex flex-col items-center justify-center w-full h-full gap-6 py-2.5 sm:py-5 bg-secondary'
+            className='flex flex-col items-center justify-center w-full h-full gap-6 bg-secondary'
         >
-            <div className='relative flex flex-col items-center justify-center gap-10 lg:gap-5 px-6 py-2.5 sm:py-5 md:px-14 xl:px-32 lg:flex-row lg:justify-center lg:items-end'>
+            <div className='relative flex flex-col items-center justify-center gap-10 px-5 lg:gap-5 py-7 lg:px-16 lg:py-12 lg:flex-row lg:justify-center lg:items-end'>
                 <div className='w-full h-[320px] lg:w-[340px] lg:h-[430px] xl:h-[340px] overflow-hidden relative rounded-tl-[20px] cursor-pointer shadow-lg'>
                     <Image fill src={"https://ik.imagekit.io/webibee/Rasim-Exports/aboutUs_page/about%201.jpeg?updatedAt=1728094155828"} alt="textile image" className='object-cover object-center transition-all ease-in-out hover:scale-110 duration-400' />
                 </div>
