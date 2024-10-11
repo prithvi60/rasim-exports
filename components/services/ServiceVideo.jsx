@@ -13,7 +13,7 @@ const ServiceVideo = () => {
             >
                 <source
                     src={
-                        "https://ik.imagekit.io/webibee/Rasim-Exports/service_page/service-video.mp4?updatedAt=1728299222744"
+                        "https://ik.imagekit.io/webibee/Rasim-Exports/service_page/service-video.mp4"
                     }
                     type="video/mp4"
                 />
