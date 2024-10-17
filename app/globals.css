@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .customBorder {
+    @apply border-l-[10px] border-secondary rounded-tl-[20px];
+  }
+}
+
 .slick-slide > div {
   padding: 0px 20px;
 }

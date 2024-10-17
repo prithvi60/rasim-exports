@@ -1,26 +1,41 @@
-"use client"
+"use client";
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const SlideTabsExample = ({ data, isActive, setIsActive }) => {
+export const SlideTabsExample = ({ data, isActive, setIsActive, val }) => {
     return (
         <div className="hidden md:block">
-            <SlideTabs data={data} isActive={isActive} setIsActive={setIsActive} />
+            <SlideTabs
+                data={data}
+                isActive={isActive}
+                setIsActive={setIsActive}
+                val={val}
+            />
         </div>
     );
 };
 
-export const SlideTabsMobile = ({ data, setIsMenuOpen, isActive, setIsActive }) => {
+export const SlideTabsMobile = ({
+    data,
+    setIsMenuOpen,
+    isActive,
+    setIsActive,
+}) => {
     return (
         <div>
-            <MenuLinks data={data} setIsOpen={setIsMenuOpen} isActive={isActive} setIsActive={setIsActive} />
+            <MenuLinks
+                data={data}
+                setIsOpen={setIsMenuOpen}
+                isActive={isActive}
+                setIsActive={setIsActive}
+            />
         </div>
     );
 };
 
-const SlideTabs = ({ data, isActive, setIsActive }) => {
+const SlideTabs = ({ data, isActive, setIsActive, val }) => {
     const [position, setPosition] = useState({
         left: 0,
         width: 0,
@@ -38,8 +53,15 @@ const SlideTabs = ({ data, isActive, setIsActive }) => {
             className="relative flex flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal md:justify-start md:items-center md:flex-row w-max font-libreCaslonDisplay"
         >
             {data.map((list, idx) => (
-                <Link key={idx} href={list.ref} onClick={() => setIsActive(list.menu)}>
-                    <Tab setPosition={setPosition} isActive={isActive} list={list}>{list.menu}</Tab>
+                <Link key={idx} href={list.ref} onClick={() => setIsActive(list.path)}>
+                    <Tab
+                        setPosition={setPosition}
+                        val={val}
+                        isActive={isActive}
+                        list={list}
+                    >
+                        {list.menu}
+                    </Tab>
                 </Link>
             ))}
             <Cursor position={position} />
@@ -47,18 +69,8 @@ const SlideTabs = ({ data, isActive, setIsActive }) => {
     );
 };
 
-const Tab = ({
-    children,
-    setPosition,
-    isActive,
-    list
-}) => {
-    const pathname = usePathname()
-    // const path = pathname.split('/');
-    // console.log(path[1]);
-    // console.log(list);
-    console.log(pathname);
-
+const Tab = ({ children, setPosition, isActive, list, val }) => {
+    const pathname = usePathname();
     const ref = useRef(null);
 
     return (
@@ -75,7 +87,11 @@ const Tab = ({
                     opacity: 1,
                 });
             }}
-            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase  font-semibold xl:px-10 xl:py-3 lg:text-lg  ${isActive && isActive === list.menu && pathname !== "/" ? "rounded-full bg-secondary h-7 md:h-12 text-primary" : "text-white"}`}
+            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase font-normal xl:px-10 xl:py-3 lg:text-lg ${val && pathname === "/" ? "text-white" : "text-primary"
+                }  ${isActive && isActive === list.menu || isActive === list.path && pathname !== "/"
+                    ? "rounded-full bg-secondary h-7 md:h-12 text-primary"
+                    : "text-primary"
+                }`}
         >
             {children}
         </li>
@@ -88,28 +104,29 @@ const Cursor = ({ position }) => {
             animate={{
                 ...position,
             }}
-            className={`absolute z-0 rounded-full bg-primary h-7 md:h-12`}
+            className={`absolute z-0 rounded-full bg-secondary h-7 md:h-12`}
         />
     );
 };
 
 const MenuLinks = ({ data, setIsOpen, isActive, setIsActive }) => {
-
     const handleClick = (value) => {
         // setIsActive(value)
-        setIsOpen(false)
-    }
+        setIsOpen(false);
+    };
     return (
-        <ul
-            className="relative flex flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal w-max font-libreCaslonDisplay"
-        >
+        <ul className="relative flex flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal w-max font-libreCaslonDisplay">
             {data.map((list, idx) => (
                 <div key={idx}>
                     <Link href={list.ref} onClick={() => handleClick(list.menu)}>
-                        <h4 className={`text-base font-medium uppercase font-libreCaslonDisplay hover:underline underline-offset-4 decoration-primary `}>{list.menu}</h4>
+                        <h4
+                            className={`text-base uppercase font-libreCaslonDisplay hover:underline underline-offset-4 decoration-primary `}
+                        >
+                            {list.menu}
+                        </h4>
                     </Link>
                 </div>
             ))}
         </ul>
     );
-}
+};

@@ -8,18 +8,18 @@ const ProductRange = () => {
     return (
         <>
             <ScrollToSection offset={-120} duration={600} />
-            <section id="types" className="px-6 py-10 space-y-8 md:px-14 xl:px-32">
-                <h2 className="text-2xl md:text-3xl lg:text-[48px] uppercase font-libreCaslonDisplay font-medium tracking-wider text-center w-full ">
+            <section id="types" className="px-6 py-10 space-y-8 text-white md:px-14 xl:px-32 bg-primary">
+                <h2 className="text-2xl md:text-3xl lg:text-[48px] uppercase font-libreCaslonDisplay tracking-custom font-medium text-center w-full ">
                     Our range of products
                 </h2>
                 <GridCards data={variousProducts} />
                 <div className="block space-y-8">
-                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
+                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         Men
                     </h4>
                     <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
                         {men.map((list, idx) => (
-                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
+                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden customBorder">
                                 <Image
                                     alt="image"
                                     src={list}
@@ -31,12 +31,12 @@ const ProductRange = () => {
                     </div>
                 </div>
                 <div className="block space-y-8">
-                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
+                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         women
                     </h4>
                     <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
                         {women.map((list, idx) => (
-                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
+                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden customBorder">
                                 <Image
                                     alt="image"
                                     src={list}
@@ -48,12 +48,12 @@ const ProductRange = () => {
                     </div>
                 </div>
                 <div className="block space-y-8">
-                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
+                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         children
                     </h4>
                     <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
                         {children.map((list, idx) => (
-                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
+                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden customBorder">
                                 <Image
                                     alt="image"
                                     src={list}
@@ -65,12 +65,12 @@ const ProductRange = () => {
                     </div>
                 </div>
                 <div className="block space-y-8">
-                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize">
+                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         Infant
                     </h4>
                     <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
                         {infant.map((list, idx) => (
-                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden rounded-tl-[20px]">
+                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden customBorder">
                                 <Image
                                     alt="image"
                                     src={list}

@@ -4,25 +4,24 @@ import { animate, useInView } from "framer-motion";
 
 export const CountUpStats1 = () => {
     return (
-        <div className="px-4 pt-20 md:pt-24 bg-secondary">
+        <div className="px-4 pt-10 md:pt-14">
             <div className="flex flex-col items-center justify-center sm:flex-row">
                 <Stat1
-                    num={10}
+                    num={8}
                     suffix="+"
                     subheading="COUNTRIES EXPORTED"
                 />
-                <div className="h-[1px] w-12 bg-indigo-200 sm:h-6 sm:w-[1px]" />
+                <div className="h-[1px] w-12 bg-white sm:h-6 sm:w-[1px]" />
                 <Stat1
                     num={35000}
                     // decimals={1}
                     suffix=""
                     subheading="AREA"
                 />
-                <div className="h-[1px] w-12 bg-indigo-200 sm:h-6 sm:w-[1px]" />
-                <Stat1
-                    num={70}
-                    suffix="%"
-                    subheading="FEMALE EMPLOYEES"
+                <div className="h-[1px] w-12 bg-white sm:h-6 sm:w-[1px]" />
+                <StatData
+                    val={"India"}
+                    subheading="FABRIC SOURCING"
                 />
             </div>
         </div>
@@ -31,22 +30,22 @@ export const CountUpStats1 = () => {
 
 export const CountUpStats2 = () => {
     return (
-        <div className="px-4 py-20 md:py-24 bg-secondary">
+        <div className="px-4 py-6">
             <div className="flex flex-col items-center justify-center sm:flex-row">
                 <Stat2
                     num={40000}
                     suffix="per month"
                     subheading="CAPCITY"
                 />
-                <div className="h-[1px] w-12 bg-indigo-200 sm:h-12 sm:w-[1px]" />
+                <div className="h-[1px] w-12 bg-white sm:h-12 sm:w-[1px]" />
                 <Stat2
                     num={90}
-                    suffix="days approx"
+                    suffix="days"
                     subheading="LEAD TIME"
                 />
-                <div className="h-[1px] w-12 bg-indigo-200 sm:h-12 sm:w-[1px]" />
+                <div className="h-[1px] w-12 bg-white sm:h-12 sm:w-[1px]" />
                 <StatData
-                    val={"India&China"}
+                    val={"Taiwan&China"}
                     subheading="FABRIC SOURCING"
                 />
             </div>
@@ -63,14 +62,14 @@ export const CountUpStats3 = () => {
                     suffix="+"
                     subheading="COUNTRIES EXPORTED"
                 />
-                <div className="h-[1px] w-12 bg-indigo-200 sm:h-6 sm:w-[1px]" />
+                <div className="h-[1px] w-12 bg-white sm:h-6 sm:w-[1px]" />
                 <Stat3
                     num={35000}
                     // decimals={1}
                     suffix=""
                     subheading="AREA"
                 />
-                <div className="h-[1px] w-12 bg-indigo-200 sm:h-6 sm:w-[1px]" />
+                <div className="h-[1px] w-12 bg-white sm:h-6 sm:w-[1px]" />
                 <Stat3
                     num={70}
                     suffix="%"
@@ -100,7 +99,7 @@ const Stat1 = ({ num, suffix, decimals = 0, subheading }) => {
 
     return (
         <div className="flex flex-col items-center py-8 first:rounded-tl-[20px] w-full sm:w-96 bg-primary">
-            <p className="mb-2 text-center text-5xl text-secondary sm:text-4xl md:text-5xl xl:text-[96px] font-libreCaslonDisplay font-normal">
+            <p className="mb-2 text-center text-5xl text-white sm:text-4xl md:text-5xl xl:text-[86px] font-libreCaslonDisplay font-normal">
                 <span ref={ref}></span>
                 {/* <span className="text-[92px]">{val}</span> */}
                 <span className="text-lg lg:text-[48px]">{suffix}</span>
@@ -129,7 +128,7 @@ const Stat2 = ({ num, suffix, decimals = 0, subheading }) => {
 
     return (
         <div className="flex flex-col items-center py-8 first:rounded-tl-[20px] w-full sm:w-96 bg-primary">
-            <p className="mb-2 text-center text-5xl text-secondary sm:text-4xl md:text-5xl xl:text-[92px] font-libreCaslonDisplay font-normal">
+            <p className="mb-2 text-center text-5xl text-white sm:text-4xl md:text-5xl xl:text-[86px] font-libreCaslonDisplay font-normal">
                 <span ref={ref}></span>
                 <span className="text-[18px]">{suffix}</span>
                 {/* <span className="text-base font-libreCaslonDisplay md:text-xl"></span> */}
@@ -158,7 +157,7 @@ const Stat3 = ({ num, suffix, decimals = 0, subheading }) => {
 
     return (
         <div className="flex flex-col items-center py-8 first:rounded-tl-[20px] w-full sm:w-96 bg-primary">
-            <p className="mb-2 text-center text-5xl text-secondary sm:text-4xl md:text-5xl xl:text-[92px] font-libreCaslonDisplay font-normal">
+            <p className="mb-2 text-center text-5xl text-white sm:text-4xl md:text-5xl xl:text-[92px] font-libreCaslonDisplay font-normal">
                 <span ref={ref}></span>
                 <span className="text-[18px]">{suffix}</span>
                 {/* <span className="text-base font-libreCaslonDisplay md:text-xl"></span> */}
@@ -172,9 +171,9 @@ const StatData = ({ val, subheading }) => {
 
     return (
         <div className="flex flex-col items-center py-10 lg:py-8 xl:py-10 first:rounded-tl-[20px] w-full sm:w-96 bg-primary ">
-            <p className="font-normal text-center text-secondary font-libreCaslonDisplay">
+            <p className="font-normal text-center text-white font-libreCaslonDisplay">
                 {/* <span ref={ref}></span> */}
-                <span className="text-[27px] lg:text-[36px] xl:text-[54px] uppercase">{val}</span>
+                <span className={`${val === "India" ? "text-[27px] lg:text-[36px] xl:text-[54px]" : "text-[27px] lg:text-[38px] xl:text-[50px]"}  uppercase`}>{val}</span>
                 {/* <span className="text-[48px]">{suffix}</span> */}
             </p>
             <p className="text-center text-lg lg:text-[24px] xl:text-[32px] text-white font-figtree font-semibold">{subheading}</p>

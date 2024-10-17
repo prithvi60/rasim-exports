@@ -6,6 +6,8 @@ import FabricTypes from "@/components/FabricTypes";
 import Hero from "@/components/Hero";
 import OurClients from "@/components/OurClients";
 import OurVision_Mission from "@/components/OurVison&Mission";
+import { ReactMarquee } from "@/components/ReactMarquee";
+import REProgress from "@/components/REProgress";
 import Summary from "@/components/Summary";
 import VariousTypesOfProducts from "@/components/VariousTypesOfProducts";
 
@@ -14,12 +16,21 @@ export default function Home() {
     <main>
       <Hero />
       <Summary />
+      <ReactMarquee
+        data={"With every piece, we build a legacy of Q"}
+        direction={"left"}
+      />
+      <REProgress />
       <Carousel />
       <OurClients />
       <FabricTypes />
       <CompanyStats />
       <VariousTypesOfProducts />
       <OurVision_Mission />
+      <ReactMarquee
+        data={"Guided by deep commitment to ethical"}
+        direction={"right"}
+      />
       <Certifications />
       <ContactUsHome />
     </main>

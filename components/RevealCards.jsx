@@ -89,8 +89,8 @@ const Card = ({
     link
 }) => {
     return (
-        <motion.div whileHover="hover" className="w-full h-[300px] relative group md:last:col-span-2 lg:last:col-span-1 shadow-lg">
-            <div className="flex flex-col justify-center p-6 bg-primary h-1/2 rounded-tl-[20px]">
+        <motion.div whileHover="hover" className="w-full h-[300px] relative group md:last:col-span-2 lg:last:col-span-1 shadow-lg ">
+            <div className="flex flex-col justify-center p-6 bg-primary h-1/2 customBorder">
                 <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
                 <p className="text-sm font-light text-slate-300">{description}</p>
             </div>
@@ -105,7 +105,7 @@ const Card = ({
                         right: "50%",
                     },
                 }}
-                className="absolute inset-0 z-10 bg-slate-200 rounded-tl-[20px] group-hover:!rounded-none"
+                className="absolute inset-0 z-10 bg-slate-200 rounded-tl-[20px] group-hover:!rounded-none customBorder"
                 style={{
                     backgroundImage: `url(${imgSrc})`,
                     backgroundSize: "cover",

@@ -2,6 +2,8 @@ import {
   Figtree,
   Libre_Caslon_Display,
   Playfair_Display,
+  Abril_Fatface,
+  Open_Sans,
 } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
@@ -9,13 +11,13 @@ import "slick-carousel/slick/slick-theme.css";
 import { Providers } from "./providers";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-const libreCaslonDisplay = Libre_Caslon_Display({
+const libreCaslonDisplay = Abril_Fatface({
   subsets: ["latin"],
   variable: "--font-libreCaslonDisplay",
   weight: ["400"],
 });
 
-const figtree = Figtree({
+const figtree = Open_Sans({
   subsets: ["latin"],
   variable: "--font-figtree",
   weight: ["400", "700"],

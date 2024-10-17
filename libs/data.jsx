@@ -246,3 +246,31 @@ export const founders = [
         position: "Founder",
     },
 ];
+
+export const REProcess = [
+    {
+        title: "Ethical Manufacturing",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/HomePage%20icons/RE-icon-1.svg",
+        alt: "Manufacturing icon",
+    },
+    {
+        title: "Quality Craftsmanship",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/HomePage%20icons/RE-icon-2.svg",
+        alt: "Quality icon",
+    },
+    {
+        title: "Buyer Centric approach",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/HomePage%20icons/RE-icon-3.svg",
+        alt: "Buyer icon",
+    },
+    {
+        title: "Global Standards",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/HomePage%20icons/RE-icon-4.svg",
+        alt: "Global icon",
+    },
+    {
+        title: "Efficient Port Access",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/HomePage%20icons/RE-icon-5.svg",
+        alt: "Port icon",
+    },
+];

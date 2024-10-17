@@ -4,7 +4,7 @@ import { certificatePageLogos } from '@/libs/data'
 
 const CertificateSpinningLogo = () => {
     return (
-        <section className="px-6 py-10 space-y-8 md:px-14 xl:px-32">
+        <section className="px-6 py-10 space-y-8 md:py-16 md:px-14 xl:px-32">
             <Spinning logos={certificatePageLogos} />
         </section>
     )

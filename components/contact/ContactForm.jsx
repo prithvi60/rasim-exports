@@ -7,7 +7,7 @@ const ContactForm = () => {
     return (
         <section className='px-6 py-10 mx-auto md:px-14 xl:px-32 '>
             <div className="w-full p-10 mx-auto space-y-6 lg:w-3/5 bg-primary rounded-tl-[20px]">
-                <h3 className="w-full text-5xl font-normal text-center capitalize text-secondary font-libreCaslonDisplay">
+                <h3 className="w-full text-5xl font-normal text-center text-white capitalize font-libreCaslonDisplay">
                     Get in touch!
                 </h3>
                 <form>
@@ -71,7 +71,7 @@ const ContactForm = () => {
                     <div className="w-full mx-auto mb-5 text-center">
                         <button
                             type="submit"
-                            className="px-5 py-3 uppercase transition cursor-pointer rounded-xl w-max text-primary hover:bg-opacity-90 bg-secondary disabled:bg-opacity-40 font-libreCaslonDisplay"
+                            className="px-5 py-3 text-white capitalize transition cursor-pointer rounded-xl w-max hover:bg-opacity-90 bg-secondary disabled:bg-opacity-40 font-libreCaslonDisplay"
                         >
                             Submit
                         </button>

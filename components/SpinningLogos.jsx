@@ -20,7 +20,6 @@ const SpinningLogos = ({ logos }) => {
         radiusToCenterOfIcons: RADIUS_TO_CENTER_OF_ICONS.lg,
         iconWrapperWidth: ICON_WRAPPER_WIDTH.lg,
         ringPadding: RING_PADDING.lg,
-        logoFontSize: LOGO_FONT_SIZE.lg,
     });
 
     useEffect(() => {
@@ -31,27 +30,24 @@ const SpinningLogos = ({ logos }) => {
                 radiusToCenterOfIcons: RADIUS_TO_CENTER_OF_ICONS.sm,
                 iconWrapperWidth: ICON_WRAPPER_WIDTH.sm,
                 ringPadding: RING_PADDING.sm,
-                logoFontSize: LOGO_FONT_SIZE.sm,
             });
         } else if (width < BREAKPOINTS.md) {
             setSizes({
                 radiusToCenterOfIcons: RADIUS_TO_CENTER_OF_ICONS.md,
                 iconWrapperWidth: ICON_WRAPPER_WIDTH.md,
                 ringPadding: RING_PADDING.md,
-                logoFontSize: LOGO_FONT_SIZE.md,
             });
         } else {
             setSizes({
                 radiusToCenterOfIcons: RADIUS_TO_CENTER_OF_ICONS.lg,
                 iconWrapperWidth: ICON_WRAPPER_WIDTH.lg,
                 ringPadding: RING_PADDING.lg,
-                logoFontSize: LOGO_FONT_SIZE.lg,
             });
         }
     }, [width]);
 
     return (
-        <div className="p-2 md:p-4 rounded-full bg-[#38A3A580] relative w-full shrink-0 shadow-lg">
+        <div className="relative w-full rounded-full shadow-lg shrink-0">
             <div
                 style={{
                     width:
@@ -66,7 +62,7 @@ const SpinningLogos = ({ logos }) => {
                 className="grid rounded-full shadow-inner place-content-center bg-primary"
             >
                 <SpinningBox />
-                <div className="p-1 md:p-4 rounded-full bg-[#38A3A580] w-full">
+                <div className="w-full p-1 rounded-full md:p-4">
                     <motion.div
                         initial={{ rotate: 0 }}
                         animate={{ rotate: 360 }}
@@ -84,14 +80,14 @@ const SpinningLogos = ({ logos }) => {
                         className="relative grid bg-white rounded-full shadow place-items-center"
                     >
 
-                        <motion.div
+                        {/* <motion.div
                             initial={{ rotate: 0 }}
                             animate={{ rotate: -360 }}
                             transition={TRANSITION}
                             className="text-lg font-bold uppercase text-neutral-900 sm:text-xl md:text-3xl"
                         >
 
-                        </motion.div>
+                        </motion.div> */}
 
                         {logos.map((logo, idx) => {
                             const degrees = (360 / logos.length) * idx;
@@ -111,14 +107,14 @@ const SpinningLogos = ({ logos }) => {
                                     initial={{ rotate: 0 }}
                                     animate={{ rotate: -360 }}
                                     transition={TRANSITION}
-                                    className={`absolute grid place-content-center rounded-full shadow-lg overflow-hidden bg-white`}
+                                    className={`absolute grid place-content-center bg-white rounded-full shadow-xl overflow-hidden w-28 h-28`}
                                 >
                                     {/* <icon.Icon
                                         style={{
                                             fontSize: sizes.logoFontSize,
                                         }}
                                     /> */}
-                                    <Image src={logo.src} alt={logo.alt} width={80} height={80} />
+                                    <Image src={logo.src} alt={logo.alt} fill className="object-contain object-center" />
                                 </motion.div>
                             );
                         })}
@@ -167,28 +163,28 @@ const degreesToRadians = (degrees) => {
 // Defines the distance from the center of the circle to the center
 // of the icons
 const RADIUS_TO_CENTER_OF_ICONS = {
-    sm: 230,
+    sm: 280,
     md: 325,
     lg: 525,
 };
 // Defines the width of the icon circles
 const ICON_WRAPPER_WIDTH = {
-    sm: 40,
+    sm: 80,
     md: 65,
     lg: 100,
 };
 // Defines the padding between the icon circles and the inner and outer rings
 const RING_PADDING = {
-    sm: 8,
+    sm: 30,
     md: 8,
     lg: 12,
 };
 // Defines the font size for logos
-const LOGO_FONT_SIZE = {
-    sm: 18,
-    md: 24,
-    lg: 36,
-};
+// const LOGO_FONT_SIZE = {
+//     sm: 28,
+//     md: 24,
+//     lg: 36,
+// };
 
 const BREAKPOINTS = {
     sm: 480,
