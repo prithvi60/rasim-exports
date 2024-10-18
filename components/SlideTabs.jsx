@@ -50,7 +50,7 @@ const SlideTabs = ({ data, isActive, setIsActive, val }) => {
                     opacity: 0,
                 }));
             }}
-            className="relative flex flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal md:justify-start md:items-center md:flex-row w-max font-libreCaslonDisplay"
+            className="relative flex flex-col items-center justify-center gap-3.5 xl:gap-16 p-1 mx-auto font-normal md:justify-start md:items-center md:flex-row w-max font-libreCaslonDisplay"
         >
             {data.map((list, idx) => (
                 <Link key={idx} href={list.ref} onClick={() => setIsActive(list.path)}>
@@ -64,7 +64,7 @@ const SlideTabs = ({ data, isActive, setIsActive, val }) => {
                     </Tab>
                 </Link>
             ))}
-            <Cursor position={position} />
+            {/* <Cursor position={position} /> */}
         </ul>
     );
 };
@@ -87,9 +87,9 @@ const Tab = ({ children, setPosition, isActive, list, val }) => {
                     opacity: 1,
                 });
             }}
-            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase font-normal xl:px-10 xl:py-3 lg:text-lg ${val && pathname === "/" ? "text-white" : "text-primary"
+            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase font-normal hover:underline underline-offset-4 decoration-secondary transition-all duration-700 ease-linear xl:py-3 lg:text-lg ${val && pathname === "/" ? "text-white" : "text-primary"
                 }  ${isActive && isActive === list.menu || isActive === list.path && pathname !== "/"
-                    ? "rounded-full bg-secondary h-7 md:h-12 text-primary"
+                    ? "underline underline-offset-8 decoration-secondary"
                     : "text-primary"
                 }`}
         >

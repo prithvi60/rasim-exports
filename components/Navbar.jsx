@@ -43,7 +43,7 @@ const Navbar = () => {
 
     return (
         <nav className="w-full h-full mx-auto ">
-            <div className={`flex items-center justify-between md:justify-center gap-2.5 px-5 py-2 lg:px-16 z-[999] transition-colors duration-500 ease-linear fixed top-0 left-0 w-full ${val && pathname === "/" ? "bg-transparent" : "bg-white shadow-lg"}`}>
+            <div className={`flex items-center justify-between md:justify-center gap-2.5 px-5 lg:px-8 xl:px-16 z-[999] transition-colors duration-500 ease-linear fixed top-0 left-0 w-full ${val && pathname === "/" ? "bg-transparent" : "bg-white shadow-lg"}`}>
                 <SlideTabsExample
                     data={navbarLinks.slice(0, 3)}
                     isActive={isActive}
@@ -53,11 +53,11 @@ const Navbar = () => {
                 {/* <div className="px-5 py-2 bg-secondary"> */}
                 <Link
                     href={"/"}
-                    className="relative w-12 h-12 font-bold rounded-full cursor-pointer font-libreCaslonDisplay"
+                    className="relative w-16 h-16 font-bold rounded-full cursor-pointer md:h-20 md:w-24 font-libreCaslonDisplay"
                 >
                     <Image
                         alt="Rasim Exports Logo"
-                        className={`${val && "bg-white rounded-3xl"} object-contain object-center`}
+                        className={` object-contain object-center rounded-full`}
                         fill
                         src={"https://ik.imagekit.io/webibee/Rasim-Exports/RE-logo.png"}
                     />

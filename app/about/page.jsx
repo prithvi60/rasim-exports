@@ -15,7 +15,7 @@ const page = () => {
             <VisionMission />
             <WorldDistributors />
             <FounderRevealCard />
-
+            <ReactMarquee data={"Pillars of Rasim exports pvt limited"} direction={"right"} />
         </main>
     )
 }

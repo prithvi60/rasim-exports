@@ -28,7 +28,6 @@ const Card = ({
     lists
 }) => {
     const pathname = usePathname();
-    console.log(pathname);
 
     return (
         <a

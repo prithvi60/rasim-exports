@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const RevealCards = ({ data }) => {
     return (
-        <div className="hidden grid-cols-1 gap-4 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
+        <div className="hidden w-full grid-cols-1 gap-4 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
             {data.map((list, idx) => (
                 <Card
                     key={idx}
@@ -21,7 +21,7 @@ const RevealCards = ({ data }) => {
 
 export const AboutRevealCards = ({ data }) => {
     return (
-        <div className="hidden max-w-6xl grid-cols-1 gap-4 lg:grid sm:grid-cols-2">
+        <div className="hidden w-full max-w-6xl grid-cols-1 gap-4 lg:grid sm:grid-cols-2">
             {data.map((list, idx) => (
                 <AboutCard
                     key={idx}
@@ -44,8 +44,8 @@ const AboutCard = ({
     link
 }) => {
     return (
-        <motion.div whileHover="hover" className="w-full h-[300px] relative group shadow-lg">
-            <div className="flex flex-col justify-center p-6 bg-primary h-1/2 rounded-tl-[20px]">
+        <motion.div whileHover="hover" className="w-full h-[300px] relative group shadow-lg ">
+            <div className="flex flex-col justify-center p-6 bg-primary h-1/2 customBorder">
                 <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
                 <p className="text-sm font-light text-slate-300">{description}</p>
             </div>
@@ -60,7 +60,7 @@ const AboutCard = ({
                         right: "50%",
                     },
                 }}
-                className="absolute inset-0 z-10 bg-slate-200 rounded-tl-[20px] group-hover:!rounded-none object-center lg:object-top"
+                className="absolute inset-0 z-10 bg-slate-200 group-hover:!rounded-none object-center lg:object-top customBorder"
                 style={{
                     backgroundImage: `url(${imgSrc})`,
                     backgroundSize: "cover",

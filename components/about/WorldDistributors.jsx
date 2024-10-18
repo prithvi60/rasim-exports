@@ -11,6 +11,12 @@ const markers = [
   { name: "Australia", coordinates: [123.7751, -20.2744] },
   { name: "Dubai", coordinates: [50.2708, 30.2048] },
   { name: "India", coordinates: [74.2707, 16.0827] },
+  { name: "USA", coordinates: [-95.7129, 37.0902] },
+  { name: "England", coordinates: [-0.1278, 51.5074] },
+  { name: "Netherlands", coordinates: [4.8951, 52.3702] },
+  { name: "Peru", coordinates: [-70.6484, -9.1899] },
+  { name: "Saudi Arabia", coordinates: [46.7723, 23.5700] },
+  { name: "Chile", coordinates: [-70.6484, -33.4378] },
 ];
 
 const WorldDistributors = () => {
@@ -35,10 +41,10 @@ const WorldDistributors = () => {
               <text
                 x={10}
                 y={3}
-                fontSize={20}
+                fontSize={24}
                 fill="#F97316"
-                className="mb-5 font-semibold backdrop-brightness-50 rounded-xl"
-                textAnchor="bottom"
+                className="p-4 mb-5 font-semibold backdrop-brightness-50 rounded-xl bg-secondary text-primary"
+                textAnchor="left"
               >
                 {name}
               </text>

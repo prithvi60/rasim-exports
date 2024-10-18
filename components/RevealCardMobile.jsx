@@ -3,7 +3,7 @@ import React from "react";
 
 export const RevealCardMobile = ({ data, styles }) => {
     return (
-        <section className="block px-6 py-5 lg:hidden md:px-14 xl:px-32">
+        <section className="block w-full px-6 py-5 lg:hidden md:px-14 xl:px-32">
             <div className={`grid  gap-3 md:gap-5 ${styles}`}>
                 {data.map((list, idx) => (
                     <Link

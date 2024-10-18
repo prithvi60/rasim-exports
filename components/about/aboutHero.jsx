@@ -5,7 +5,7 @@ const AboutHero = () => {
     return (
         <section className="relative flex flex-col-reverse items-center w-full h-screen gap-8 px-6 py-10 mt-5 overflow-hidden md:mt-0 mt- md:justify-between md:flex-row md:px-14 xl:px-32">
             <div className='block w-full space-y-6 lg:w-[90%] md:w-3/4'>
-                <h3 className='text-[34px] md:text-[40px] lg:text-[48px] font-libreCaslonDisplay font-normal !leading-snug uppercase mt-10 xl:mt-0 tracking-custom'>Delivering quality clothing, crafted with precision for global markets.</h3>
+                <h3 className='text-[27px] md:text-[40px] lg:text-[48px] font-libreCaslonDisplay font-normal !leading-snug uppercase mt-10 xl:mt-0 tracking-custom'>Delivering quality clothing, crafted with precision for global markets.</h3>
                 {/* <p className='text-base font-normal font-figtree md:text-lg'>Lorem ipsum dolor sit amet consectetur. Elit libero nec lectus in. Viverra aliquet lectus cursus alitate sed sed mauris leo eget et non id donec. Enim id massa</p> */}
             </div>
             <div className='relative w-full h-[420px]'>

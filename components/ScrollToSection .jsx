@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { scroller } from 'react-scroll';
 
-const ScrollToSection = ({ offset = -100, duration = 500 }) => {
+const ScrollToSection = ({ offset, duration }) => {
     useEffect(() => {
         if (window.location.hash) {
             const sectionId = window.location.hash.replace('#', '');

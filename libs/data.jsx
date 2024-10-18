@@ -10,7 +10,7 @@ export const navbarLinks = [
 export const footerLinks = [
     { menu: "Home", ref: "/" },
     { menu: "People of rasims", ref: "/initiatives#founder" },
-    { menu: "Catalogue", ref: "/catalogue" },
+    // { menu: "Catalogue", ref: "/Rasim brochures.pdf" },
     { menu: "T&C", ref: "/termsAndConditions" },
     { menu: "Policy", ref: "/policy" },
 ];
