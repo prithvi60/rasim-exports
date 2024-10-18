@@ -22,8 +22,8 @@ const ProductHero = () => {
                 <div className='block w-full p-2 space-y-5 text-center'>
                     <h1 className='font-medium   uppercase text-2xl md:text-4xl lg:text-[48px] font-libreCaslonDisplay text-white leading-8 lg:!leading-[50px] tracking-custom'>Discover Quality, Style, and Innovation in Every Piece</h1>
                     <div className='flex items-center justify-center gap-5 pb-3.5'>
-                        <Link href={""} className='p-3 text-sm font-normal tracking-wide text-white uppercase bg-transparent border-2 md:text-lg md:border-4 border-secondary rounded-tl-xl font-figtree '>Get catalogue</Link>
-                        <Link href={""} className='p-3 text-sm font-normal tracking-wide text-white uppercase border-2 md:text-lg md:border-4 bg-secondary border-secondary rounded-tl-xl font-figtree '>View products</Link>
+                        <Link href={""} className='p-3 text-sm font-normal tracking-wide text-white uppercase transition-colors ease-linear bg-transparent border-2 md:text-lg md:border-4 hover:bg-secondary border-secondary duration-400 rounded-tl-xl font-figtree '>Get catalogue</Link>
+                        <Link href={""} className='p-3 text-sm font-normal tracking-wide text-white uppercase transition-colors ease-linear border-2 md:text-lg md:border-4 bg-secondary hover:bg-opacity-60 duration-400 hover:text-white border-secondary rounded-tl-xl font-figtree '>View products</Link>
                     </div>
                 </div>
             </div>

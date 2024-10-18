@@ -212,8 +212,8 @@ export const founders = [
     },
     {
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/aboutUs_page/about%20page%20founder%202.jpeg?updatedAt=1728299397544",
-        name: "Unknown Name",
-        position: "Founder",
+        name: "V MOHAMED RASIM",
+        position: "DIRECTOR",
     },
     {
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/founders/founder%203.jpeg?updatedAt=1728273259296",

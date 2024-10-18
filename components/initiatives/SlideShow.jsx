@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React from 'react'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Slider from "react-slick";
 
 const SlideShow = () => {
@@ -10,11 +11,12 @@ const SlideShow = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
-        arrows: false,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         speed: 1000,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive: [
             {
                 breakpoint: 1024,
@@ -37,16 +39,16 @@ const SlideShow = () => {
         ]
     };
     return (
-        <section className='px-6 py-10 my-6 md:px-14 xl:px-32'>
+        <section className='p-6 my-3 md:px-14 xl:px-32'>
             <div className="slider-container">
                 <Slider {...settings}>
-                    <div className='relative w-full overflow-hidden h-[250px] md:h-[280px] xl:h-[320px] rounded-tl-[20px]'>
+                    <div className='relative w-full overflow-hidden h-[250px] md:h-[280px] xl:h-[320px] customBorder'>
                         <Image alt='slideshow image' src={"https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/initiative%20card%201.png?updatedAt=1728273440803"} fill className='object-cover object-center' />
                     </div>
-                    <div className='relative w-full overflow-hidden h-[250px] md:h-[280px] xl:h-[320px] rounded-tl-[20px]'>
+                    <div className='relative w-full overflow-hidden h-[250px] md:h-[280px] xl:h-[320px] customBorder'>
                         <Image alt='slideshow image' src={"https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/initiative%20card%202.jpeg?updatedAt=1728273456828"} fill className='object-cover object-center' />
                     </div>
-                    <div className='relative w-full overflow-hidden h-[250px] md:h-[280px] xl:h-[320px] rounded-tl-[20px]'>
+                    <div className='relative w-full overflow-hidden h-[250px] md:h-[280px] xl:h-[320px] customBorder'>
                         <Image alt='slideshow image' src={"https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/initiative%20card%203.png?updatedAt=1728273441088"} fill className='object-cover object-center' />
                     </div>
                 </Slider>
@@ -56,3 +58,28 @@ const SlideShow = () => {
 }
 
 export default SlideShow
+
+
+function NextArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className={"p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer -right-5 md:-right-10 xl:-right-14 group"}
+            onClick={onClick}
+        >
+            <FaArrowRight className='text-sm text-white md:text-lg xl:text-xl group-hover:text-secondary' />
+        </div>
+    );
+}
+
+function PrevArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className={"p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer -left-5 md:-left-10 xl:-left-14 group"}
+            onClick={onClick}
+        >
+            <FaArrowLeft className='text-sm text-white md:text-lg xl:text-xl group-hover:text-secondary' />
+        </div>
+    );
+}

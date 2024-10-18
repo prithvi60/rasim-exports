@@ -58,7 +58,7 @@ export const CountUpStats3 = () => {
         <div className="px-6 py-10 my-6 md:px-14 xl:px-32">
             <div className="flex flex-col items-center justify-center sm:flex-row">
                 <Stat3
-                    num={10}
+                    num={8}
                     suffix="+"
                     subheading="COUNTRIES EXPORTED"
                 />

@@ -7,17 +7,17 @@ const Founders = () => {
         <>
             <ScrollToSection offset={120} duration={600} />
             <section id='founder' className='px-6 py-10 my-6 md:px-14 xl:px-32'>
-                <div className='grid grid-cols-1 gap-3 md:gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
+                <div className='grid grid-cols-1 gap-3 text-white md:gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
                     {founders.map((list, idx) => (
                         <div
                             key={idx}
-                            className={`relative flex flex-col justify-end h-56 px-2 overflow-hidden transition-colors shadow-lg group md:h-80 md:px-2 rounded-tl-2xl`}
+                            className={`relative flex flex-col justify-end px-2 overflow-hidden transition-colors shadow-lg group h-80 md:px-2 rounded-tl-2xl`}
                         >
                             <div className="!bg-primary p-2.5 z-10 rounded-t-lg">
-                                <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight transition-transform duration-500 capitalize group-hover:-translate-y-2 text-secondary">
+                                <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight transition-transform duration-500 !capitalize group-hover:-translate-y-2">
                                     {list.position}
                                 </h2>
-                                <h3 className="relative font-libreCaslonDisplay text-base md:text-[18px] leading-tight capitalize text-secondary">
+                                <h3 className="relative font-libreCaslonDisplay text-base md:text-[18px] leading-tight !capitalize">
                                     {list.name}
                                 </h3>
                             </div>

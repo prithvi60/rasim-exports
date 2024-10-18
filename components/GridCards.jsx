@@ -1,7 +1,6 @@
-
+"use client"
+import { usePathname } from "next/navigation";
 import React from "react";
-import { FiBookOpen } from "react-icons/fi";
-import { FiArrowUpRight } from "react-icons/fi";
 import { LuArrowDownRightFromCircle } from "react-icons/lu";
 
 export const GridCards = ({ data }) => {
@@ -28,14 +27,17 @@ const Card = ({
     src,
     lists
 }) => {
+    const pathname = usePathname();
+    console.log(pathname);
+
     return (
         <a
             href={href}
             // target="_blank"
             className="relative flex flex-col justify-end h-56 px-2 overflow-hidden transition-colors shadow-lg group md:h-80 md:px-2 md:last:col-span-3 lg:last:col-span-1"
         >
-            <div className="flex justify-center items-center gap-3 !bg-primary p-3.5 z-10 rounded-t-lg">
-                <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight transition-transform duration-500 group-hover:-translate-y-2 text-white">
+            <div className={` ${pathname === "/products" ? "bg-white text-primary" : "bg-primary text-white"} flex justify-center items-center gap-3 bg-primary p-3.5 z-10 rounded-t-lg`}>
+                <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight transition-transform duration-500 group-hover:-translate-y-2">
                     {title}
                 </h2>
 
