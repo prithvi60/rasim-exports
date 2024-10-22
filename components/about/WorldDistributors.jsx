@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 import { IoLocation } from "react-icons/io5";
 
-const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
+// const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
+const geoUrl = "/features.json"
 
 const markers = [
   { name: "France", coordinates: [-3.0099, 52.2276] },
@@ -44,7 +45,7 @@ const WorldDistributors = () => {
                 fontSize={24}
                 fill="#F97316"
                 className="p-4 mb-5 font-semibold backdrop-brightness-50 rounded-xl bg-secondary text-primary"
-                textAnchor="left"
+                textAnchor="middle"
               >
                 {name}
               </text>

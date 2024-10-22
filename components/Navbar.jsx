@@ -78,7 +78,7 @@ const Navbar = () => {
                     <GiHamburgerMenu className="text-2xl text-white" />
                 </div>
                 <div
-                    className={`w-full h-dvh z-[1000] border-2 bg-secondary flex flex-col justify-start pt-16 items-center fixed top-0 ${isMenuOpen
+                    className={`w-full h-dvh z-[1000] border-2 bg-primary/95 text-white flex flex-col justify-start pt-16 items-center fixed top-0 ${isMenuOpen
                         ? "right-0 transition-all duration-500 ease-linear"
                         : "opacity-0 right-[-100%] transition-all duration-500 ease-linear"
                         }`}

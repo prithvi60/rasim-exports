@@ -46,7 +46,7 @@ const MakingProcess = () => {
         <section className="relative w-full h-full px-6 py-10 md:px-14 xl:px-32 md:py-12 ">
             <div className="overflow-x-scroll shadow-xl lg:overflow-x-hidden lg:hover:overflow-x-scroll custom rounded-tl-xl" ref={scrollContainerRef}>
                 <div ref={targetRef} className="flex">
-                    <img src={"https://ik.imagekit.io/webibee/Rasim-Exports/tree.png?updatedAt=1728364756196"} alt="legacy-image" loading="lazy" className="max-w-[350%] md:max-w-[450%]" />
+                    <img src={"https://ik.imagekit.io/webibee/Rasim-Exports/yarn.png?updatedAt=1729488413891"} alt="legacy-image" loading="lazy" className="md:h-[600px] max-w-[350%] md:max-w-[450%]" />
                 </div>
             </div>
         </section>

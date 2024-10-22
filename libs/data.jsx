@@ -93,27 +93,51 @@ export const variousProducts = [
 export const logos = [
     {
         alt: "Hinano Life",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%201.png?updatedAt=1727336427367",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/Ellipse%205.svg",
     },
     {
         alt: "Petrol",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%204.png?updatedAt=1727336427284",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/Ellipse%204.svg",
     },
     {
-        alt: "Ryan Michael",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%206.png?updatedAt=1727336427256",
+        alt: "Pan Handle",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/Ellipse%208.svg",
     },
     {
-        alt: "Ayacucha",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%202.png?updatedAt=1727336427279",
+        alt: "OldTejas",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/lo5.svg",
     },
     {
-        alt: "kuhl",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%205.png?updatedAt=1727336426938",
+        alt: "Ellus",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/c2.svg",
     },
     {
         alt: "ariat",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/logo%203.png?updatedAt=1727336426818",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/Ellipse%202.svg",
+    },
+    {
+        alt: "Silent Theory",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/c4.svg",
+    },
+    {
+        alt: "Little Dutch",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/Ellipse%203.svg",
+    },
+    {
+        alt: "Rock&Roll",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/Ellipse%201.svg",
+    },
+    {
+        alt: "French Connection",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/Ellipse%206.svg",
+    },
+    {
+        alt: "Molo",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/Ellipse%207.svg",
+    },
+    {
+        alt: "Mormaii",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimbuyers/c3.svg",
     },
 ];
 
@@ -159,31 +183,31 @@ export const fabricCollections = [
 export const certificatePageLogos = [
     {
         alt: "Sodex",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/logos/logo%201.png?updatedAt=1728093506715",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimcertificates/Rectangle%2028.svg",
     },
     {
         alt: "Wrap",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/logos/logo%202.png?updatedAt=1728093506694",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimcertificates/Rectangle%2022.svg",
     },
     {
         alt: "Accordia",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/logos/logo%203.png?updatedAt=1728093506587",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimcertificates/Rectangle%2027.svg",
     },
     {
         alt: "ECCC",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/logos/logo%204.png?updatedAt=1728093506764",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimcertificates/Rectangle%2021.svg",
     },
     {
         alt: "GOTS",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/logos/logo%205.png?updatedAt=1728093506639",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimcertificates/Rectangle%2020.svg",
     },
     {
         alt: "OEKO TEX",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/logos/logo%206.png?updatedAt=1728093506816",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimcertificates/Rectangle%2029.svg",
     },
     {
         alt: "Organic Blended",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/certification_page/logos/logo%207.png?updatedAt=1728093507060",
+        src: "https://ik.imagekit.io/webibee/Rasim-Exports/logo/rasimcertificates/Rectangle%2024.svg",
     },
 ];
 

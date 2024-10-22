@@ -107,7 +107,8 @@ const SpinningLogos = ({ logos }) => {
                                     initial={{ rotate: 0 }}
                                     animate={{ rotate: -360 }}
                                     transition={TRANSITION}
-                                    className={`absolute grid place-content-center bg-white rounded-full shadow-xl overflow-hidden w-28 h-28`}
+                                    className={`absolute grid place-content-center bg-transparent `}
+                                // rounded-full shadow-xl overflow-hidden w-28 h-28
                                 >
                                     {/* <icon.Icon
                                         style={{
@@ -163,21 +164,21 @@ const degreesToRadians = (degrees) => {
 // Defines the distance from the center of the circle to the center
 // of the icons
 const RADIUS_TO_CENTER_OF_ICONS = {
-    sm: 280,
+    sm: 310,
     md: 325,
-    lg: 525,
+    lg: 490
 };
 // Defines the width of the icon circles
 const ICON_WRAPPER_WIDTH = {
     sm: 80,
-    md: 65,
-    lg: 100,
+    md: 55,
+    lg: 120,
 };
 // Defines the padding between the icon circles and the inner and outer rings
 const RING_PADDING = {
-    sm: 30,
+    sm: 10,
     md: 8,
-    lg: 12,
+    lg: 10,
 };
 // Defines the font size for logos
 // const LOGO_FONT_SIZE = {
@@ -188,7 +189,7 @@ const RING_PADDING = {
 
 const BREAKPOINTS = {
     sm: 480,
-    md: 768,
+    md: 640,
 };
 
 const TRANSITION = {

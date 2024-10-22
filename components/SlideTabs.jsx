@@ -110,6 +110,7 @@ const Cursor = ({ position }) => {
 };
 
 const MenuLinks = ({ data, setIsOpen, isActive, setIsActive }) => {
+    const pathname = usePathname();
     const handleClick = (value) => {
         // setIsActive(value)
         setIsOpen(false);
@@ -120,7 +121,10 @@ const MenuLinks = ({ data, setIsOpen, isActive, setIsActive }) => {
                 <div key={idx}>
                     <Link href={list.ref} onClick={() => handleClick(list.menu)}>
                         <h4
-                            className={`text-base uppercase font-libreCaslonDisplay hover:underline underline-offset-4 decoration-primary `}
+                            className={`text-base uppercase font-libreCaslonDisplay ${isActive && isActive === list.menu || isActive === list.path && pathname !== "/"
+                                ? "underline underline-offset-8 decoration-secondary"
+                                : "text-white"
+                                }`}
                         >
                             {list.menu}
                         </h4>
