@@ -14,6 +14,7 @@ module.exports = {
         custom: "8%",
       },
       lineHeight: {
+        "custom-head": "72px",
         "custom-line": "28px",
       },
       fontFamily: {

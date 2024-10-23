@@ -10,7 +10,7 @@ const VisionMission = () => {
                 <div className='size-[320px] sm:size-[510px] p-3.5 bg-primary rounded-full flex justify-center items-center'>
                     <div className='size-[290px] sm:size-[480px] p-3.5 bg-secondary rounded-full flex justify-center items-center'>
                         <div className='size-[260px] sm:size-[450px] p-3.5 bg-primary rounded-full flex justify-center  items-center'>
-                            <div className='size-[230px] sm:size-[420px] flex flex-col items-center justify-start ga-2 sm:gap-7 w-full bg-white rounded-full py-3.5 sm:py-7 px-9 overflow-scroll no-scrollbar'>
+                            <div className='size-[230px] sm:size-[420px] flex flex-col items-center md:justify-center gap-2 sm:gap-7 w-full bg-white rounded-full py-3.5 sm:py-7 px-9 overflow-scroll no-scrollbar'>
                                 <h4 className='text-2xl font-medium tracking-wide text-justify sm:text-4xl font-libreCaslonDisplay'>MISSION</h4>
                                 <p className='mb-5 text-sm font-normal text-justify sm:text-base font-figtree sm:mb-0'>From 2002, when Rasim was started as a small shirt manufacturer entering into the apparel market, we have come a long way expanding our business into various products such as dresses, jumpsuits, bottoms,  kids and infant clothing for Men, Women, Boys & Girls. While we have grown in scale, the core mission still remains unchanged: <span className='italic'>“Placing customers at the heart of everything we do”</span>.</p>
                             </div>

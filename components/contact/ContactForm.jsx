@@ -7,16 +7,16 @@ const ContactForm = () => {
     return (
         <section className='px-6 py-10 mx-auto md:px-14 xl:px-32 '>
             <div className="w-full p-10 mx-auto space-y-6 lg:w-3/5 bg-primary rounded-tl-[20px]">
-                <h3 className="w-full text-5xl font-normal text-center text-white capitalize font-libreCaslonDisplay">
+                <h3 className="w-full text-5xl font-normal text-center text-white capitalize tracking-custom font-libreCaslonDisplay">
                     Get in touch!
                 </h3>
-                <form>
+                <form className='font-libreCaslonDisplay'>
                     {/* User Name */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize">
+                        <label className="mb-2.5 block font-medium text-white capitalize tracking-custom">
                             Name
                         </label>
-                        <div className="relative">
+                        <div className="relative font-figtree">
                             <input
                                 type="text"
                                 placeholder="Enter your User Name"
@@ -27,10 +27,10 @@ const ContactForm = () => {
                     </div>
                     {/* Email */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize">
+                        <label className="mb-2.5 block font-medium text-white capitalize tracking-custom">
                             Email
                         </label>
-                        <div className="relative">
+                        <div className="relative font-figtree">
                             <input
                                 type="email"
                                 placeholder="Enter your User Name"
@@ -41,10 +41,10 @@ const ContactForm = () => {
                     </div>
                     {/* phone no. */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize">
+                        <label className="mb-2.5 block font-medium text-white capitalize tracking-custom">
                             Phone Number
                         </label>
-                        <div className="relative">
+                        <div className="relative font-figtree">
                             <input
                                 type="text"
                                 placeholder="Enter your User Name"
@@ -55,10 +55,10 @@ const ContactForm = () => {
                     </div>
                     {/* Message */}
                     <div className="mb-6">
-                        <label className="mb-2.5 block font-medium text-white capitalize">
+                        <label className="mb-2.5 block font-medium text-white capitalize tracking-custom">
                             Message
                         </label>
-                        <div className="relative">
+                        <div className="relative font-figtree">
                             <textarea
                                 placeholder="Enter Your Message"
                                 rows={3}
@@ -71,7 +71,7 @@ const ContactForm = () => {
                     <div className="w-full mx-auto mb-5 text-center">
                         <button
                             type="submit"
-                            className="px-5 py-3 text-white capitalize transition cursor-pointer rounded-xl w-max hover:bg-opacity-90 bg-secondary disabled:bg-opacity-40 font-libreCaslonDisplay"
+                            className="px-5 py-3 text-white capitalize transition cursor-pointer tracking-custom rounded-xl w-max hover:bg-opacity-90 bg-secondary disabled:bg-opacity-40 font-libreCaslonDisplay"
                         >
                             Submit
                         </button>

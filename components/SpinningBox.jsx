@@ -1,20 +1,32 @@
-"use client"
 import { TypeAnimation } from "react-type-animation";
 
 const SpinningBox = () => {
     return (
-        <div className="absolute z-10 flex items-center justify-center w-full text-base font-medium uppercase -translate-x-1/2 -translate-y-1/2 md:text-2xl xl:text-3xl font-libreCaslonDisplay top-1/2 left-1/2">
+        <div className="absolute z-10 flex items-center w-full py-5 text-sm pl-24 sm:pl-36 pr-5 font-semibold uppercase -translate-x-1/2 -translate-y-1/2 sm:text-[22px] font-figtree top-1/2 left-1/2">
+            {/* <div className="w-4/5 h-auto bg-white"> */}
             <TypeAnimation
                 preRenderFirstString={true}
                 sequence={[
                     500,
                     "WE EXCEL IN QUALITY",
                     1000,
-                    "WE EXCEL IN SAFETY",
+                    "WE EXCEL IN INTEGRITY",
                     1000,
-                    "WE EXCEL IN BEST",
+                    "WE EXCEL IN CRAFTSMANSHIP",
                     1000,
-                    "WE EXCEL IN LEARN",
+                    "WE EXCEL IN INNOVATION",
+                    1000,
+                    "WE EXCEL IN SUSTAINABILITY",
+                    1000,
+                    "WE EXCEL IN TRUST",
+                    1000,
+                    "WE EXCEL IN RELIABILITY",
+                    1000,
+                    "WE EXCEL IN EXCELLENCE",
+                    1000,
+                    "WE EXCEL IN PRECISION",
+                    1000,
+                    "WE EXCEL IN COMMITMENT",
                     500,
                 ]}
                 speed={50}
@@ -22,6 +34,7 @@ const SpinningBox = () => {
                 repeat={Infinity}
             />
         </div>
+        // </div>
     );
 };
 

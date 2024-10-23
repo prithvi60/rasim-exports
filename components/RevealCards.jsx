@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 
-const RevealCards = ({ data }) => {
+const RevealCards = ({ data, type }) => {
     return (
-        <div className="hidden w-full grid-cols-1 gap-4 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
+        <div className="hidden w-full grid-cols-1 gap-4 md:gap-12 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
             {data.map((list, idx) => (
                 <Card
                     key={idx}
@@ -13,15 +13,16 @@ const RevealCards = ({ data }) => {
                     imgSrc={list.img}
                     ListRef={list.ref}
                     link={list.link}
+                    type={type}
                 />
             ))}
-        </div >
+        </div>
     );
 };
 
 export const AboutRevealCards = ({ data }) => {
     return (
-        <div className="hidden w-full max-w-6xl grid-cols-1 gap-4 lg:grid sm:grid-cols-2">
+        <div className="items-center justify-center hidden w-full max-w-6xl gap-4 lg:flex">
             {data.map((list, idx) => (
                 <AboutCard
                     key={idx}
@@ -32,22 +33,19 @@ export const AboutRevealCards = ({ data }) => {
                     link={list.link}
                 />
             ))}
-        </div >
+        </div>
     );
 };
 
-const AboutCard = ({
-    imgSrc,
-    title,
-    description,
-    ListRef,
-    link
-}) => {
+const AboutCard = ({ imgSrc, title, description, ListRef, link }) => {
     return (
-        <motion.div whileHover="hover" className="w-full h-[300px] relative group shadow-lg ">
+        <motion.div
+            whileHover="hover"
+            className="w-[400px] h-[400px] relative group shadow-lg "
+        >
             <div className="flex flex-col justify-center p-6 bg-primary h-1/2 customBorder">
-                <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
-                <p className="text-sm font-light text-slate-300">{description}</p>
+                <h3 className="mb-2 text-xl font-semibold text-white font-libreCaslonDisplay tracking-custom">{title}</h3>
+                <p className="text-sm font-light font-figtree text-slate-300">{description}</p>
             </div>
             <motion.div
                 initial={{
@@ -70,7 +68,7 @@ const AboutCard = ({
             <a
                 href={ListRef}
                 rel="nofollow"
-                className="absolute bottom-0 right-0 z-0 grid w-1/2 text-black transition-colors bg-secondary h-1/2 place-content-center hover:text-primary"
+                className="absolute bottom-0 right-0 z-0 grid w-1/2 text-black transition-colors bg-secondary h-1/2 place-content-center hover:text-primary font-figtree"
             >
                 <div className="flex items-center">
                     <span className="text-xs sm:text-base">{link}</span>
@@ -81,18 +79,15 @@ const AboutCard = ({
     );
 };
 
-const Card = ({
-    imgSrc,
-    title,
-    description,
-    ListRef,
-    link
-}) => {
+const Card = ({ imgSrc, title, description, ListRef, link, type }) => {
     return (
-        <motion.div whileHover="hover" className="w-full h-[300px] relative group md:last:col-span-2 lg:last:col-span-1 shadow-lg ">
+        <motion.div
+            whileHover="hover"
+            className="w-full h-[400px] relative group md:last:col-span-2 lg:last:col-span-1 shadow-lg "
+        >
             <div className="flex flex-col justify-center p-6 bg-primary h-1/2 customBorder">
-                <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
-                <p className="text-sm font-light text-slate-300">{description}</p>
+                <h3 className="mb-2 text-xl font-semibold text-white font-libreCaslonDisplay tracking-custom">{title}</h3>
+                <p className="text-sm font-light font-figtree text-slate-300">{description}</p>
             </div>
             <motion.div
                 initial={{
@@ -105,17 +100,20 @@ const Card = ({
                         right: "50%",
                     },
                 }}
-                className="absolute inset-0 z-10 bg-slate-200 rounded-tl-[20px] group-hover:!rounded-none customBorder"
+                className={`absolute inset-0 z-10 rounded-tl-[20px] group-hover:!rounded-none customBorder  ${type === "certificate"
+                    ? "bg-no-repeat bg-white bg-contain"
+                    : "bg-transparent bg-cover"
+                    }`}
                 style={{
                     backgroundImage: `url(${imgSrc})`,
-                    backgroundSize: "cover",
+                    // backgroundSize: "contain",
                     backgroundPosition: "center",
                 }}
             />
             <a
                 href={ListRef}
                 rel="nofollow"
-                className="absolute bottom-0 right-0 z-0 grid w-1/2 text-black transition-colors bg-secondary h-1/2 place-content-center hover:text-primary"
+                className="absolute bottom-0 right-0 z-0 grid w-1/2 text-black transition-colors font-figtree bg-secondary h-1/2 place-content-center hover:text-primary"
             >
                 <div className="flex items-center">
                     <span className="text-xs sm:text-base">{link}</span>

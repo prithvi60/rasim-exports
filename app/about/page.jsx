@@ -16,8 +16,9 @@ const page = () => {
             <ReactMarquee data={"Crafting Excellence with Precision and Expertise"} direction={"left"} />
             <VisionMission />
             <WorldMap />
+            <ReactMarquee data={"Supporting Clients Globally Through Our Export Services"} direction={"left"} />
             <FounderRevealCard />
-            <ReactMarquee data={"Pillars of Rasim exports pvt limited"} direction={"right"} />
+            <ReactMarquee data={"Pillars of Rasim exports pvt limited"} direction={"left"} />
         </main>
     )
 }

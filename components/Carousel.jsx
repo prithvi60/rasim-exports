@@ -19,10 +19,10 @@ const Carousel = () => {
     return (
         <section className='w-full h-full px-6 py-10 md:px-14 xl:px-32 slider-container'>
             <Slider {...settings}>
-                <div className='w-full h-[340px] overflow-hidden relative cursor-pointer shadow-lg'>
+                <div className='w-full h-[200px] overflow-hidden relative cursor-pointer shadow-lg'>
                     <Image fill src={"https://ik.imagekit.io/webibee/Rasim-Exports/slide%201.png?updatedAt=1727336458558"} alt="textile image" className='object-cover object-bottom transition-all ease-in-out hover:scale-110 duration-400' />
                 </div>
-                <div className='w-full h-[340px] overflow-hidden relative rounded-tl-[20px] cursor-pointer shadow-lg'>
+                <div className='w-full h-[200px] overflow-hidden relative rounded-tl-[20px] cursor-pointer shadow-lg'>
                     <Image fill src={"https://ik.imagekit.io/webibee/Rasim-Exports/slide%202.png?updatedAt=1727336458712"} alt="textile image" className='object-cover object-center transition-all ease-in-out hover:scale-110 duration-400' />
                 </div>
             </Slider>

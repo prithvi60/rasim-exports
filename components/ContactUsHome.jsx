@@ -11,13 +11,13 @@ const ContactUsHome = () => {
                 <h3 className="w-full text-5xl font-normal text-center capitalize font-libreCaslonDisplay tracking-custom">
                     Get in touch!
                 </h3>
-                <form>
+                <form className="space-y-7 font-libreCaslonDisplay">
                     {/* User Name */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize">
+                        <label className="mb-2.5 block font-medium text-white capitalize ">
                             Name
                         </label>
-                        <div className="relative">
+                        <div className="relative font-figtree">
                             <input
                                 type="text"
                                 placeholder="Enter your User Name"
@@ -31,7 +31,7 @@ const ContactUsHome = () => {
                         <label className="mb-2.5 block font-medium text-white capitalize">
                             Email
                         </label>
-                        <div className="relative">
+                        <div className="relative font-figtree">
                             <input
                                 type="email"
                                 placeholder="Enter your User Name"
@@ -45,7 +45,7 @@ const ContactUsHome = () => {
                         <label className="mb-2.5 block font-medium text-white capitalize">
                             Phone Number
                         </label>
-                        <div className="relative">
+                        <div className="relative font-figtree">
                             <input
                                 type="text"
                                 placeholder="Enter your User Name"
@@ -59,7 +59,7 @@ const ContactUsHome = () => {
                         <label className="mb-2.5 block font-medium text-white capitalize">
                             Message
                         </label>
-                        <div className="relative">
+                        <div className="relative font-figtree">
                             <textarea
                                 placeholder="Enter Your Message"
                                 rows={3}

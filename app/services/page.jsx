@@ -1,3 +1,4 @@
+import { ReactMarquee } from '@/components/ReactMarquee'
 import MakingProcess from '@/components/services/MakingProcess'
 import ServiceHero from '@/components/services/ServiceHero'
 import ServiceVideo from '@/components/services/ServiceVideo'
@@ -7,8 +8,12 @@ const page = () => {
     return (
         <main>
             <ServiceHero />
-            <MakingProcess />
             <ServiceVideo />
+            <ReactMarquee
+                data={"We give all in right fROm the start till the end"}
+                direction={"left"}
+            />
+            <MakingProcess />
         </main>
     )
 }

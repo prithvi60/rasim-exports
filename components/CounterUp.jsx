@@ -126,7 +126,7 @@ const Stat2 = ({ num, suffix, decimals = 0, subheading }) => {
     }, [num, decimals, isInView]);
 
     return (
-        <div className="flex flex-col items-center w-full py-8 sm:w-[470px] bg-primary">
+        <div className="flex flex-col items-center w-full py-8 sm:w-[510px] bg-primary">
             <p className="mb-2 text-center text-5xl text-white sm:text-4xl md:text-5xl xl:text-[86px] font-libreCaslonDisplay font-normal">
                 <span ref={ref}></span>
                 <span className="text-[18px]">{suffix}</span>
@@ -169,7 +169,7 @@ const Stat3 = ({ num, suffix, decimals = 0, subheading }) => {
 const StatData = ({ val, subheading }) => {
 
     return (
-        <div className="flex flex-col justify-center items-center py-6 xl:py-10 first:rounded-tl-[20px] w-full sm:w-[650px] bg-primary">
+        <div className="flex flex-col justify-center items-center py-6 xl:py-10 first:rounded-tl-[20px] w-full sm:w-[770px] bg-primary">
             <p className="my-4 font-normal text-center text-white font-libreCaslonDisplay">
                 {/* <span ref={ref}></span> */}
                 <span className={`text-3xl md:text-[40px] xl:text-[56px] uppercase`}>{val}</span>

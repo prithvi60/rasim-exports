@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { ReactMarquee } from "./ReactMarquee";
 
 const Summary = () => {
 
@@ -12,38 +11,18 @@ const Summary = () => {
                     <Image
                         fill
                         src={
-                            "https://ik.imagekit.io/webibee/Rasim-Exports/sample%201.png?updatedAt=1727336458598"
+                            "https://ik.imagekit.io/webibee/Rasim-Exports/summary-bg.jpg?updatedAt=1729664678937"
                         }
                         alt="textile image"
                         className="object-cover object-center transition-all ease-in-out hover:scale-110 duration-400"
                     />
                 </div>
                 <div className="relative w-full px-6 space-y-1 lg:w-3/5">
-                    <h4 className="text-lg ml-auto md:text-xl text-center md:text-end w-full md:w-4/5 xl:text-[30px] tracking-custom !leading-8 font-normal font-libreCaslonDisplay uppercase">
+                    <h4 className="text-lg ml-auto md:text-xl text-center md:text-end w-full md:w-4/5 xl:text-[30px] tracking-custom !leading-[34px] font-normal font-libreCaslonDisplay uppercase">
                         With every piece, we build a legacy of Quality products
                     </h4>
-                    <p className="w-full pb-4 md:pb-0 md:pt-4 lg:pt-6 text-sm font-medium !leading-custom-line tracking-wide text-justify sm:text-base rounded-tl-[20px] font-figtree indent-7">
-                        Since 2002 Rasim Exports Pvt Ltd has been at the heart of apparel manufacturing, committed to crafting high-quality clothing for men, women, and children. Our journey is driven by a passion for excellence and a dedication to sustainability. With a state-of-the-art manufacturing unit and a team of skilled professionals, we ensure every piece we create meets the highest standards. From the careful selection of materials to the expertise of our designers and textile developers, we pour our heart into every stitch, delivering timeless fashion that speaks of quality, care, and a love for the craft.
-                        {/* Since{" "}
-                        <span className="text-[48px] font-libreCaslonDisplay font-medium">
-                            2002
-                        </span>{" "}
-                        Rasim Exports Pvt Ltd has been at the heart of apparel
-                        manufacturing, committed to crafting high-quality clothing for men,
-                        women, and children. Our journey is driven by a passion for
-                        excellence and a dedication to{" "}
-                        <span className="text-lg italic font-medium sm:text-xl font-libreCaslonDisplay">
-                            sustainability
-                        </span>
-                        .With a state-of-the-art manufacturing unit and a team of skilled
-                        professionals, we ensure every piece we create meets the highest
-                        standards. From the careful selection of materials to the expertise
-                        of our designers and textile developers, we pour our heart into
-                        every stitch, delivering timeless fashion that speaks of{" "}
-                        <span className="text-lg italic font-medium sm:text-xl font-libreCaslonDisplay">
-                            quality, care, and a love for the craft
-                        </span>
-                        . */}
+                    <p className="w-full pb-4 md:pb-0 md:pt-4 lg:pt-6 text-sm font-medium !leading-custom-line text-justify sm:text-base rounded-tl-[20px] font-figtree indent-7">
+                        Rasim Exports is founded in  context to quality and dedication, with each garment reflecting employees’ hard work and passion through strong customer connections. Since Rasim’s inception, the company has grown steadily through effective management and robust export strategies, ensuring high product standards.
                     </p>
                     <Link
                         href={"/about#vision"}

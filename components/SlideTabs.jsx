@@ -50,7 +50,7 @@ const SlideTabs = ({ data, isActive, setIsActive, val }) => {
                     opacity: 0,
                 }));
             }}
-            className="relative flex flex-col items-center justify-center gap-3.5 xl:gap-16 p-1 mx-auto font-normal md:justify-start md:items-center md:flex-row w-max font-libreCaslonDisplay"
+            className="relative flex flex-col items-center justify-center gap-3.5 xl:gap-16 p-1 mx-auto font-semibold md:justify-start md:items-center md:flex-row w-max font-figtree"
         >
             {data.map((list, idx) => (
                 <Link key={idx} href={list.ref} onClick={() => setIsActive(list.path)}>
@@ -87,7 +87,7 @@ const Tab = ({ children, setPosition, isActive, list, val }) => {
                     opacity: 1,
                 });
             }}
-            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase font-normal hover:underline underline-offset-4 decoration-secondary transition-all duration-700 ease-linear xl:py-3 lg:text-lg ${val && pathname === "/" ? "text-white" : "text-primary"
+            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase font-semibold hover:underline underline-offset-4 decoration-secondary transition-all duration-700 ease-linear xl:py-3 lg:text-lg ${val && pathname === "/" ? "text-white" : "text-primary"
                 }  ${isActive && isActive === list.menu || isActive === list.path && pathname !== "/"
                     ? "underline underline-offset-8 decoration-secondary"
                     : "text-primary"
@@ -116,12 +116,12 @@ const MenuLinks = ({ data, setIsOpen, isActive, setIsActive }) => {
         setIsOpen(false);
     };
     return (
-        <ul className="relative flex flex-col items-center justify-center gap-3.5 p-1 mx-auto font-normal w-max font-libreCaslonDisplay">
+        <ul className="relative flex flex-col items-center justify-center gap-3.5 p-1 mx-auto font-semibold w-max font-figtree">
             {data.map((list, idx) => (
                 <div key={idx}>
                     <Link href={list.ref} onClick={() => handleClick(list.menu)}>
                         <h4
-                            className={`text-base uppercase font-libreCaslonDisplay ${isActive && isActive === list.menu || isActive === list.path && pathname !== "/"
+                            className={`text-base uppercase font-figtree ${isActive && isActive === list.menu || isActive === list.path && pathname !== "/"
                                 ? "underline underline-offset-8 decoration-secondary"
                                 : "text-white"
                                 }`}
