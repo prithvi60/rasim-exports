@@ -6,7 +6,7 @@ const Summary = () => {
 
     return (
         <section className="flex flex-col items-center justify-center w-full h-full px-5 text-white py-7 lg:px-16 lg:py-12 bg-primary">
-            <div className="relative flex flex-col items-center justify-center gap-14 md:gap-10 lg:gap-5 lg:flex-row lg:justify-center lg:items-end">
+            <div className="relative flex flex-col items-start justify-center gap-14 md:gap-10 lg:gap-5 lg:flex-row lg:justify-center">
                 <div className="w-full h-[320px]  lg:w-[340px] lg:h-[430px] xl:h-[340px] overflow-hidden relative rounded-tl-[20px] cursor-pointer shadow-xl customBorder">
                     <Image
                         fill
@@ -17,16 +17,16 @@ const Summary = () => {
                         className="object-cover object-center transition-all ease-in-out hover:scale-110 duration-400"
                     />
                 </div>
-                <div className="relative w-full px-6 space-y-1 lg:w-3/5">
-                    <h4 className="text-lg ml-auto md:text-xl text-center md:text-end w-full md:w-4/5 xl:text-[30px] tracking-custom !leading-[34px] font-normal font-libreCaslonDisplay uppercase">
+                <div className="relative w-full px-6 space-y-3 xl:w-1/2">
+                    <h4 className="text-xl xl:text-[30px] tracking-widest !leading-[34px] font-normal font-libreCaslonDisplay uppercase">
                         With every piece, we build a legacy of Quality products
                     </h4>
-                    <p className="w-full pb-4 md:pb-0 md:pt-4 lg:pt-6 text-sm font-medium !leading-custom-line text-justify sm:text-base rounded-tl-[20px] font-figtree indent-7">
+                    <p className="pb-4 md:pb-0 md:pt-4 lg:pt-6 text-base font-medium !leading-custom-line text-justify sm:text-xl rounded-tl-[20px] font-figtree">
                         Rasim Exports is founded in  context to quality and dedication, with each garment reflecting employees’ hard work and passion through strong customer connections. Since Rasim’s inception, the company has grown steadily through effective management and robust export strategies, ensuring high product standards.
                     </p>
                     <Link
                         href={"/about#vision"}
-                        className="absolute flex gap-2 right-2 1items-center -top-10 lg:-top-16 font-figtree group scroll-smooth"
+                        className="flex items-center gap-2 pt-4 w-max font-figtree group scroll-smooth"
                     >
                         <h4 className="group-hover:underline group-hover:underline-offset-8 decoration-secondary">
                             More about us

@@ -17,7 +17,7 @@ const page = () => {
             />
             <SlideShow />
             <CountUpStats3 />
-            <Summary1 />
+            {/* <Summary1 /> */}
             <Founders />
         </main>
     );

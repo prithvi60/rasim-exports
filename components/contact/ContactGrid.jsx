@@ -15,9 +15,10 @@ const ContactGrid = () => {
                         Email Us
                     </h4>
                 </div>
-                <ul className="p-2 space-y-6 sm:space-y-10 text-xl sm:text-[26px] xl:text-[36px] font-normal text-white list-disc list-inside font-figtree w-full sm:w-max">
+                <ul className="p-2 space-y-3 text-[22px] xl:text-[28px] font-normal text-white font-figtree w-full sm:w-max">
                     <li>md@rasims.com</li>
                     <li>hr@rasims.com</li>
+                    <li>info@rasims.com</li>
                 </ul>
             </div>
             <div className="block space-y-6 rounded-tl-[20px] bg-primary p-5 ">
@@ -52,8 +53,8 @@ const ContactGrid = () => {
                         Phone
                     </h4>
                 </div>
-                <ul className="p-2 text-xl space-y-4 sm:space-y-6 sm:text-[22px] xl:text-[30px] font-normal text-white list-disc list-inside font-figtree bg-primary w-full sm:w-max">
-                    <li>044-26496461</li>
+                <ul className="p-2 space-y-3 text-[22px] xl:text-[28px] font-normal text-white font-figtree bg-primary w-full sm:w-max">
+                    <li>+044-26496461</li>
                     <li>+91 - 89392 - 35917</li>
                     <li>+91 - 95516 - 97865</li>
 

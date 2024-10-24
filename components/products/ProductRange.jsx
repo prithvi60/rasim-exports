@@ -99,12 +99,12 @@ const women = [
     "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0029.jpg?updatedAt=1729757185298",
 ];
 const children = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/children%201.jpeg?updatedAt=1728092938960",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/children%202.jpeg?updatedAt=1728092938932",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/children%203.jpeg?updatedAt=1728092939104",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0079.jpg?updatedAt=1729757199899",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0005.jpg?updatedAt=1729757176359",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0060.jpg?updatedAt=1729757194554",
 ];
 const infant = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0043.jpg?updatedAt=1729757188283",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0074.jpg?updatedAt=1729757198673",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0052.jpg?updatedAt=1729757191272",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0040.jpg?updatedAt=1729757188205",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0021.jpg?updatedAt=1729757181557",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0041.jpg?updatedAt=1729757188660",
 ];
