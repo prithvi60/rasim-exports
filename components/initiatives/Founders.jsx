@@ -13,8 +13,8 @@ const Founders = () => {
                             key={idx}
                             className={`relative flex flex-col justify-end px-2 overflow-hidden transition-colors shadow-lg group h-80 md:px-2 rounded-tl-2xl`}
                         >
-                            <div className="!bg-primary p-2.5 z-10 rounded-t-lg">
-                                <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight tracking-custom transition-transform duration-500 !capitalize group-hover:-translate-y-2">
+                            <div className="!bg-primary space-y-2 p-2.5 z-10 rounded-t-lg">
+                                <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[24px] leading-tight tracking-custom transition-transform duration-500 !capitalize group-hover:-translate-y-2">
                                     {list.position}
                                 </h2>
                                 <h3 className="relative font-figtree text-base md:text-[18px] leading-tight !capitalize">

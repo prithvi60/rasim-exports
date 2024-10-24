@@ -44,7 +44,7 @@ const AboutCard = ({ imgSrc, title, description, ListRef, link }) => {
             className="w-[400px] h-[400px] relative group shadow-lg "
         >
             <div className="flex flex-col justify-center p-6 bg-primary h-1/2 customBorder">
-                <h3 className="mb-2 text-xl font-semibold text-white font-libreCaslonDisplay tracking-custom">{title}</h3>
+                <h3 className="mb-2 text-xl font-medium text-white font-libreCaslonDisplay tracking-custom">{title}</h3>
                 <p className="text-sm font-light font-figtree text-slate-300">{description}</p>
             </div>
             <motion.div
@@ -86,7 +86,7 @@ const Card = ({ imgSrc, title, description, ListRef, link, type }) => {
             className="w-full h-[400px] relative group md:last:col-span-2 lg:last:col-span-1 shadow-lg "
         >
             <div className="flex flex-col justify-center p-6 bg-primary h-1/2 customBorder">
-                <h3 className="mb-2 text-xl font-semibold text-white font-libreCaslonDisplay tracking-custom">{title}</h3>
+                <h3 className="mb-2 text-xl font-medium text-white font-libreCaslonDisplay tracking-custom">{title}</h3>
                 <p className="text-sm font-light font-figtree text-slate-300">{description}</p>
             </div>
             <motion.div

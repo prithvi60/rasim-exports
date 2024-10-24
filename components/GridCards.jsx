@@ -33,7 +33,7 @@ const Card = ({
         <a
             href={href}
             // target="_blank"
-            className="relative flex flex-col justify-end h-56 px-2 overflow-hidden transition-colors shadow-lg group md:h-80 md:px-2 md:last:col-span-3 lg:last:col-span-1"
+            className="relative flex flex-col justify-end px-2 overflow-hidden transition-colors shadow-lg h-60 group md:h-96 md:px-2 md:last:col-span-3 lg:last:col-span-1"
         >
             <div className={` ${pathname === "/products" ? "bg-white text-primary" : "bg-primary text-white"} flex justify-center items-center gap-3 bg-primary p-3.5 z-10 rounded-t-lg`}>
                 <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight transition-transform duration-500 group-hover:-translate-y-2">

@@ -2,7 +2,7 @@ import { footerLinks } from "@/libs/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -35,14 +35,14 @@ const Footer = () => {
                         ))}
                     </ul>
                     <div className="flex items-center justify-center gap-6 md:justify-end">
-                        <Link href={"#"}>
+                        <Link target="_blank" href={"#"}>
                             <FaFacebook className="text-3xl md:text-4xl text-[#0866FF] hover:scale-105 transition-all duration-400 ease-in-out" />
                         </Link>
-                        <Link href={"#"}>
+                        <Link target="_blank" href={"#"}>
                             <FaInstagram className="text-3xl md:text-4xl text-[#E4405F] hover:scale-105 transition-all duration-400 ease-in-out" />
                         </Link>
-                        <Link href={"#"}>
-                            <FaYoutube className="text-3xl md:text-4xl text-[#FF0000] hover:scale-105 transition-all duration-400 ease-in-out" />
+                        <Link target="_blank" href={"https://www.linkedin.com/in/mohdrasim/"}>
+                            <FaLinkedin className="text-3xl md:text-4xl text-[#0B66C3] hover:scale-105 transition-all duration-400 ease-in-out" />
                         </Link>
                     </div>
                 </div>

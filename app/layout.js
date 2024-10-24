@@ -30,9 +30,8 @@ const playFair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "Rasim Exports Textile Enterprises",
-  description:
-    "Rasim Textile Enterprises is a prominent company engaged in the manufacturing and exporting of a wide range of garments. Established in 2002, the company specializes in producing high-quality men’s shirts, men’s shorts, women’s blouses, and children’s garments.",
+  title: "Rasim Exports Pvt Ltd - EST. 2002",
+  description: "Manufactures and Exporters of Fashion Apparels",
 };
 
 export default function RootLayout({ children }) {

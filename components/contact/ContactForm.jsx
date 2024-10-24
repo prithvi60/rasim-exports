@@ -1,24 +1,34 @@
-import React from 'react'
+import React from "react";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import { FaPhoneAlt, FaRegUser } from "react-icons/fa";
 import { MdOutlineMessage } from "react-icons/md";
 
 const ContactForm = () => {
     return (
-        <section className='px-6 py-10 mx-auto md:px-14 xl:px-32 '>
+        <section className="px-6 py-10 mx-auto md:px-14 xl:px-32 ">
             <div className="w-full p-10 mx-auto space-y-6 lg:w-3/5 bg-primary rounded-tl-[20px]">
                 <h3 className="w-full text-5xl font-normal text-center text-white capitalize tracking-custom font-libreCaslonDisplay">
                     Get in touch!
                 </h3>
-                <form className='font-libreCaslonDisplay'>
+                <form
+                    className="font-libreCaslonDisplay"
+                    action={
+                        "https://public.herotofu.com/v1/d408ed00-2579-11ef-b435-b1ba21672864"
+                    }
+                >
                     {/* User Name */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize tracking-custom">
+                        <label
+                            htmlFor="name"
+                            className="mb-2.5 block font-medium text-white capitalize tracking-custom"
+                        >
                             Name
                         </label>
                         <div className="relative font-figtree">
                             <input
                                 type="text"
+                                id="name"
+                                name="Name"
                                 placeholder="Enter your User Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
@@ -27,12 +37,17 @@ const ContactForm = () => {
                     </div>
                     {/* Email */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize tracking-custom">
+                        <label
+                            htmlFor="email"
+                            className="mb-2.5 block font-medium text-white capitalize tracking-custom"
+                        >
                             Email
                         </label>
                         <div className="relative font-figtree">
                             <input
                                 type="email"
+                                id="email"
+                                name="email"
                                 placeholder="Enter your User Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
@@ -41,11 +56,16 @@ const ContactForm = () => {
                     </div>
                     {/* phone no. */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize tracking-custom">
+                        <label
+                            htmlFor="phone"
+                            className="mb-2.5 block font-medium text-white capitalize tracking-custom"
+                        >
                             Phone Number
                         </label>
                         <div className="relative font-figtree">
                             <input
+                                id="phone"
+                                name="Phone"
                                 type="text"
                                 placeholder="Enter your User Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
@@ -55,11 +75,16 @@ const ContactForm = () => {
                     </div>
                     {/* Message */}
                     <div className="mb-6">
-                        <label className="mb-2.5 block font-medium text-white capitalize tracking-custom">
+                        <label
+                            htmlFor="message"
+                            className="mb-2.5 block font-medium text-white capitalize tracking-custom"
+                        >
                             Message
                         </label>
                         <div className="relative font-figtree">
                             <textarea
+                                name="Message"
+                                id="message"
                                 placeholder="Enter Your Message"
                                 rows={3}
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
@@ -79,7 +104,7 @@ const ContactForm = () => {
                 </form>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default ContactForm
+export default ContactForm;

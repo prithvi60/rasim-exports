@@ -2,31 +2,32 @@ import { TypeAnimation } from "react-type-animation";
 
 const SpinningBox = () => {
     return (
-        <div className="absolute z-10 flex items-center w-full py-5 text-sm pl-24 sm:pl-36 pr-5 font-semibold uppercase -translate-x-1/2 -translate-y-1/2 sm:text-[22px] font-figtree top-1/2 left-1/2">
+        <div className="absolute z-10 flex flex-col items-center w-full py-5 text-sm font-semibold uppercase -translate-x-1/2 -translate-y-1/2 md:gap-2 sm:text-3xl font-figtree top-1/2 left-1/2">
             {/* <div className="w-4/5 h-auto bg-white"> */}
+            <p>WE EXCEL IN</p>
             <TypeAnimation
                 preRenderFirstString={true}
                 sequence={[
                     500,
-                    "WE EXCEL IN QUALITY",
+                    "QUALITY",
                     1000,
-                    "WE EXCEL IN INTEGRITY",
+                    "INTEGRITY",
                     1000,
-                    "WE EXCEL IN CRAFTSMANSHIP",
+                    "CRAFTSMANSHIP",
                     1000,
-                    "WE EXCEL IN INNOVATION",
+                    "INNOVATION",
                     1000,
-                    "WE EXCEL IN SUSTAINABILITY",
+                    "SUSTAINABILITY",
                     1000,
-                    "WE EXCEL IN TRUST",
+                    "TRUST",
                     1000,
-                    "WE EXCEL IN RELIABILITY",
+                    "RELIABILITY",
                     1000,
-                    "WE EXCEL IN EXCELLENCE",
+                    "EXCELLENCE",
                     1000,
-                    "WE EXCEL IN PRECISION",
+                    "PRECISION",
                     1000,
-                    "WE EXCEL IN COMMITMENT",
+                    "COMMITMENT",
                     500,
                 ]}
                 speed={50}

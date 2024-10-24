@@ -87,7 +87,7 @@ const Tab = ({ children, setPosition, isActive, list, val }) => {
                     opacity: 1,
                 });
             }}
-            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase font-semibold hover:underline underline-offset-4 decoration-secondary transition-all duration-700 ease-linear xl:py-3 lg:text-lg ${val && pathname === "/" ? "text-white" : "text-primary"
+            className={`relative z-10 cursor-pointer px-3 py-1.5 text-base md:text-xs uppercase font-semibold hover:underline underline-offset-4 decoration-secondary transition-all duration-700 ease-linear  xl:py-3 lg:text-lg ${val && pathname === "/" ? "text-primary" : "text-primary"
                 }  ${isActive && isActive === list.menu || isActive === list.path && pathname !== "/"
                     ? "underline underline-offset-8 decoration-secondary"
                     : "text-primary"

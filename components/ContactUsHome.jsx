@@ -11,15 +11,25 @@ const ContactUsHome = () => {
                 <h3 className="w-full text-5xl font-normal text-center capitalize font-libreCaslonDisplay tracking-custom">
                     Get in touch!
                 </h3>
-                <form className="space-y-7 font-libreCaslonDisplay">
+                <form
+                    className="space-y-7 font-libreCaslonDisplay"
+                    action={
+                        "https://public.herotofu.com/v1/d408ed00-2579-11ef-b435-b1ba21672864"
+                    }
+                >
                     {/* User Name */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize ">
+                        <label
+                            htmlFor="name"
+                            className="mb-2.5 block font-medium text-white capitalize "
+                        >
                             Name
                         </label>
                         <div className="relative font-figtree">
                             <input
+                                id="name"
                                 type="text"
+                                name="Name"
                                 placeholder="Enter your User Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
@@ -28,11 +38,16 @@ const ContactUsHome = () => {
                     </div>
                     {/* Email */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize">
+                        <label
+                            htmlFor="email"
+                            className="mb-2.5 block font-medium text-white capitalize"
+                        >
                             Email
                         </label>
                         <div className="relative font-figtree">
                             <input
+                                id="email"
+                                name="Email"
                                 type="email"
                                 placeholder="Enter your User Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
@@ -42,11 +57,16 @@ const ContactUsHome = () => {
                     </div>
                     {/* phone no. */}
                     <div className="mb-4">
-                        <label className="mb-2.5 block font-medium text-white capitalize">
+                        <label
+                            htmlFor="phone"
+                            className="mb-2.5 block font-medium text-white capitalize"
+                        >
                             Phone Number
                         </label>
                         <div className="relative font-figtree">
                             <input
+                                name="Phone"
+                                id="phone"
                                 type="text"
                                 placeholder="Enter your User Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
@@ -56,11 +76,16 @@ const ContactUsHome = () => {
                     </div>
                     {/* Message */}
                     <div className="mb-6">
-                        <label className="mb-2.5 block font-medium text-white capitalize">
+                        <label
+                            htmlFor="message"
+                            className="mb-2.5 block font-medium text-white capitalize"
+                        >
                             Message
                         </label>
                         <div className="relative font-figtree">
                             <textarea
+                                name="Message"
+                                id="message"
                                 placeholder="Enter Your Message"
                                 rows={3}
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
@@ -88,7 +113,7 @@ const ContactUsHome = () => {
                 </div>
                 <div className="block ml-3.5 space-y-4">
                     <h4 className="text-2xl font-semibold tracking-wide text-white capitalize font-figtree">
-                        Factory
+                        Factory <span className="text-sm">(For Communication)</span>
                     </h4>
                     <div className="text-lg font-normal tracking-wide capitalize font-figtree">
                         <p className="w-full text-white">
@@ -111,7 +136,6 @@ const ContactUsHome = () => {
                             Choolaimedu, Chennai,
                             <br />
                             Tamil Nadu - 600 094.
-
                         </p>
                     </div>
                 </div>
@@ -122,17 +146,19 @@ const ContactUsHome = () => {
                     </h4>
                 </div>
                 <ul className="text-lg font-normal text-white list-disc ml-9 font-figtree">
-                    <li>
-                        md@rasims.com
-                    </li>
-                    <li>
-                        hr@rasims.com
-                    </li>
-                    <li>
-                        info@rasims.com
-                    </li>
+                    <li>md@rasims.com</li>
+                    <li>hr@rasims.com</li>
+                    <li>info@rasims.com</li>
                 </ul>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.9247210789926!2d80.11232561629664!3d13.048682773950777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261c39e8c0a61%3A0x10060ee946c2087!2sRasim%20Exports%20Private%20Limited!5e0!3m2!1sen!2sin!4v1727437573636!5m2!1sen!2sin" width={"100%"} height={"100%"} className="h-[320px] lg:h-full" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.9247210789926!2d80.11232561629664!3d13.048682773950777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261c39e8c0a61%3A0x10060ee946c2087!2sRasim%20Exports%20Private%20Limited!5e0!3m2!1sen!2sin!4v1727437573636!5m2!1sen!2sin"
+                    width={"100%"}
+                    height={"100%"}
+                    className="h-[320px] lg:h-full"
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
         </section>
     );

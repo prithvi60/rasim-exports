@@ -67,27 +67,40 @@ export const variousProducts = [
     {
         title: "Men",
         ref: "/products#types",
-        img: "https://ik.imagekit.io/webibee/Rasim-Exports/gender%20cards/gender-card%201.png?updatedAt=1727336399725",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0025.jpg?updatedAt=1729757184263",
         lists: ["Shirts", "Shorts"],
     },
     {
         title: "Women",
         ref: "/products#types",
-        img: "https://ik.imagekit.io/webibee/Rasim-Exports/gender%20cards/gender-card%202.png?updatedAt=1727336399571",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0087.jpg?updatedAt=1729757202525",
         lists: ["Shirts", "Skirts"],
     },
     {
         title: "Children",
         ref: "/products#types",
-        img: "https://ik.imagekit.io/webibee/Rasim-Exports/gender%20cards/gender-card%203.jpg?updatedAt=1727336399438",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0059.jpg?updatedAt=1729757194595",
         lists: ["Top", "bottom"],
     },
     {
         title: "Infants",
         ref: "/products#types",
-        img: "https://ik.imagekit.io/webibee/Rasim-Exports/gender%20cards/gender-card%204.jpg?updatedAt=1727336399563",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0038.jpg?updatedAt=1729757188114",
         lists: ["Shirts", "Shorts"],
     },
+];
+
+export const carouselImg = [
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Merchandise2.jpg?updatedAt=1729757144735",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/CAD1.jpg?updatedAt=1729757148302",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Fabric.jpg?updatedAt=1729757148539",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Store2.jpg?updatedAt=1729757100676",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Sampling2.jpg?updatedAt=1729757137449",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Stiching2.jpg?updatedAt=1729757148361",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Finishing1.jpg?updatedAt=1729757138933",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Packing2.jpg?updatedAt=1729757103426",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Inspection1.jpg?updatedAt=1729757092603",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Good2.jpg?updatedAt=1729757096790",
 ];
 
 export const logos = [
@@ -213,15 +226,15 @@ export const certificatePageLogos = [
 
 export const founderData = [
     {
-        title: "Founder",
-        desc: "R. Varusai Mohammed",
+        title: "Founder & Managing Director",
+        desc: "R.VARUSAI MOHAMMED (B.E.)",
         ref: "/contact",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/founders/founder%201.jpeg?updatedAt=1729679727380",
         link: "Contact",
     },
     {
-        title: "Founder",
-        desc: "Unknown Name",
+        title: "Director",
+        desc: "V MOHAMED RASIM (B.E. , MFTech)",
         ref: "/contact",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/aboutUs_page/about%20page%20founder%202.jpeg?updatedAt=1728299397544",
         link: "Contact",
@@ -231,13 +244,13 @@ export const founderData = [
 export const founders = [
     {
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/founders/founder%201.jpeg?updatedAt=1728273260885",
-        name: "R.VARUSAI MOHAMMED",
-        position: "Founder",
+        name: "R.VARUSAI MOHAMMED (B.E.)",
+        position: "Founder & Managing Director",
     },
     {
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/aboutUs_page/about%20page%20founder%202.jpeg?updatedAt=1728299397544",
-        name: "V MOHAMED RASIM",
-        position: "DIRECTOR",
+        name: "V MOHAMED RASIM (B.E. , MFTech)",
+        position: "Director",
     },
     {
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/founders/founder%203.jpeg?updatedAt=1728273259296",

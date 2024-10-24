@@ -14,12 +14,12 @@ const ProductRange = () => {
                 </h2>
                 <GridCards data={variousProducts} />
                 <div className="block space-y-8">
-                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
+                    <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         Men
                     </h4>
-                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                    <div className="grid w-full grid-cols-1 gap-5 place-content-center place-items-center md:grid-cols-3">
                         {men.map((list, idx) => (
-                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden customBorder">
+                            <div key={idx} className="relative h-[390px] sm:h-[320px] w-[300px] md:w-[220px] lg:w-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden customBorder">
                                 <Image
                                     alt="image"
                                     src={list}
@@ -31,29 +31,12 @@ const ProductRange = () => {
                     </div>
                 </div>
                 <div className="block space-y-8">
-                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
+                    <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         women
                     </h4>
-                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                    <div className="grid w-full grid-cols-1 gap-5 place-content-center place-items-center md:grid-cols-3">
                         {women.map((list, idx) => (
-                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden customBorder">
-                                <Image
-                                    alt="image"
-                                    src={list}
-                                    fill
-                                    className="object-cover object-center"
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div className="block space-y-8">
-                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        children
-                    </h4>
-                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-                        {children.map((list, idx) => (
-                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden customBorder">
+                            <div key={idx} className="relative h-[390px] sm:h-[320px] w-[300px] md:w-[220px] lg:w-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden customBorder">
                                 <Image
                                     alt="image"
                                     src={list}
@@ -65,17 +48,34 @@ const ProductRange = () => {
                     </div>
                 </div>
                 <div className="block space-y-8">
-                    <h4 className="text-xl md:text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        Infant
+                    <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
+                        children
                     </h4>
-                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-                        {infant.map((list, idx) => (
-                            <div key={idx} className="relative w-full h-[200px] sm:h-[220px] lg:h-[280px] overflow-hidden customBorder">
+                    <div className="grid w-full grid-cols-1 gap-5 place-content-center place-items-center md:grid-cols-3">
+                        {children.map((list, idx) => (
+                            <div key={idx} className="relative h-[390px] sm:h-[320px] w-[300px] md:w-[220px] lg:w-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden customBorder">
                                 <Image
                                     alt="image"
                                     src={list}
                                     fill
-                                    className="object-cover object-center"
+                                    className="object-cover object-bottom"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="block space-y-8">
+                    <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
+                        Infant
+                    </h4>
+                    <div className="grid w-full grid-cols-1 gap-5 place-content-center place-items-center md:grid-cols-3">
+                        {infant.map((list, idx) => (
+                            <div key={idx} className="relative h-[390px] sm:h-[320px] w-[300px] md:w-[220px] lg:w-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden customBorder">
+                                <Image
+                                    alt="image"
+                                    src={list}
+                                    fill
+                                    className="object-cover object-bottom"
                                 />
                             </div>
                         ))}
@@ -89,14 +89,14 @@ const ProductRange = () => {
 export default ProductRange;
 
 const men = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/men%201.png?updatedAt=1728092942519",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/men%202.png?updatedAt=1728092942160",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/men%203.png?updatedAt=1728092940281",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0024.jpg?updatedAt=1729757184754",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0037.jpg?updatedAt=1729757187823",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0027.jpg?updatedAt=1729757184799",
 ];
 const women = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/women%201.png?updatedAt=1728092939925",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/women%202.png?updatedAt=1728092940075",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/women%203.png?updatedAt=1728092940217",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0031.jpg?updatedAt=1729757185515",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0032.jpg?updatedAt=1729757185519",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0029.jpg?updatedAt=1729757185298",
 ];
 const children = [
     "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/children%201.jpeg?updatedAt=1728092938960",
@@ -104,7 +104,7 @@ const children = [
     "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/children%203.jpeg?updatedAt=1728092939104",
 ];
 const infant = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/infant%201.jpeg?updatedAt=1728092938456",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/infant%202.jpeg?updatedAt=1728092938902",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/products/infant%203.jpeg?updatedAt=1728092938899",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0043.jpg?updatedAt=1729757188283",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0074.jpg?updatedAt=1729757198673",
+    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0052.jpg?updatedAt=1729757191272",
 ];

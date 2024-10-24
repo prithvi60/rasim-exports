@@ -43,7 +43,7 @@ const Navbar = () => {
 
     return (
         <nav className="w-full h-full mx-auto ">
-            <div className={`flex items-center justify-between md:justify-center gap-2.5 px-5 lg:px-8 xl:px-16 z-[999] transition-colors duration-500 ease-linear fixed top-0 left-0 w-full ${val && pathname === "/" ? "bg-transparent" : "bg-white shadow-lg"}`}>
+            <div className={`flex items-center justify-between md:justify-center gap-2.5 px-5 lg:px-8 xl:px-16 z-[999] transition-colors duration-500 ease-linear fixed top-0 left-0 w-full shadow-lg ${val && pathname === "/" ? "bg-white/50 " : "bg-white"}`}>
                 <SlideTabsExample
                     data={navbarLinks.slice(0, 3)}
                     isActive={isActive}
@@ -61,6 +61,7 @@ const Navbar = () => {
                         fill
                         src={"https://ik.imagekit.io/webibee/Rasim-Exports/RE-logo.png"}
                     />
+                    <h4 className="absolute -bottom-0.5 md:-bottom-0 right-1 lg:right-3 xl:right-[20px] text-primary text-xs font-figtree font-semibold">EST. 2002</h4>
                 </Link>
                 {/* </div> */}
                 {/* py-0.5 md:py-1.5 px-3.5 md:px-5 rounded-full bg-secondary  */}
