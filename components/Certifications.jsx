@@ -6,8 +6,8 @@ import { RevealCardMobile } from './RevealCardMobile'
 const Certifications = () => {
     return (
         <section className='flex flex-row items-center justify-center px-6 py-10 md:px-14 xl:px-32'>
-            <RevealCards data={certification} type="certificate" />
-            <RevealCardMobile data={certification} styles={"grid gap-3 md:gap-5 grid-cols-1 sm:grid-cols-2"} type="certificate" />
+            <RevealCards data={certification} type="certificate" slide={true} />
+            <RevealCardMobile data={certification} styles={"w-full h-full slider-container block lg:hidden"} type="certificate" slide={true} />
         </section>
     )
 }

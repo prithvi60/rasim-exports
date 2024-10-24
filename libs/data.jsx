@@ -3,14 +3,13 @@ export const navbarLinks = [
     { menu: "Services", ref: "/services", path: "services" },
     { menu: "Products", ref: "/products", path: "products" },
     { menu: "Certifications", ref: "/certifications", path: "certifications" },
-    { menu: "Initiatives", ref: "/initiatives", path: "initiatives" },
+    { menu: "Gallery", ref: "/gallery", path: "gallery" },
     { menu: "Contact us", ref: "/contact", path: "contact" },
 ];
 
 export const footerLinks = [
     { menu: "Home", ref: "/" },
     { menu: "People of rasims", ref: "/initiatives#founder" },
-    // { menu: "Catalogue", ref: "/Rasim brochures.pdf" },
     { menu: "T&C", ref: "/termsAndConditions" },
     { menu: "Policy", ref: "/policy" },
 ];
@@ -91,16 +90,15 @@ export const variousProducts = [
 ];
 
 export const carouselImg = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Merchandise2.jpg?updatedAt=1729757144735",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/CAD1.jpg?updatedAt=1729757148302",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Fabric.jpg?updatedAt=1729757148539",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Store2.jpg?updatedAt=1729757100676",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Sampling2.jpg?updatedAt=1729757137449",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Stiching2.jpg?updatedAt=1729757148361",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Finishing1.jpg?updatedAt=1729757138933",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Packing2.jpg?updatedAt=1729757103426",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Inspection1.jpg?updatedAt=1729757092603",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Good2.jpg?updatedAt=1729757096790",
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Merchandise2.jpg?updatedAt=1729757144735", style: "object-center" },
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/CAD1.jpg?updatedAt=1729757148302", style: "object-center" },
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Fabric.jpg?updatedAt=1729757148539", style: "object-center" },
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Store2.jpg?updatedAt=1729757100676", style: "object-top" },
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Sampling2.jpg?updatedAt=1729757137449", style: "object-center" },
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Stiching2.jpg?updatedAt=1729757148361", style: "object-center" },
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Finishing1.jpg?updatedAt=1729757138933", style: "object-center" },
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Packing2.jpg?updatedAt=1729757103426", style: "object-center" },
+    { img: "https://ik.imagekit.io/webibee/Rasim-Exports/carousel/Inspection1.jpg?updatedAt=1729757092603", style: "object-bottom" }
 ];
 
 export const logos = [

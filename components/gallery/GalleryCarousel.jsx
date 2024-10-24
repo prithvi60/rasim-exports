@@ -6,7 +6,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { carouselImg } from "@/libs/data";
 
-const Carousel = () => {
+const GalleryCarousel = () => {
     const settings = {
         infinite: true,
         slidesToShow: 1,
@@ -18,11 +18,11 @@ const Carousel = () => {
         prevArrow: <PrevArrow />,
     };
     return (
-        <section className="w-full h-full px-6 py-10 md:px-14 xl:px-32 slider-container">
+        <section className="w-full h-full px-6 py-10 mt-14 md:px-14 xl:px-20 slider-container">
             <Slider {...settings}>
                 {carouselImg.map((item, idx) => (
                     <div
-                        className="w-full h-[150px] md:h-[360px] lg:h-[420px] xl:h-[520px] overflow-hidden relative cursor-pointer shadow-lg"
+                        className="w-full h-[30vh] sm:h-[60vh] lg:h-[75vh] xl:h-[85vh] overflow-hidden relative cursor-pointer shadow-lg"
                         key={idx}
                     >
                         <Image
@@ -38,7 +38,7 @@ const Carousel = () => {
     );
 };
 
-export default Carousel;
+export default GalleryCarousel;
 
 function NextArrow(props) {
     const { onClick } = props;

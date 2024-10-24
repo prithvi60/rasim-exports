@@ -53,15 +53,15 @@ const Navbar = () => {
                 {/* <div className="px-5 py-2 bg-secondary"> */}
                 <Link
                     href={"/"}
-                    className="relative w-16 h-16 font-bold rounded-full cursor-pointer md:h-20 md:w-24 font-libreCaslonDisplay"
+                    className="relative w-16 h-16 font-bold rounded-full cursor-pointer md:h-16 md:w-20 font-libreCaslonDisplay"
                 >
                     <Image
                         alt="Rasim Exports Logo"
-                        className={` object-contain object-center rounded-full`}
+                        className={`object-contain object-center rounded-full`}
                         fill
                         src={"https://ik.imagekit.io/webibee/Rasim-Exports/RE-logo.png"}
                     />
-                    <h4 className="absolute -bottom-0.5 md:-bottom-0 right-1 lg:right-3 xl:right-[20px] text-primary text-xs font-figtree font-semibold">EST. 2002</h4>
+                    <h4 className="absolute -bottom-0.5 md:-bottom-0.5 right-2.5 lg:right-[15px] xl:right-[18px] text-primary text-[10px] font-figtree font-semibold">EST. 2002</h4>
                 </Link>
                 {/* </div> */}
                 {/* py-0.5 md:py-1.5 px-3.5 md:px-5 rounded-full bg-secondary  */}

@@ -1,24 +1,96 @@
 "use client";
 import { motion } from "framer-motion";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
+import Slider from "react-slick";
 
-const RevealCards = ({ data, type }) => {
+const RevealCards = ({ data, type, slide, rtl = false }) => {
+    const settings = {
+        rtl: rtl,
+        lazyLoad: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 1000,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1536,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
     return (
-        <div className="hidden w-full grid-cols-1 gap-4 md:gap-12 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
-            {data.map((list, idx) => (
-                <Card
-                    key={idx}
-                    title={list.title}
-                    description={list.desc}
-                    imgSrc={list.img}
-                    ListRef={list.ref}
-                    link={list.link}
-                    type={type}
-                />
-            ))}
-        </div>
+        <>
+            {!slide ? (
+                <div className="hidden w-full grid-cols-1 gap-4 md:gap-12 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
+                    {data.map((list, idx) => (
+                        <Card
+                            key={idx}
+                            title={list.title}
+                            description={list.desc}
+                            imgSrc={list.img}
+                            ListRef={list.ref}
+                            link={list.link}
+                            type={type}
+                        />
+                    ))}
+                </div>
+            ) : (
+                <div className="hidden w-full h-[55vh] max-w-7xl lg:block slider-container">
+                    <Slider {...settings}>
+                        {data.map((list, idx) => (
+                            <Card
+                                key={idx}
+                                title={list.title}
+                                description={list.desc}
+                                imgSrc={list.img}
+                                ListRef={list.ref}
+                                link={list.link}
+                                type={type}
+                            />
+                        ))}
+                    </Slider>
+                </div>
+            )}
+        </>
     );
 };
+
+// const RevealCardsSlider = ({data, type}) => {
+//     return (
+//         <div className="hidden w-full grid-cols-1 gap-4 md:gap-12 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
+//             {data.map((list, idx) => (
+//                 <Card
+//                     key={idx}
+//                     title={list.title}
+//                     description={list.desc}
+//                     imgSrc={list.img}
+//                     ListRef={list.ref}
+//                     link={list.link}
+//                     type={type}
+//                 />
+//             ))}
+//         </div>
+//     );
+// }
 
 export const AboutRevealCards = ({ data }) => {
     return (
@@ -44,8 +116,12 @@ const AboutCard = ({ imgSrc, title, description, ListRef, link }) => {
             className="w-[400px] h-[400px] relative group shadow-lg "
         >
             <div className="flex flex-col justify-center p-6 bg-primary h-1/2 customBorder">
-                <h3 className="mb-2 text-xl font-medium text-white font-libreCaslonDisplay tracking-custom">{title}</h3>
-                <p className="text-sm font-light font-figtree text-slate-300">{description}</p>
+                <h3 className="mb-2 text-xl font-medium text-white font-libreCaslonDisplay tracking-custom">
+                    {title}
+                </h3>
+                <p className="text-sm font-light font-figtree text-slate-300">
+                    {description}
+                </p>
             </div>
             <motion.div
                 initial={{
@@ -86,8 +162,12 @@ const Card = ({ imgSrc, title, description, ListRef, link, type }) => {
             className="w-full h-[400px] relative group md:last:col-span-2 lg:last:col-span-1 shadow-lg "
         >
             <div className="flex flex-col justify-center p-6 bg-primary h-1/2 customBorder">
-                <h3 className="mb-2 text-xl font-medium text-white font-libreCaslonDisplay tracking-custom">{title}</h3>
-                <p className="text-sm font-light font-figtree text-slate-300">{description}</p>
+                <h3 className="mb-2 text-xl font-medium text-white font-libreCaslonDisplay tracking-custom">
+                    {title}
+                </h3>
+                <p className="text-sm font-light font-figtree text-slate-300">
+                    {description}
+                </p>
             </div>
             <motion.div
                 initial={{
@@ -125,3 +205,31 @@ const Card = ({ imgSrc, title, description, ListRef, link, type }) => {
 };
 
 export default RevealCards;
+
+function NextArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className={
+                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer -right-5 md:-right-10 xl:-right-14 group"
+            }
+            onClick={onClick}
+        >
+            <FaArrowRight className="text-sm text-white md:text-lg xl:text-xl group-hover:text-secondary" />
+        </div>
+    );
+}
+
+function PrevArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className={
+                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer -left-5 md:-left-10 xl:-left-14 group"
+            }
+            onClick={onClick}
+        >
+            <FaArrowLeft className="text-sm text-white md:text-lg xl:text-xl group-hover:text-secondary" />
+        </div>
+    );
+}
