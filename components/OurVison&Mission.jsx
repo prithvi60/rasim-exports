@@ -24,7 +24,7 @@ const OurVision_Mission = () => {
                         Global Brands Trust Rasim for Unmatched Quality and Scale
                     </h4>
                     <p className="pb-4 md:pb-0 md:pt-4 lg:pt-6 text-base font-medium !leading-custom-line text-justify sm:text-xl rounded-tl-[20px] font-figtree">
-                        Rasim consistently delivers over 400,000 garments annually, meeting the high standards of renowned global brands. Our efficient management ensures seamless production, while a focus on quality and scalability drives continuous growth and customer satisfaction. Through years of experience, we have built a reputation for reliability and excellence in every piece we create.
+                        Rasim consistently delivers over 400,000 garments annually, meeting the high standards of renowned global brands. Our efficient management ensures seamless production, while a focus on quality and scalability drives continuous growth and customer satisfaction. With years of experience in the industry, we have built a reputation for reliability and excellence in every piece we create. Our dedicated team of professionals employs cutting-edge technology and best practices to uphold our commitment to superior craftsmanship.
                     </p>
                     <Link
                         href={"/about#vision"}

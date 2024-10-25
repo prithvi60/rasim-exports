@@ -13,8 +13,10 @@ const ContactForm = () => {
                 <form
                     className="font-libreCaslonDisplay"
                     action={
-                        "https://public.herotofu.com/v1/d408ed00-2579-11ef-b435-b1ba21672864"
+                        "https://public.herotofu.com/v1/cd09b6a0-91c7-11ef-82c2-4bbcc1388e1d"
                     }
+                    method="post"
+                    accept-charset="UTF-8"
                 >
                     {/* User Name */}
                     <div className="mb-4">
@@ -108,3 +110,10 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+
+// how can we help you ?
+// service request
+// feedback
+// partnership
+// enquiry

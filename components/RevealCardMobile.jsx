@@ -85,7 +85,7 @@ export const RevealCardMobile = ({ data, styles, type, slide }) => {
                             </div>
 
                             <div
-                                className={`absolute top-0 bottom-0 left-0 right-0 transition-all group-hover:scale-110 ${type === "certificate"
+                                className={`absolute top-0 bottom-0 left-0 right-0 transition-all group-hover:scale-110 p-3 ${type === "certificate"
                                     ? "bg-no-repeat bg-white bg-contain"
                                     : "bg-transparent bg-cover"
                                     }`}

@@ -21,8 +21,8 @@ const Summary = () => {
                     <h4 className="text-xl xl:text-[30px] tracking-widest !leading-[34px] font-normal font-libreCaslonDisplay uppercase">
                         With every piece, we build a legacy of Quality products
                     </h4>
-                    <p className="pb-4 md:pb-0 md:pt-4 lg:pt-6 text-base font-medium !leading-custom-line text-justify sm:text-xl rounded-tl-[20px] font-figtree">
-                        Rasim Exports is founded in  context to quality and dedication, with each garment reflecting employees’ hard work and passion through strong customer connections. Since Rasim’s inception, the company has grown steadily through effective management and robust export strategies, ensuring high product standards.
+                    <p className="pb-4 md:pb-0 md:pt-4 lg:pt-6 text-base font-medium !leading-custom-line tracking-[0.5px] sm:text-xl rounded-tl-[20px] font-figtree">
+                        Rasim Exports is founded on a commitment to quality and dedication, with each garment reflecting the hard work and passion of our employees, reinforced by strong customer connections. Since our inception, the company has steadily expanded through effective management practices and robust export strategies, ensuring high product standards that resonate with our clients. We pride ourselves on fostering long-term partnerships and consistently delivering exceptional value, making us a trusted name in the global textile market.
                     </p>
                     <Link
                         href={"/about#vision"}

@@ -15,7 +15,7 @@ module.exports = {
       },
       lineHeight: {
         "custom-head": "72px",
-        "custom-line": "28px",
+        "custom-line": "1.5",
       },
       fontFamily: {
         libreCaslonDisplay: "var(--font-libreCaslonDisplay)",

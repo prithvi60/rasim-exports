@@ -4,6 +4,7 @@ import {
   Playfair_Display,
   Abril_Fatface,
   Open_Sans,
+  Questrial,
 } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
@@ -17,10 +18,10 @@ const libreCaslonDisplay = Abril_Fatface({
   weight: ["400"],
 });
 
-const figtree = Open_Sans({
+const figtree = Questrial({
   subsets: ["latin"],
   variable: "--font-figtree",
-  weight: ["400", "700"],
+  weight: ["400"],
 });
 
 const playFair = Playfair_Display({

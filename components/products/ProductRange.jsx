@@ -4,6 +4,7 @@ import Image from "next/image";
 import ScrollToSection from "../ScrollToSection ";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Slider from "react-slick";
+import { infants, kids, mens, women } from "@/libs/data";
 
 const ProductRange = () => {
     return (
@@ -21,7 +22,7 @@ const ProductRange = () => {
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         Men
                     </h4>
-                    <SliderComponent data={men} rtl={false} />
+                    <SliderComponent data={mens} rtl={false} />
                 </div>
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
@@ -33,13 +34,13 @@ const ProductRange = () => {
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         children
                     </h4>
-                    <SliderComponent data={children} rtl={false} />
+                    <SliderComponent data={kids} rtl={false} />
                 </div>
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
                         Infant
                     </h4>
-                    <SliderComponent data={infant} rtl={true} />
+                    <SliderComponent data={infants} rtl={true} />
                 </div>
             </section>
         </>
@@ -86,34 +87,35 @@ const SliderComponent = ({ data, rtl }) => {
             <div className="slider-container">
                 <Slider {...settings}>
                     {data.map((list, idx) => (
-                        <div
-                            key={idx}
-                            className="relative h-[390px] sm:h-[320px] !w-[300px] md:!w-[220px] lg:!w-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden customBorder"
-                        >
-                            <Image
-                                alt="image"
-                                src={list}
-                                fill
-                                className="object-cover object-bottom"
-                            />
+                        <div key={idx}>
+                            <div className="relative h-[390px] sm:h-[320px] !w-[300px] md:!w-[220px] lg:!w-[300px] lg:h-[360px] xl:h-[400px] xl:!w-[350px] overflow-hidden customBorder group">
+                                <Image
+                                    alt="image"
+                                    src={list.img}
+                                    fill
+                                    className="object-cover object-bottom"
+                                />
+                                <div
+                                    className={`bg-white absolute bottom-0 left-0 text-primary w-full p-3.5 z-10 rounded-t-lg translate-y-96 group-hover:translate-y-0 transition-all duration-[2000] ease-in-out`}
+                                >
+                                    <h2 className="relative uppercase font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight">
+                                        {list.category}
+                                    </h2>
+                                    <ul className="font-semibold tracking-wide text-primary font-figtree">
+                                        <li className="text-sm sm:text-base">{list.material}</li>
+                                        <li className="text-sm sm:text-base">{list.type}</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </Slider>
             </div>
         </div>
-    )
-}
+    );
+};
 
-const men = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0024.jpg?updatedAt=1729757184754",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0037.jpg?updatedAt=1729757187823",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0027.jpg?updatedAt=1729757184799",
-];
-const women = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0031.jpg?updatedAt=1729757185515",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0032.jpg?updatedAt=1729757185519",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0029.jpg?updatedAt=1729757185298",
-];
+
 const children = [
     "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0079.jpg?updatedAt=1729757199899",
     "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0005.jpg?updatedAt=1729757176359",

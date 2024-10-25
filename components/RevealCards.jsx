@@ -54,7 +54,7 @@ const RevealCards = ({ data, type, slide, rtl = false }) => {
                     ))}
                 </div>
             ) : (
-                <div className="hidden w-full h-[55vh] max-w-7xl lg:block slider-container">
+                <div className="hidden w-full h-full max-w-7xl lg:block slider-container">
                     <Slider {...settings}>
                         {data.map((list, idx) => (
                             <Card
