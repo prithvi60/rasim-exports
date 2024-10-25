@@ -94,25 +94,25 @@ export const variousProducts = [
     {
         title: "Men",
         ref: "/products#types",
-        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0025.jpg?updatedAt=1729757184263",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/grid%201.png?updatedAt=1729863471989",
         lists: ["Shirts", "Shorts"],
     },
     {
         title: "Women",
         ref: "/products#types",
-        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0087.jpg?updatedAt=1729757202525",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/grid%202.png?updatedAt=1729863471993",
         lists: ["Shirts", "Skirts"],
     },
     {
         title: "Children",
         ref: "/products#types",
-        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0059.jpg?updatedAt=1729757194595",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/grid%203.png?updatedAt=1729863471834",
         lists: ["Top", "bottom"],
     },
     {
         title: "Infants",
         ref: "/products#types",
-        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0038.jpg?updatedAt=1729757188114",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/grid%204.png?updatedAt=1729863471800",
         lists: ["Shirts", "Shorts"],
     },
 ];
