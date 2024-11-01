@@ -40,7 +40,7 @@ const RevealCards = ({ data, type, slide, rtl = false }) => {
     return (
         <>
             {!slide ? (
-                <div className="hidden w-full grid-cols-1 gap-4 md:gap-12 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-3">
+                <div className="hidden w-full grid-cols-1 gap-4 md:gap-12 lg:grid max-w-7xl sm:grid-cols-2 lg:grid-cols-4">
                     {data.map((list, idx) => (
                         <Card
                             key={idx}

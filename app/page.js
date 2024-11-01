@@ -17,18 +17,18 @@ export default function Home() {
       <Hero />
       <Summary />
       <ReactMarquee
-        data={"With every piece, we build a legacy of Q"}
+        data={"Fashion that redefines timeless charm"}
         direction={"left"}
       />
       <REProgress />
-      <Carousel />
+      {/* <Carousel /> */}
       <OurClients />
       <FabricTypes />
       <CompanyStats />
-      <VariousTypesOfProducts />
+      {/* <VariousTypesOfProducts /> */}
       <OurVision_Mission />
       <ReactMarquee
-        data={"Guided by deep commitment to ethical"}
+        data={"Fashion that redefines timeless charm"}
         direction={"right"}
       />
       <Certifications />

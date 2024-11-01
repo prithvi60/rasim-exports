@@ -9,30 +9,37 @@ export const navbarLinks = [
 
 export const footerLinks = [
     { menu: "Home", ref: "/" },
-    { menu: "People of rasims", ref: "/initiatives#founder" },
+    // { menu: "People of rasims", ref: "/initiatives#founder" },
     { menu: "T&C", ref: "/termsAndConditions" },
     { menu: "Policy", ref: "/policy" },
 ];
 
 export const fabricTypes = [
     {
-        title: "Silk/Woolen",
+        title: "Men",
         desc: "Wool is not just a fiber, it’s a lifestyle.",
-        ref: "/products#fabric",
+        ref: "/products#types",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/cards/mens-wear.png?updatedAt=1729668433466",
         link: "More",
     },
     {
-        title: "Denim Jeans",
+        title: "Women",
         desc: "Denim is a love that never fades.",
-        ref: "/products#fabric",
+        ref: "/products#types",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/cards/ladies-wear.png?updatedAt=1729668434104",
         link: "More",
     },
     {
-        title: "Cotton",
+        title: "Children",
         desc: "Cotton is the fabric of our lives.",
-        ref: "/products#fabric",
+        ref: "/products#types",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/cards/childrens-wear.png?updatedAt=1729668647617",
+        link: "More",
+    },
+    {
+        title: "Infants",
+        desc: "Cotton is the fabric of our lives.",
+        ref: "/products#types",
         img: "https://ik.imagekit.io/webibee/Rasim-Exports/cards/childrens-wear.png?updatedAt=1729668647617",
         link: "More",
     },
@@ -211,37 +218,37 @@ export const fabricCollections = [
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%201.jpeg?updatedAt=1728093008059",
-        title: "fabric name",
+        title: "100% Cotton Yarn dyed Jacquard",
         span: "320px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%202.jpeg?updatedAt=1728092998646",
-        title: "fabric name",
+        title: "98% Cotton 2% Lurex Plain Weave",
         span: "200px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%203.jpeg?updatedAt=1728093006684",
-        title: "fabric name",
+        title: "55% Cotton 45% Linen",
         span: "200px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%204.jpeg?updatedAt=1728093008011",
-        title: "fabric name",
+        title: "98% Cotton 2% Lycra",
         span: "320px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%205.jpeg?updatedAt=1728093004809",
-        title: "fabric name",
+        title: "10 Oz Denim 98% Cotton 2% Elasthane Twil Denim",
         span: "320px",
     },
     {
         alt: "fabric name",
         src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%206.jpeg?updatedAt=1728093006041",
-        title: "fabric name",
+        title: "5.5 Oz Twill Denim 100% Cotton",
         span: "200px",
     },
 ];
