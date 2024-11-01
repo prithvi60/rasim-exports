@@ -64,7 +64,7 @@ const Hero = () => {
             >
                 <source
                     src={
-                        "https://ik.imagekit.io/webibee/Rasim-Exports/bg-video.mp4"
+                        "https://ik.imagekit.io/webibee/Rasim-Exports/bg-video.mp4?updatedAt=1730462512687"
                     }
                     type="video/mp4"
                 />
