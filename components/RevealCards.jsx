@@ -165,9 +165,9 @@ const Card = ({ imgSrc, title, description, ListRef, link, type }) => {
                 <h3 className="mb-2 text-xl font-medium text-white font-libreCaslonDisplay tracking-custom">
                     {title}
                 </h3>
-                <p className="text-sm font-light font-figtree text-slate-300">
+                {/* <p className="text-sm font-light font-figtree text-slate-300">
                     {description}
-                </p>
+                </p> */}
             </div>
             <motion.div
                 initial={{

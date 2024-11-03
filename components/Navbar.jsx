@@ -42,8 +42,8 @@ const Navbar = () => {
     const val = scrollYValue <= scrollValue.value1
 
     return (
-        <nav className="w-full h-full mx-auto ">
-            <div className={`flex items-center justify-between md:justify-center gap-2.5 px-5 lg:px-8 xl:px-16 z-[999] transition-colors duration-500 ease-linear fixed top-0 left-0 w-full shadow-lg ${val && pathname === "/" ? "bg-white/50 " : "bg-white"}`}>
+        <nav className="w-full h-full mx-auto" >
+            <div className={` flex items-center justify-between md:justify-center gap-8 z-[999] transition-colors duration-500 ease-linear fixed top-0 left-0 w-screen shadow-lg bg-white`}>
                 <SlideTabsExample
                     data={navbarLinks.slice(0, 3)}
                     isActive={isActive}
@@ -53,7 +53,7 @@ const Navbar = () => {
                 {/* <div className="px-5 py-2 bg-secondary"> */}
                 <Link
                     href={"/"}
-                    className="relative w-16 h-16 font-bold rounded-full cursor-pointer md:h-16 md:w-20 font-libreCaslonDisplay"
+                    className="ml-8 relative w-16 h-16 font-bold rounded-full cursor-pointer md:h-16 md:w-20 font-libreCaslonDisplay"
                 >
                     <Image
                         alt="Rasim Exports Logo"
@@ -61,7 +61,7 @@ const Navbar = () => {
                         fill
                         src={"https://ik.imagekit.io/webibee/Rasim-Exports/RE-logo.png"}
                     />
-                    <h4 className="absolute -bottom-0.5 md:-bottom-0.5 right-2.5 lg:right-[15px] xl:right-[18px] text-primary text-[10px] font-figtree font-semibold">EST. 2002</h4>
+                    <h4 className={`absolute -bottom-0.5 md:-bottom-0.5 right-2.5 lg:right-[15px] xl:right-[18px] ${val && pathname === "/" ? "text-primary " : "text-primary"} text-[10px] font-figtree font-semibold`}>EST. 2002</h4>
                 </Link>
                 {/* </div> */}
                 {/* py-0.5 md:py-1.5 px-3.5 md:px-5 rounded-full bg-secondary  */}
@@ -72,7 +72,7 @@ const Navbar = () => {
                     val={val}
                 />
                 <div
-                    className={`block p-1 rounded-lg cursor-pointer md:hidden bg-primary  ${isMenuOpen ? "opacity-0" : "opacity-100"
+                    className={`mr-4 block p-1 rounded-lg cursor-pointer md:hidden bg-primary  ${isMenuOpen ? "opacity-0" : "opacity-100"
                         }`}
                     onClick={() => setIsMenuOpen(true)}
                 >

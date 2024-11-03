@@ -26,19 +26,19 @@ const ProductRange = () => {
                 </div>
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        women
+                        Women
                     </h4>
                     <SliderComponent data={women} rtl={true} />
                 </div>
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        children
+                        Kids
                     </h4>
                     <SliderComponent data={kids} rtl={false} />
                 </div>
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        Infant
+                        Infants
                     </h4>
                     <SliderComponent data={infants} rtl={true} />
                 </div>
@@ -52,7 +52,7 @@ export default ProductRange;
 const SliderComponent = ({ data, rtl }) => {
     const settings = {
         rtl: rtl,
-        lazyLoad: true,
+        lazyLoad: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -82,6 +82,7 @@ const SliderComponent = ({ data, rtl }) => {
             },
         ],
     };
+    const blurDataURL = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==";
     return (
         <div className="w-full h-full">
             <div className="slider-container">
@@ -93,7 +94,10 @@ const SliderComponent = ({ data, rtl }) => {
                                     alt="image"
                                     src={list.img}
                                     fill
-                                    className="object-cover object-bottom"
+                                    placeholder="blur"
+                                    loading="lazy"
+                                    blurDataURL={blurDataURL}
+                                    className="object-cover object-center"
                                 />
                                 <div
                                     className={`bg-white absolute bottom-0 left-0 text-primary w-full p-3.5 z-10 rounded-t-lg translate-y-96 group-hover:translate-y-0 transition-all duration-[2000] ease-in-out`}

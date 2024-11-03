@@ -49,9 +49,9 @@ export const RevealCardMobile = ({ data, styles, type, slide }) => {
                             <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight transition-transform duration-500 capitalize group-hover:-translate-y-2 ">
                                 {list.title}
                             </h2>
-                            <h3 className="relative font-libreCaslonDisplay text-base md:text-[18px] leading-tight capitalize">
+                            {/* <h3 className="relative font-libreCaslonDisplay text-base md:text-[18px] leading-tight capitalize">
                                 {list.desc}
-                            </h3>
+                            </h3> */}
                         </div>
 
                         <div

@@ -150,13 +150,15 @@ const ContactUsHome = () => {
                                 Choolaimedu, Chennai - 600 094
                                 <br/>
                                 Tamil Nadu, India
+                                <br/>
+                                ‎ 
                             </p>
                         </div>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.8494032357875!2d80.1199942454696!3d13.048702578877181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261fcc5f55f75%3A0x59f2e49cbaead487!2sHDFC%20Bank!5e0!3m2!1sen!2sin!4v1729844811145!5m2!1sen!2sin"
                             width={"100%"}
                             height={"250px"}
-                            className="h-[250px] mt-8"
+                            className="h-[250px]"
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
