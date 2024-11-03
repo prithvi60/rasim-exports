@@ -24,7 +24,7 @@ const FabricCollections = () => {
 
                             </div>
                             <div className="absolute bottom-0 left-0 right-0 !bg-primary p-2.5 z-10 rounded-t-lg">
-                                <h2 className="relative font-libreCaslonDisplay text-[18px] md:text-[28px] transition-transform duration-500 capitalize group-hover:-translate-y-2 text-white tracking-custom">
+                                <h2 className="relative font-libreCaslonDisplay text-[14px] md:text-[18px] transition-transform duration-500 capitalize group-hover:-translate-y-2 text-white tracking-custom">
                                     {list.title}
                                 </h2>
                             </div>

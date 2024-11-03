@@ -27,9 +27,9 @@ const ContactGrid = () => {
                     </h4>
                 </div>
                 <ul className="p-2 space-y-2 text-lg font-normal text-white font-figtree text-center">
-                    <li>+044-26496461</li>
-                    <li>+91 - 89392 - 35917</li>
-                    <li>+91 - 95516 - 97865</li>
+                    <li>+044 - 26791882&nbsp;&nbsp;</li>
+                    <li>+91 - 8939235917</li>
+                    <li>+91 - 9551697865</li>
                 </ul>
             </div>
             <div className="block space-y-4 rounded-lg w-full md:w-[35vw] bg-primary p-6 shadow-lg transition-transform transform hover:scale-105">

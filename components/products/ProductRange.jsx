@@ -20,25 +20,25 @@ const ProductRange = () => {
                 {/* <GridCards data={variousProducts} /> */}
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        Men
+                        Mens Collection
                     </h4>
                     <SliderComponent data={mens} rtl={false} />
                 </div>
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        Women
+                        Womens Collection
                     </h4>
                     <SliderComponent data={women} rtl={true} />
                 </div>
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        Kids
+                        Kids Collection
                     </h4>
                     <SliderComponent data={kids} rtl={false} />
                 </div>
                 <div className="block space-y-8">
                     <h4 className="text-2xl xl:text-[36px] font-normal font-libreCaslonDisplay capitalize tracking-custom">
-                        Infants
+                        Infants Collection
                     </h4>
                     <SliderComponent data={infants} rtl={true} />
                 </div>

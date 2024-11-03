@@ -61,7 +61,7 @@ const Navbar = () => {
                         fill
                         src={"https://ik.imagekit.io/webibee/Rasim-Exports/RE-logo.png"}
                     />
-                    <h4 className={`absolute -bottom-0.5 md:-bottom-0.5 right-2.5 lg:right-[15px] xl:right-[18px] ${val && pathname === "/" ? "text-primary " : "text-primary"} text-[10px] font-figtree font-semibold`}>EST. 2002</h4>
+                    {/* <h4 className={`absolute -bottom-0.5 md:-bottom-0.5 right-2.5 lg:right-[15px] xl:right-[18px] ${val && pathname === "/" ? "text-primary " : "text-primary"} text-[10px] font-figtree font-semibold`}>EST. 2002</h4> */}
                 </Link>
                 {/* </div> */}
                 {/* py-0.5 md:py-1.5 px-3.5 md:px-5 rounded-full bg-secondary  */}
