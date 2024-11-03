@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
             </div>
             <p className="w-full font-normal leading-6 tracking-wide text-center capitalize cursor-pointer md:text-base font-figtree hover:text-primary">
-                Rasims export {new Date().getFullYear()} | ® All rights reserved
+                Rasims exports {new Date().getFullYear()} | ® All rights reserved
             </p>
         </footer >
     );
