@@ -56,12 +56,38 @@ export default Hero;
 const HeroVideo = forwardRef((props, ref) => {
   useEffect(() => {
     const isInstagramBrowser = navigator.userAgent.includes("Instagram");
-
+  
+    const playVideo = () => {
+      if (ref.current) {
+        ref.current.play().catch((error) => {
+          console.log("Autoplay failed:", error);
+        });
+      }
+    };
+  
+    // Attempt autoplay with a small delay
+    const autoplayTimeout = setTimeout(() => {
+      playVideo();
+    }, 300);
+  
+    // Listen to visibility change for retrying autoplay
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") {
+        playVideo();
+      }
+    });
+  
+    // Fallback on user interaction for Instagram browsers
     if (isInstagramBrowser) {
-      document.addEventListener("touchstart", () => {
-        ref.current.play();
-      });
+      document.addEventListener("touchstart", playVideo);
     }
+  
+    // Cleanup
+    return () => {
+      clearTimeout(autoplayTimeout);
+      document.removeEventListener("visibilitychange", playVideo);
+      document.removeEventListener("touchstart", playVideo);
+    };
   }, [ref]);
   return    <>
       {/* Desktop Video */}
