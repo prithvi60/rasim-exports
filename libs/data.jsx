@@ -215,41 +215,43 @@ export const logos = [
 ];
 
 export const fabricCollections = [
-    {
+    
+    {   category: "Fabric",
         alt: "fabric name",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%201.jpeg?updatedAt=1728093008059",
-        title: "100% Cotton Yarn dyed Jacquard",
-        span: "320px",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%201.jpeg?updatedAt=1728093008059",
+        type: "100% Cotton Yarn dyed Jacquard",
+        material: "",
+       
     },
     {
         alt: "fabric name",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%202.jpeg?updatedAt=1728092998646",
-        title: "98% Cotton 2% Lurex Plain Weave",
-        span: "200px",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%202.jpeg?updatedAt=1728092998646",
+        type: "98% Cotton 2% Lurex Plain Weave",
+        material: "",
     },
     {
         alt: "fabric name",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%203.jpeg?updatedAt=1728093006684",
-        title: "55% Cotton 45% Linen",
-        span: "200px",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%203.jpeg?updatedAt=1728093006684",
+        type: "55% Cotton 45% Linen",
+        material: "",
     },
     {
         alt: "fabric name",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%204.jpeg?updatedAt=1728093008011",
-        title: "98% Cotton 2% Lycra",
-        span: "320px",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%204.jpeg?updatedAt=1728093008011",
+        type: "98% Cotton 2% Lycra",
+        material: "",
     },
     {
         alt: "fabric name",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%205.jpeg?updatedAt=1728093004809",
-        title: "10 Oz Denim 98% Cotton 2% Elasthane Twil Denim",
-        span: "320px",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%205.jpeg?updatedAt=1728093004809",
+        type: "10 Oz Denim 98% Cotton 2% Elasthane Twil Denim",
+        material: "",
     },
     {
         alt: "fabric name",
-        src: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%206.jpeg?updatedAt=1728093006041",
-        title: "5.5 Oz Twill Denim 100% Cotton",
-        span: "200px",
+        img: "https://ik.imagekit.io/webibee/Rasim-Exports/product_page/Fabric%20collections/fabric%206.jpeg?updatedAt=1728093006041",
+        type: "5.5 Oz Twill Denim 100% Cotton",
+        material: "",
     },
 ];
 

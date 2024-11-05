@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import ScrollToSection from '../ScrollToSection '
+import { SliderComponent } from './ProductRange'
 
 const FabricCollections = () => {
     return (
@@ -11,7 +12,7 @@ const FabricCollections = () => {
             <section id='fabric' className='block w-full h-full px-6 py-10 space-y-5 md:px-14 xl:px-32'>
                 <h2 className='text-2xl md:text-3xl lg:text-[48px] uppercase font-libreCaslonDisplay font-medium tracking-wider text-center w-full'>We Weave strong</h2>
                 <h4 className='text-xl md:text-2xl lg:text-[36px] capitalize font-figtree font-medium tracking-wider text-center w-full text-black/80'>Fabric Collections</h4>
-                <div className='p-3.5  columns-1 md:columns-3 h-full '>
+                {/* <div className='p-3.5  columns-1 md:columns-3 h-full '>
                     {fabricCollections.map((list, idx) => (
                         <Link
                             key={idx}
@@ -30,6 +31,9 @@ const FabricCollections = () => {
                             </div>
                         </Link>
                     ))}
+                </div> */}
+                 <div className="block space-y-8">
+                <SliderComponent data={fabricCollections} rtl={false} />
                 </div>
             </section>
         </>

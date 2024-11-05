@@ -49,7 +49,7 @@ const ProductRange = () => {
 
 export default ProductRange;
 
-const SliderComponent = ({ data, rtl }) => {
+export const SliderComponent = ({ data, rtl }) => {
     const settings = {
         rtl: rtl,
         lazyLoad: false,
