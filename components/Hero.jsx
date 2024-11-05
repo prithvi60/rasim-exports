@@ -54,6 +54,15 @@ const Hero = () => {
 export default Hero;
 
 const HeroVideo = forwardRef((props, ref) => {
+  useEffect(() => {
+    const isInstagramBrowser = navigator.userAgent.includes("Instagram");
+
+    if (isInstagramBrowser) {
+      document.addEventListener("touchstart", () => {
+        ref.current.play();
+      });
+    }
+  }, [ref]);
   return    <>
       {/* Desktop Video */}
       <video

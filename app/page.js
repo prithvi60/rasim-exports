@@ -9,7 +9,7 @@ import OurVision_Mission from "@/components/OurVison&Mission";
 import { ReactMarquee } from "@/components/ReactMarquee";
 import REProgress from "@/components/REProgress";
 import Summary from "@/components/Summary";
-import VariousTypesOfProducts from "@/components/VariousTypesOfProducts";
+// import VariousTypesOfProducts from "@/components/VariousTypesOfProducts";
 
 export default function Home() {
   return (
