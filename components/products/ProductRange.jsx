@@ -55,29 +55,38 @@ const SliderComponent = ({ data, rtl }) => {
         lazyLoad: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 6,
+        slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 2000,
         speed: 1000,
+        rows: 3,
+        // dots: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         responsive: [
             {
                 breakpoint: 1536,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
                 },
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
                 },
             },
             {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
                 },
             },
         ],
@@ -89,7 +98,7 @@ const SliderComponent = ({ data, rtl }) => {
                 <Slider {...settings}>
                     {data.map((list, idx) => (
                         <div key={idx}>
-                            <div className="relative h-[390px] sm:h-[320px] !w-[300px] md:!w-[220px] lg:!w-[300px] lg:h-[360px] xl:h-[400px] xl:!w-[350px] overflow-hidden customBorder group">
+                            <div className="relative h-[112px] sm:h-[256px] w-[100px] md:w-[176px] lg:w-[240px] lg:h-[288px] xl:h-[320px] xl:w-[280px] overflow-hidden customBorder group">
                                 <Image
                                     alt="image"
                                     src={list.img}
