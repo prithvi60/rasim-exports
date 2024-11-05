@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden slider-container">
       <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold rounded-md py-2 md:px-3.5 z-10">
-        <div className="-mt-64 md:mt-64 block w-full py-2 mx-auto space-y-5 text-center rounded-md px-16 sm:px-0  md:mr-6">
+        <div className="mt-16 md:mt-64 block w-full py-2 mx-auto space-y-5 text-center rounded-md px-16 sm:px-0  md:mr-6">
           {/* <div className="md:-mt-72"> */}
           
             <p className="text-3xl font-medium tracking-wide text-white uppercase sm:text-4xl xl:text-5xl font-libreCaslonDisplay">
@@ -42,7 +42,7 @@ const Hero = () => {
             }
             style={{ objectFit: "cover", objectPosition: "center" }}
             fill
-            className="brightness-[0.85]"
+            className="brightness-[0.45]"
           />
         </div>
       )}
@@ -74,7 +74,7 @@ const HeroVideo = forwardRef((props, ref) => {
         autoPlay
         playsInline
         ref={ref}
-        className="block sm:hidden h-screen w-full object-cover object-center translate-y-0 transition-all duration-700 ease-linear -z-10"
+        className="block sm:hidden  w-full h-screen object-cover  object-center translate-y-0 transition-all duration-700 ease-linear -z-10"
       >
         <source src="https://ik.imagekit.io/a7ag28udt/Rasim/herosection-mobile.mp4?q-70" type="video/mp4" />
       </video>
