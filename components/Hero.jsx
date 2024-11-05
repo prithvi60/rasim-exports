@@ -42,7 +42,18 @@ const Hero = () => {
             }
             style={{ objectFit: "cover", objectPosition: "center" }}
             fill
-            className="brightness-[0.45]"
+            className="brightness-[0.45] hidden md:block"
+          />
+                    <Image
+            priority
+            loading={"eager"}
+            alt="bg image"
+            src={
+              " https://ik.imagekit.io/webibee/Rasim-Exports/mobileplaceholder.jpg?updatedAt=1730794747237"
+            }
+            style={{ objectFit: "cover", objectPosition: "center" }}
+            fill
+            className="md:hidden"
           />
         </div>
       )}
