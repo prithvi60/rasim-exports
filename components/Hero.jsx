@@ -42,7 +42,7 @@ const Hero = () => {
             }
             style={{ objectFit: "cover", objectPosition: "center" }}
             fill
-            className="brightness-[0.2]"
+            className="brightness-[0.85]"
           />
         </div>
       )}
@@ -62,9 +62,9 @@ const HeroVideo = forwardRef((props, ref) => {
         autoPlay
         playsInline
         ref={ref}
-        className="hidden sm:block h-screen w-full object-cover object-center translate-y-0 transition-all duration-700 ease-linear brightness-[0.45] -z-10"
+        className="hidden sm:block h-screen w-full object-cover object-center translate-y-0 transition-all duration-700 ease-linear -z-10"
       >
-        <source src="https://ik.imagekit.io/webibee/Rasim-Exports/heroweb.mp4?updatedAt=1730653086601" type="video/mp4" />
+        <source src="https://ik.imagekit.io/a7ag28udt/Rasim/herosection-web.mp4?q-70" type="video/mp4" />
       </video>
 
       {/* Mobile Video */}
@@ -74,9 +74,9 @@ const HeroVideo = forwardRef((props, ref) => {
         autoPlay
         playsInline
         ref={ref}
-        className="block sm:hidden h-screen w-full object-cover object-center translate-y-0 transition-all duration-700 ease-linear brightness-[0.45] -z-10"
+        className="block sm:hidden h-screen w-full object-cover object-center translate-y-0 transition-all duration-700 ease-linear -z-10"
       >
-        <source src="https://ik.imagekit.io/webibee/Rasim-Exports/heromob.mp4?updatedAt=1730653085448" type="video/mp4" />
+        <source src="https://ik.imagekit.io/a7ag28udt/Rasim/herosection-mobile.mp4?q-70" type="video/mp4" />
       </video>
     </>
   })

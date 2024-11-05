@@ -8,7 +8,7 @@ export const CountUpStats1 = () => {
             <div className="flex flex-col items-center justify-center md:flex-row">
                 <Stat1 num={8} suffix="+" subheading="COUNTRIES EXPORTED" />
                 <div className="h-[1px] w-full bg-white md:h-28 md:w-[1px]" />
-                <Stat1 num={300}  subheading="MOQ" />
+                <Stat1 num={300}  subheading="MOQ"suffix="pcs" />
                 <div className="h-[1px] w-full bg-white md:h-28 md:w-[1px]" />
                 <Stat1 num={90} suffix="days" subheading="LEAD TIME" />
                 {/* <StatData
@@ -25,7 +25,7 @@ export const CountUpStats2 = () => {
         <div className="px-6 pb-8 ">
             <div className="flex flex-col items-center justify-center md:flex-row">
                 <div className="block md:hidden h-[1px] w-full bg-white md:h-28 md:w-[1px]" />
-                <Stat2 num={40000} suffix="/ per month" subheading="CAPACITY" />
+                <Stat2 num={40000} suffix="/ month" subheading="CAPACITY" />
                 <div className="h-[1px] w-full bg-white md:h-28 md:w-[1px]" />
                 <StatData val={"India, Taiwan, China"} subheading="FABRIC SOURCING" />
                 <div className="h-[1px] w-full bg-white md:h-28 md:w-[1px]" />
