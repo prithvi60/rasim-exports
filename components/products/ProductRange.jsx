@@ -60,7 +60,7 @@ const SliderComponent = ({ data, rtl }) => {
         autoplay: true,
         autoplaySpeed: 2000,
         speed: 1000,
-        rows: 3,
+        rows: 4,
         // dots: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
@@ -85,8 +85,9 @@ const SliderComponent = ({ data, rtl }) => {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 2,
                     infinite: true,
+                    rows:5
                 },
             },
         ],
@@ -111,12 +112,12 @@ const SliderComponent = ({ data, rtl }) => {
                                 <div
                                     className={`bg-white absolute bottom-0 left-0 text-primary w-full p-3.5 z-10 rounded-t-lg translate-y-96 group-hover:translate-y-0 transition-all duration-[2000] ease-in-out`}
                                 >
-                                    <h2 className="relative uppercase font-libreCaslonDisplay text-[18px] md:text-[28px] leading-tight">
+                                    <h2 className="relative uppercase font-libreCaslonDisplay text-[8px] md:text-[28px] leading-tight">
                                         {list.category}
                                     </h2>
                                     <ul className="font-semibold tracking-wide text-primary font-figtree">
-                                        <li className="text-sm sm:text-base">{list.material}</li>
-                                        <li className="text-sm sm:text-base">{list.type}</li>
+                                        <li className="text-[8px] sm:text-base">{list.material}</li>
+                                        <li className="text-[8px] sm:text-base">{list.type}</li>
                                     </ul>
                                 </div>
                             </div>
