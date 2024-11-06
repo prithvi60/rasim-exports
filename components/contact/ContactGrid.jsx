@@ -42,7 +42,7 @@ const ContactGrid = () => {
                 <ul className="w-full p-2 space-y-2 text-lg font-normal text-white font-figtree">
                     <li>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.9247210789926!2d80.11232561629664!3d13.048682773950777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261c39e8c0a61%3A0x10060ee946c2087!2sRasim%20Exports%20Private%20Limited!5e0!3m2!1sen!2sin!4v1727437573636!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.8370508540197!2d80.22954378642928!3d13.054986395709701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267867309ff9b%3A0x72df85537ff7338b!2sRasim%20crescent!5e0!3m2!1sen!2sin!4v1730896009567!5m2!1sen!2sin"
                             width={"100%"}
                             height={"300"}
                             className="rounded-lg"

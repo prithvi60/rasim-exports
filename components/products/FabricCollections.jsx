@@ -33,7 +33,7 @@ const FabricCollections = () => {
                     ))}
                 </div> */}
                  <div className="block space-y-8">
-                <SliderComponent data={fabricCollections} rtl={false} />
+                <SliderComponent data={fabricCollections} rtl={false} type={"fabric"}/>
                 </div>
             </section>
         </>

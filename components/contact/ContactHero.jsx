@@ -24,7 +24,8 @@ const ContactHero = () => {
                         loading={"eager"}
                         alt="bg image"
                         src={
-                            "https://ik.imagekit.io/webibee/Rasim-Exports/contact_page/contactherobg.jpeg?updatedAt=1728093705435"
+                            // "https://ik.imagekit.io/webibee/Rasim-Exports/contact_page/contactherobg.jpeg?updatedAt=1728093705435"
+                       "https://ik.imagekit.io/webibee/Rasim-Exports/rasimsbuilding.jpg?tr:q-10"
                         }
                         style={{ objectFit: "cover", objectPosition: "center" }}
                         fill
@@ -37,11 +38,11 @@ const ContactHero = () => {
                     alt="Contact bg image"
                     ref={loadingImage}
                     src={
-                        "https://ik.imagekit.io/webibee/Rasim-Exports/contact_page/contactherobg.jpeg?updatedAt=1728093705435"
+                        "https://ik.imagekit.io/webibee/Rasim-Exports/rasimsbuilding.jpg"
                     }
                     // style={{ objectFit: "cover", objectPosition: "center" }}
                     fill
-                    className="object-cover object-left md:object-center"
+                    className="object-cover object-top md:object-top scale-110"
                 />
             </div>
             {/* <video

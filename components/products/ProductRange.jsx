@@ -49,18 +49,19 @@ const ProductRange = () => {
 
 export default ProductRange;
 
-export const SliderComponent = ({ data, rtl }) => {
+export const SliderComponent = ({ data, rtl,type }) => {
+    const isFabric=type === "fabric";
     const settings = {
         rtl: rtl,
         lazyLoad: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 6,
+        slidesToShow:  isFabric?8:6 ,
         slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 2000,
         speed: 1000,
-        rows: 4,
+        rows: isFabric? 6:4,
         // dots: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
@@ -87,7 +88,7 @@ export const SliderComponent = ({ data, rtl }) => {
                     slidesToShow: 3,
                     slidesToScroll: 2,
                     infinite: true,
-                    rows:5
+                    rows:isFabric? 8:5
                 },
             },
         ],
@@ -99,7 +100,7 @@ export const SliderComponent = ({ data, rtl }) => {
                 <Slider {...settings}>
                     {data.map((list, idx) => (
                         <div key={idx}>
-                            <div className="relative h-[112px] sm:h-[256px] w-[100px] md:w-[176px] lg:w-[240px] lg:h-[288px] xl:h-[320px] xl:w-[280px] overflow-hidden customBorder group">
+                            <div className={`relative ${isFabric? "h-[95px] sm:h-[218px] w-[85px] md:w-[150px] lg:w-[204px] lg:h-[245px] xl:h-[272px] xl:w-[238px]" :"h-[112px] sm:h-[256px] w-[100px] md:w-[176px] lg:w-[240px] lg:h-[288px] xl:h-[320px] xl:w-[280px] "}overflow-hidden customBorder group`}>
                                 <Image
                                     alt="image"
                                     src={list.img}
@@ -110,7 +111,7 @@ export const SliderComponent = ({ data, rtl }) => {
                                     className="object-cover object-center"
                                 />
                                 <div
-                                    className={`bg-white absolute bottom-0 left-0 text-primary w-full p-3.5 z-10 rounded-t-lg translate-y-96 group-hover:translate-y-0 transition-all duration-[2000] ease-in-out`}
+                                    className={`bg-white absolute bottom-0 left-0 text-primary w-full p-3.5 z-10 rounded-t-lg translate-y-[100vh] md:translate-y-96 md:hidden group-hover:block group-hover:translate-y-0 transition-all duration-[2000] ease-in-out`}
                                 >
                                     <h2 className="relative uppercase font-libreCaslonDisplay text-[8px] md:text-[28px] leading-tight">
                                         {list.category}
