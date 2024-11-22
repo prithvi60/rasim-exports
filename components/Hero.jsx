@@ -17,15 +17,15 @@ const Hero = () => {
   }, []);
   return (
     <section className="relative w-full h-screen overflow-hidden slider-container">
-      <div className="absolute top-[62.5%] md:top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold rounded-md py-2 md:px-3.5 z-10">
+      <div className="absolute top-[65%] md:top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap font-bold rounded-md py-2 md:px-3.5 z-10">
         <div className=" md:mt-64 block w-full py-2 mx-auto space-y-5 text-center rounded-md px-16 sm:px-0  md:mr-6">
           {/* <div className="md:-mt-72"> */}
           
-            <p className="text-3xl font-medium tracking-wide text-white uppercase sm:text-4xl xl:text-5xl font-libreCaslonDisplay">
+            <p className="text-2xl font-medium tracking-wide text-white uppercase sm:text-4xl xl:text-5xl font-libreCaslonDisplay">
               Exports pvt Ltd
             </p>
           {/* </div> */}
-          <p className="w-full mx-auto text-sm italic font-semibold text-white uppercase tracking-custom sm:w-full text-basefont-bold sm:text-xl font-figtree">
+          <p className="w-full mx-auto text-xs italic font-semibold text-white uppercase tracking-custom sm:w-full text-basefont-bold sm:text-xl font-figtree">
             MANUFACTURERS AND EXPORTERS OF FASHION APPARELS
           </p>
         </div>
