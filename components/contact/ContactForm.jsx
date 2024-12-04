@@ -16,7 +16,7 @@ const ContactForm = () => {
                         "https://public.herotofu.com/v1/cd09b6a0-91c7-11ef-82c2-4bbcc1388e1d"
                     }
                     method="post"
-                    accept-charset="UTF-8"
+                    acceptCharset="UTF-8"
                 >
                     {/* User Name */}
                     <div className="mb-4">
@@ -50,7 +50,7 @@ const ContactForm = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="Enter your User Name"
+                                placeholder="Enter your Email Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <BsEnvelopeAtFill className="absolute text-xl right-4 top-5 text-neutral-200" />
@@ -69,7 +69,7 @@ const ContactForm = () => {
                                 id="phone"
                                 name="Phone"
                                 type="text"
-                                placeholder="Enter your User Name"
+                                placeholder="Enter your Phone Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <FaPhoneAlt className="absolute text-xl right-4 top-5 text-neutral-200" />
