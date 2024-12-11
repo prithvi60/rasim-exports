@@ -47,15 +47,14 @@ const PdfList = ({ pdfFiles }) => {
           <div className="pdf-selector flex flex-col underline gap-4">
               {pdfFiles.map((pdf, index) => (
                   <button key={index} onClick={() => handlePdfChange(pdf)}>
-                      {`Annual Return  ${index + 20} - ${index + 21}`} 
+                      {`ROC Return FY ${index + 20} - ${index + 21}`} 
                   </button>
               ))}
           </div>
 
           {/* Modal for PDF Viewer */}
           <Modal isOpen={isModalOpen} onRequestClose={closeModal} className={"overflow-hidden w-full mt-16"}>
-              <button onClick={closeModal} className='text-lg flex justify-center w-full font-bold text-red-600'> Close</button> 
-          <PdfViewer url={currentPdf} />
+          <PdfViewer pdfFile={currentPdf} closeModal={closeModal}/>
           </Modal>
       </div>
   );

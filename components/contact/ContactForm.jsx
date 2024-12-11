@@ -31,7 +31,7 @@ const ContactForm = () => {
                                 type="text"
                                 id="name"
                                 name="Name"
-                                placeholder="Enter your User Name"
+                                placeholder="Enter your Name"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <FaRegUser className="absolute text-xl right-4 top-5 text-neutral-200" />
@@ -50,7 +50,7 @@ const ContactForm = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="Enter your Email Name"
+                                placeholder="Enter your Email"
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <BsEnvelopeAtFill className="absolute text-xl right-4 top-5 text-neutral-200" />
@@ -69,7 +69,7 @@ const ContactForm = () => {
                                 id="phone"
                                 name="Phone"
                                 type="text"
-                                placeholder="Enter your Phone Name"
+                                placeholder="Enter your Phone No."
                                 className="w-full py-4 pl-6 pr-10 text-white bg-transparent border rounded-lg outline-none border-stroke placeholder:text-slate-300 placeholder:text-sm focus:border-secondary focus-visible:shadow-none"
                             />
                             <FaPhoneAlt className="absolute text-xl right-4 top-5 text-neutral-200" />
