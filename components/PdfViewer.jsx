@@ -1,10 +1,53 @@
 "use client";
 import { IoMdClose } from "react-icons/io";
 import React, { useState } from "react";
-import { MdRemoveRedEye } from "react-icons/md";
 import FileViewer from "react-file-viewer";
+import Modal from 'react-modal'; // Import Modal component
+const pdfFiles = [
+  '/roc-20-21.pdf',
+  '/roc-21-22.pdf',
+  '/roc-22-23.pdf',
+  '/roc-23-24.pdf',
+];
 
-const PdfViewer = ({ pdfFile ,closeModal}) => {
+
+
+ const PdfList = () => {
+
+    const [currentPdf, setCurrentPdf] = useState(pdfFiles[0]);
+    const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  
+  
+  
+    const handlePdfChange = (pdf) => {
+        setCurrentPdf(pdf);
+        setIsModalOpen(true); // Open the modal
+    };
+  
+    const closeModal = () => {
+        setIsModalOpen(false); // Close the modal
+    };
+  
+    return (
+        <div className="pdf-viewer">
+            <div className="pdf-selector flex flex-col underline gap-4">
+                {pdfFiles.map((pdf, index) => (
+                    <button key={index} onClick={() => handlePdfChange(pdf)}>
+                        {`ROC Return FY ${index + 20} - ${index + 21}`} 
+                    </button>
+                ))}
+            </div>
+  
+            {/* Modal for PDF Viewer */}
+            <Modal isOpen={isModalOpen} onRequestClose={closeModal} className={"overflow-hidden w-full mt-16"}>
+            <PdfViewer pdfFile={currentPdf} closeModal={closeModal}/>
+            </Modal>
+        </div>
+    );
+  };
+
+  export default PdfList
+  const PdfViewer = ({ pdfFile ,closeModal}) => {
     const [pdf] = useState(pdfFile);
 
 
@@ -64,5 +107,3 @@ const PdfViewer = ({ pdfFile ,closeModal}) => {
         </>
     );
 };
-
-export default PdfViewer;
