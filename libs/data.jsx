@@ -334,7 +334,7 @@ export const fabricCollections = [
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/rasim%20fabric/15.jpg?tr:q-5",
     type: "97% Cotton 3% Spandex",
     material: "50 s x 50 s Lycra/ 132x 72",
-  
+
   },
   {
     category: "Fabric?tr:q-15",
@@ -342,7 +342,7 @@ export const fabricCollections = [
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/rasim%20fabric/16.jpg?tr:q-5",
     type: "97% Cotton 3% Spandex",
     material: "50 s x 50 s Lycra/ 132x 72",
- 
+
   },
   {
     category: "Fabric?tr:q-15",
@@ -1428,6 +1428,34 @@ export const women = [
     alt: "shirt",
   },
   {
+    category: "SHIRTS",
+    material: "100% Cotton Twill",
+    type: "10.5 Oz",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/img-1.png?updatedAt=1738314417299?tr:q-15",
+    alt: "shirt",
+  },
+  {
+    category: "SHIRTS",
+    material: "100% Cotton Twill,Denim",
+    type: "5 Oz",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/img-2.png?updatedAt=1738314417370?tr:q-15",
+    alt: "shirt",
+  },
+  {
+    category: "SHIRTS",
+    material: "100% Cotton Twill",
+    type: "5 Oz",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/img-3.png?updatedAt=1738314417367?tr:q-15",
+    alt: "shirt",
+  },
+  {
+    category: "SHIRTS",
+    material: "100% Cotton Twill,Denim",
+    type: "5 Oz",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/img-4.png?updatedAt=1738314416285?tr:q-15",
+    alt: "shirt",
+  },
+  {
     category: "DRESS",
     material: "100% Cotton",
     type: "5 Oz Twill Denim Chambray Puff Sleeve Dress",
@@ -1464,7 +1492,7 @@ export const women = [
   },
   {
     category: "DRESS",
-    material: "00% Cotton",
+    material: "100% Cotton",
     type: "Denim Long Dress",
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/image-5.png?updatedAt=1729851395787?tr:q-15",
     alt: "Dress",
@@ -1491,10 +1519,45 @@ export const women = [
     alt: "Dress",
   },
   {
+    category: "DRESS",
+    material: "100% Cotton Twill",
+    type: "5 Oz",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/dress%20img-5.png?updatedAt=1738314416041?tr:q-15",
+    alt: "Dress",
+  },
+  {
+    category: "DRESS",
+    material: "98% Cotton,2% Spandex Twill",
+    type: "10 OZ",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/dress%20img-6.png?updatedAt=1738314417382?tr:q-15",
+    alt: "Dress",
+  },
+  {
+    category: "DRESS",
+    material: "100% Cotton Twill",
+    type: "5 Oz",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/dress%20img-7.png?updatedAt=1738314414400?tr:q-15",
+    alt: "Dress",
+  },
+  {
     category: "DUNGAREE",
     material: "100% Cotton",
     type: "5 Oz Denim Dungaree",
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/image-1.png?updatedAt=1729851384297?tr:q-15",
+    alt: "Dungaree",
+  },
+  {
+    category: "DUNGAREE",
+    material: "100% Cotton blend",
+    type: "6 Oz",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/dg%20img-8.png?updatedAt=1738314415786?tr:q-15",
+    alt: "Dungaree",
+  },
+  {
+    category: "DUNGAREE",
+    material: "100% Cotton Twill,Denim",
+    type: "5 Oz",
+    img: "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/women/dg%20img-9.png?updatedAt=1738314415688?tr:q-15",
     alt: "Dungaree",
   },
   {

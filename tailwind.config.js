@@ -1,12 +1,12 @@
-const { nextui } = require("@nextui-org/theme");
+const { heroui } = require("@heroui/theme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  plugins: [nextui()],
+  plugins: [heroui()],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(button|navbar|ripple|spinner).js",
+    "./node_modules/@heroui/theme/dist/components/(button|navbar|ripple|spinner).js",
   ],
   theme: {
     extend: {
