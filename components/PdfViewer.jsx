@@ -7,13 +7,15 @@ import { PDFFiles, PDFFilesList } from "@/libs/data";
 const PdfList = () => {
     const [toggler, setToggler] = useState(false);
     const [currentPdf, setCurrentPdf] = useState(PDFFiles[0]);
+    const [slideIndex, setSlideIndex] = useState(1);
 
     const handlePdfChange = (pdf) => {
-        setToggler(!toggler)
         setCurrentPdf(pdf);
+        setSlideIndex(1);
+        setToggler(!toggler);
     };
 
-    const filterData = PDFFilesList.find(val => val.name === currentPdf)
+    const filterData = PDFFilesList.find((val) => val.name === currentPdf);
 
     return (
         <div className="">
@@ -24,13 +26,16 @@ const PdfList = () => {
                     </button>
                 ))}
             </div>
-            <FsLightbox
-                toggler={toggler}
-                sources={filterData.lists}
-            />
-
+            {/* Ensure filterData is defined before accessing its properties */}
+            {filterData && (
+                <FsLightbox
+                    toggler={toggler}
+                    sources={filterData.lists}
+                    slide={slideIndex}
+                />
+            )}
         </div>
     );
 };
 
-export default PdfList
+export default PdfList;

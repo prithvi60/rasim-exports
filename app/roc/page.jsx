@@ -1,12 +1,13 @@
 "use client"
+import PdfList from '@/components/PdfViewer';
 import dynamic from 'next/dynamic';
 import React from 'react';
 // import { Spinner } from "@heroui/spinner"
 
-const PdfListSSR = dynamic(
-    () => import('@/components/PdfViewer'),
-    { ssr: false, }
-)
+// const PdfListSSR = dynamic(
+//     () => import('@/components/PdfViewer'),
+//     { ssr: false, }
+// )
 
 const page = () => {
     return (
@@ -16,7 +17,7 @@ const page = () => {
             </h3>
             <h4 className='text-lg font-semibold'>View the pdf by selecting the links</h4>
             <div className="text-base font-semibold text-justify !leading-custom-line sm:text-lg font-figtree sm:indent-7 w-full sm:w-max">
-                <PdfListSSR />
+                <PdfList />
             </div>
         </section>
     );
