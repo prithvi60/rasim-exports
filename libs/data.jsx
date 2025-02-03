@@ -132,7 +132,6 @@ export const carouselImg = [
     style: "object-center",
   },
 
-
   {
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/gallery_page/gallery2.jpg?updatedAt=1729846570038",
     style: "object-center",
@@ -146,7 +145,6 @@ export const carouselImg = [
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/gallery_page/gallery4.jpg?updatedAt=1729846545957",
     style: "object-top",
   },
-
 
   {
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/initiativesBgHero.jpeg?updatedAt=1728273455068",
@@ -334,7 +332,6 @@ export const fabricCollections = [
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/rasim%20fabric/15.jpg?tr:q-5",
     type: "97% Cotton 3% Spandex",
     material: "50 s x 50 s Lycra/ 132x 72",
-
   },
   {
     category: "Fabric?tr:q-15",
@@ -342,7 +339,6 @@ export const fabricCollections = [
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/rasim%20fabric/16.jpg?tr:q-5",
     type: "97% Cotton 3% Spandex",
     material: "50 s x 50 s Lycra/ 132x 72",
-
   },
   {
     category: "Fabric?tr:q-15",
@@ -913,6 +909,90 @@ export const REProcess = [
     title: "Efficient Port Access",
     img: "https://ik.imagekit.io/webibee/Rasim-Exports/HomePage%20icons/RE-icon-5.svg",
     alt: "Port icon",
+  },
+];
+
+// modal ROC PDF
+
+export const PDFFiles = [
+  "ROC Return FY 20 - 21",
+  "ROC Return FY 21 - 22",
+  "ROC Return FY 22 - 23",
+  "ROC Return FY 23 - 24",
+];
+
+export const PDFFilesList = [
+  {
+    name: "ROC Return FY 20 - 21",
+    lists: [
+      "/AR 20-21/AR 20-21 p-1.jpg",
+      "/AR 20-21/AR 20-21 p-2.jpg",
+      "/AR 20-21/AR 20-21 p-3.jpg",
+      "/AR 20-21/AR 20-21 p-4.jpg",
+      "/AR 20-21/AR 20-21 p-5.jpg",
+      "/AR 20-21/AR 20-21 p-6.jpg",
+      "/AR 20-21/AR 20-21 p-7.jpg",
+      "/AR 20-21/AR 20-21 p-8.jpg",
+      "/AR 20-21/AR 20-21 p-9.jpg",
+      "/AR 20-21/AR 20-21 p-10.jpg",
+      "/AR 20-21/AR 20-21 p-11.jpg",
+      "/AR 20-21/AR 20-21 p-12.jpg",
+      "/AR 20-21/AR 20-21 p-13.jpg",
+    ],
+  },
+  {
+    name: "ROC Return FY 21 - 22",
+    lists: [
+      "/AR 21-22/AR 21-22 p-1.jpg",
+      "/AR 21-22/AR 21-22 p-2.jpg",
+      "/AR 21-22/AR 21-22 p-3.jpg",
+      "/AR 21-22/AR 21-22 p-4.jpg",
+      "/AR 21-22/AR 21-22 p-5.jpg",
+      "/AR 21-22/AR 21-22 p-6.jpg",
+      "/AR 21-22/AR 21-22 p-7.jpg",
+      "/AR 21-22/AR 21-22 p-8.jpg",
+      "/AR 21-22/AR 21-22 p-9.jpg",
+      "/AR 21-22/AR 21-22 p-10.jpg",
+      "/AR 21-22/AR 21-22 p-11.jpg",
+      "/AR 21-22/AR 21-22 p-12.jpg",
+      "/AR 21-22/AR 21-22 p-13.jpg",
+    ],
+  },
+  {
+    name: "ROC Return FY 22 - 23",
+    lists: [
+      "/AR 22-23/AR 22-23 p-1.jpg",
+      "/AR 22-23/AR 22-23 p-2.jpg",
+      "/AR 22-23/AR 22-23 p-3.jpg",
+      "/AR 22-23/AR 22-23 p-4.jpg",
+      "/AR 22-23/AR 22-23 p-5.jpg",
+      "/AR 22-23/AR 22-23 p-6.jpg",
+      "/AR 22-23/AR 22-23 p-7.jpg",
+      "/AR 22-23/AR 22-23 p-8.jpg",
+      "/AR 22-23/AR 22-23 p-9.jpg",
+      "/AR 22-23/AR 22-23 p-10.jpg",
+      "/AR 22-23/AR 22-23 p-11.jpg",
+      "/AR 22-23/AR 22-23 p-12.jpg",
+      "/AR 22-23/AR 22-23 p-13.jpg",
+    ],
+  },
+  {
+    name: "ROC Return FY 23 - 24",
+    lists: [
+      "/AR 23-24/AR 23-24 p-1.jpg",
+      "/AR 23-24/AR 23-24 p-2.jpg",
+      "/AR 23-24/AR 23-24 p-3.jpg",
+      "/AR 23-24/AR 23-24 p-4.jpg",
+      "/AR 23-24/AR 23-24 p-5.jpg",
+      "/AR 23-24/AR 23-24 p-6.jpg",
+      "/AR 23-24/AR 23-24 p-7.jpg",
+      "/AR 23-24/AR 23-24 p-8.jpg",
+      "/AR 23-24/AR 23-24 p-9.jpg",
+      "/AR 23-24/AR 23-24 p-10.jpg",
+      "/AR 23-24/AR 23-24 p-11.jpg",
+      "/AR 23-24/AR 23-24 p-12.jpg",
+      "/AR 23-24/AR 23-24 p-13.jpg",
+    ],
   },
 ];
 
