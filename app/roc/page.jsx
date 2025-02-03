@@ -15,7 +15,7 @@ const page = () => {
             <h3 className="text-[27px] md:text-[40px] lg:text-[48px] font-libreCaslonDisplay font-normal !leading-snug uppercase xl:mt-0 tracking-custom">
                 ROC Filing
             </h3>
-            <h4 className='text-lg font-semibold'>View the pdf by selecting the links</h4>
+            <h4 className='text-lg font-semibold'>View the Roc&apos;s by selecting the links</h4>
             <div className="text-base font-semibold text-justify !leading-custom-line sm:text-lg font-figtree sm:indent-7 w-full sm:w-max">
                 <PdfList />
             </div>
