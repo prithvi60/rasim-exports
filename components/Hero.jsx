@@ -38,7 +38,7 @@ const Hero = () => {
             loading={"eager"}
             alt="bg image"
             src={
-              "https://cdn.webibee.com/Rasim%20exports/sample%202.png"
+              "https://cdn.webibee.com/Rasim%20exports/herosection-img.png"
             }
             style={{ objectFit: "cover", objectPosition: "center" }}
             fill
