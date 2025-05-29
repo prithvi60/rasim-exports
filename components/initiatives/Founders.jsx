@@ -1,4 +1,4 @@
-import { fabricCollections, founders } from '@/libs/data'
+import { founders } from '@/libs/data'
 import React from 'react'
 import ScrollToSection from '../ScrollToSection '
 

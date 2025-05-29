@@ -35,7 +35,7 @@ const ProductHero = () => {
                         priority
                         loading={"eager"}
                         alt="bg image"
-                        src={"https://ik.imagekit.io/webibee/Rasim-Exports/product_page/productherobg.jpeg?updatedAt=1728093254352"}
+                        src={"https://cdn.webibee.com/Rasim%20exports/product_page/productherobg.jpeg"}
                         style={{ objectFit: "cover", objectPosition: "center" }}
                         fill
                         className="brightness-[0.45]"
@@ -46,7 +46,7 @@ const ProductHero = () => {
                 <Image
                     alt="Contact bg image"
                     ref={loadingImage}
-                    src={"https://ik.imagekit.io/webibee/Rasim-Exports/product_page/productherobg.jpeg?updatedAt=1728093254352"}
+                    src={"https://cdn.webibee.com/Rasim%20exports/product_page/productherobg.jpeg"}
                     // style={{ objectFit: "cover", objectPosition: "center" }}
                     fill
                     className="object-cover object-center brightness-[0.50]"

@@ -2,7 +2,6 @@ import React from 'react'
 import { AboutRevealCards } from '../RevealCards'
 import { founderData } from '@/libs/data'
 import { RevealCardMobile } from '../RevealCardMobile'
-import { ReactMarquee } from '../ReactMarquee'
 
 const FounderRevealCard = () => {
     return (

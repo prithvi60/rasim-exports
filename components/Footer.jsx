@@ -16,7 +16,7 @@ const Footer = () => {
                             alt="Rasim Exports Logo"
                             className={`object-contain object-center`}
                             fill
-                            src={"https://ik.imagekit.io/webibee/Rasim-Exports/RE-logo.png"}
+                            src={"https://cdn.webibee.com/Rasim%20exports/RE-logo.png"}
                         />
                     </div>
                     <h4 className=" text-[#454545] text-base md:text-lg 2xl:text-2xl font-figtree"  >EST. 2002</h4>

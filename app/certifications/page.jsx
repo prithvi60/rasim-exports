@@ -1,4 +1,3 @@
-import CertificateCarousel from '@/components/certification/certificateCarousel'
 import CertificateSpinningLogo from '@/components/certification/CertificateSpinningLogo'
 import React from 'react'
 
@@ -7,7 +6,7 @@ const page = () => {
         <main>
             {/* <CertificateCarousel /> */}
             <CertificateSpinningLogo />
-            <ESGOutcomes/>
+            <ESGOutcomes />
         </main>
     )
 }

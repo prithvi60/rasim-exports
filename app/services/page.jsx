@@ -10,7 +10,7 @@ const page = () => {
             <ServiceHero />
             <ServiceVideo />
             <ReactMarquee
-                data={"Rasim ensures to meet the ideal process from the start till the end"}
+                data={"Rasim ensures to meet the ideal process from the start till the end"}
                 direction={"left"}
             />
             <MakingProcess />

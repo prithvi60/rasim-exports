@@ -49,19 +49,19 @@ const ProductRange = () => {
 
 export default ProductRange;
 
-export const SliderComponent = ({ data, rtl,type }) => {
-    const isFabric=type === "fabric";
+export const SliderComponent = ({ data, rtl, type }) => {
+    const isFabric = type === "fabric";
     const settings = {
         rtl: rtl,
         lazyLoad: false,
         infinite: true,
         speed: 500,
-        slidesToShow:  isFabric?8:6 ,
+        slidesToShow: isFabric ? 8 : 6,
         slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 2000,
         speed: 1000,
-        rows: isFabric? 6:4,
+        rows: isFabric ? 6 : 4,
         // dots: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
@@ -88,7 +88,7 @@ export const SliderComponent = ({ data, rtl,type }) => {
                     slidesToShow: 3,
                     slidesToScroll: 2,
                     infinite: true,
-                    rows:isFabric? 8:5
+                    rows: isFabric ? 8 : 5
                 },
             },
         ],
@@ -100,7 +100,7 @@ export const SliderComponent = ({ data, rtl,type }) => {
                 <Slider {...settings}>
                     {data.map((list, idx) => (
                         <div key={idx}>
-                            <div className={`relative ${isFabric? "h-[95px] sm:h-[218px] w-[85px] md:w-[150px] lg:w-[204px] lg:h-[245px] xl:h-[272px] xl:w-[238px]" :"h-[112px] sm:h-[256px] w-[100px] md:w-[176px] lg:w-[240px] lg:h-[288px] xl:h-[320px] xl:w-[280px] "}overflow-hidden customBorder group`}>
+                            <div className={`relative ${isFabric ? "h-[95px] sm:h-[218px] w-[85px] md:w-[150px] lg:w-[204px] lg:h-[245px] xl:h-[272px] xl:w-[238px]" : "h-[112px] sm:h-[256px] w-[100px] md:w-[176px] lg:w-[240px] lg:h-[288px] xl:h-[320px] xl:w-[280px] "}overflow-hidden customBorder group`}>
                                 <Image
                                     alt="image"
                                     src={list.img}
@@ -129,18 +129,6 @@ export const SliderComponent = ({ data, rtl,type }) => {
         </div>
     );
 };
-
-
-const children = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0079.jpg?updatedAt=1729757199899",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0005.jpg?updatedAt=1729757176359",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0060.jpg?updatedAt=1729757194554",
-];
-const infant = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0040.jpg?updatedAt=1729757188205",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0021.jpg?updatedAt=1729757181557",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/dress%20collections/IMG-20241024-WA0041.jpg?updatedAt=1729757188660",
-];
 
 function NextArrow(props) {
     const { onClick } = props;

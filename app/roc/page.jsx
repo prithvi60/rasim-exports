@@ -1,13 +1,7 @@
 "use client"
 import PdfList from '@/components/PdfViewer';
-import dynamic from 'next/dynamic';
 import React from 'react';
-// import { Spinner } from "@heroui/spinner"
 
-// const PdfListSSR = dynamic(
-//     () => import('@/components/PdfViewer'),
-//     { ssr: false, }
-// )
 
 const page = () => {
     return (

@@ -92,10 +92,10 @@ function PrevArrow(props) {
 }
 
 const carouselImages = [
-    "https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/slide%201.jpg?updatedAt=1729760883662",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/initiativesBgHero.jpeg?updatedAt=1728273455068",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/slide%203.jpg?updatedAt=1729760884168",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/slide%204.jpg?updatedAt=1729760883826",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/initiative%20card%202.jpeg?updatedAt=1728273456828",
-    "https://ik.imagekit.io/webibee/Rasim-Exports/Initiatives_Page/initiative%201.jpeg?updatedAt=1728273457315",
+    "https://cdn.webibee.com/Rasim%20exports/Initiatives_Page/slide%201.jpg",
+    "https://cdn.webibee.com/Rasim%20exports/Initiatives_Page/initiativesBgHero.jpeg",
+    "https://cdn.webibee.com/Rasim%20exports/Initiatives_Page/slide%203.jpg",
+    "https://cdn.webibee.com/Rasim%20exports/Initiatives_Page/slide%204.jpg",
+    "https://cdn.webibee.com/Rasim%20exports/Initiatives_Page/initiative%20card%202.jpeg",
+    "https://cdn.webibee.com/Rasim%20exports/Initiatives_Page/initiative%201.jpeg",
 ];

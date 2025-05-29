@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ik.imagekit.io",
+        hostname: "cdn.webibee.com",
         pathname: "/**",
       },
     ],
@@ -14,7 +14,7 @@ const nextConfig = {
       test: /\.node/,
       use: "raw-loader",
     });
-return config;
+    return config;
   },
 };
 

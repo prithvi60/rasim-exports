@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Summary />
       <ReactMarquee
-        data={"Fashion that redefines timeless charm"}
+        data={"Fashion that redefines timeless charm"}
         direction={"left"}
       />
       <REProgress />

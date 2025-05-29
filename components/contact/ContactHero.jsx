@@ -24,8 +24,7 @@ const ContactHero = () => {
                         loading={"eager"}
                         alt="bg image"
                         src={
-                            "https://ik.imagekit.io/webibee/Rasim-Exports/contact_page/contactherobg.jpeg?updatedAt=1728093705435"
-                    //    "https://ik.imagekit.io/webibee/Rasim-Exports/rasimsbuilding.jpg?tr:q-10"
+                            "https://cdn.webibee.com/Rasim%20exports/contact_page/contactherobg.jpeg"
                         }
                         style={{ objectFit: "cover", objectPosition: "center" }}
                         fill
@@ -38,29 +37,12 @@ const ContactHero = () => {
                     alt="Contact bg image"
                     ref={loadingImage}
                     src={
-                        "https://ik.imagekit.io/webibee/Rasim-Exports/contact_page/contactherobg.jpeg?updatedAt=1728093705435"
-                        // "https://ik.imagekit.io/webibee/Rasim-Exports/rasimsbuilding.jpg"
+                        "https://cdn.webibee.com/Rasim%20exports/contact_page/contactherobg.jpeg"
                     }
-                    // style={{ objectFit: "cover", objectPosition: "center" }}
                     fill
                     className="object-cover object-top md:object-top scale-110"
                 />
             </div>
-            {/* <video
-                muted
-                loop
-                autoPlay
-                playsInline
-                ref={loadingImage}
-                className={`h-screen w-full object-cover object-center translate-y-0 transition-all duration-700 ease-linear brightness-[0.45] -z-10`}
-            >
-                <source
-                    src={
-                        "https://ik.imagekit.io/webibee/Rasim-Exports/sample-video.mp4?updatedAt=1727335810255"
-                    }
-                    type="video/mp4"
-                />
-            </video> */}
         </section>
     );
 };
