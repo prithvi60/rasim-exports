@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.webibee.com",
+        hostname: "cdn.shopifyapp.shop",
         pathname: "/**",
       },
     ],

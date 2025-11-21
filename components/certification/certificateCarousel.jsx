@@ -47,22 +47,22 @@ const CertificateCarousel = () => {
                 <div className=" py-4 md:p-5 bg-secondary rounded-tl-[20px] slider-container max-w-6xl mx-auto">
                     <Slider {...settings}>
                         <div className="relative w-full h-[460px]">
-                            <Image alt="Certificate 1" src={"https://cdn.webibee.com/Rasim%20exports/certification_page/certificates/certificate%201.png"} fill className="object-contain" />
+                            <Image alt="Certificate 1" src={"https://cdn.shopifyapp.shop/Rasim%20exports/certification_page/certificates/certificate%201.png"} fill className="object-contain" />
                         </div>
                         <div className="relative w-full h-[460px]">
-                            <Image alt="Certificate 2" src={"https://cdn.webibee.com/Rasim%20exports/certification_page/certificates/certificate%202.png"} fill className="object-contain" />
+                            <Image alt="Certificate 2" src={"https://cdn.shopifyapp.shop/Rasim%20exports/certification_page/certificates/certificate%202.png"} fill className="object-contain" />
                         </div>
                         <div className="relative w-full h-[460px]">
-                            <Image alt="Certificate 3" src={"https://cdn.webibee.com/Rasim%20exports/certification_page/certificates/certificate%203.png"} fill className="object-contain" />
+                            <Image alt="Certificate 3" src={"https://cdn.shopifyapp.shop/Rasim%20exports/certification_page/certificates/certificate%203.png"} fill className="object-contain" />
                         </div>
                         <div className="relative w-full h-[460px]">
-                            <Image alt="Certificate 1" src={"https://cdn.webibee.com/Rasim%20exports/certification_page/certificates/certificate%201.png"} fill className="object-contain" />
+                            <Image alt="Certificate 1" src={"https://cdn.shopifyapp.shop/Rasim%20exports/certification_page/certificates/certificate%201.png"} fill className="object-contain" />
                         </div>
                         <div className="relative w-full h-[460px]">
-                            <Image alt="Certificate 2" src={"https://cdn.webibee.com/Rasim%20exports/certification_page/certificates/certificate%202.png"} fill className="object-contain" />
+                            <Image alt="Certificate 2" src={"https://cdn.shopifyapp.shop/Rasim%20exports/certification_page/certificates/certificate%202.png"} fill className="object-contain" />
                         </div>
                         <div className="relative w-full h-[460px]">
-                            <Image alt="Certificate 3" src={"https://cdn.webibee.com/Rasim%20exports/certification_page/certificates/certificate%203.png"} fill className="object-contain" />
+                            <Image alt="Certificate 3" src={"https://cdn.shopifyapp.shop/Rasim%20exports/certification_page/certificates/certificate%203.png"} fill className="object-contain" />
                         </div>
                     </Slider>
                 </div>

@@ -13,7 +13,7 @@ const OurVision_Mission = () => {
                     <Image
                         fill
                         src={
-                            "https://cdn.webibee.com/Rasim%20exports/founders/founder%201.jpeg"
+                            "https://cdn.shopifyapp.shop/Rasim%20exports/founders/founder%201.jpeg"
                         }
                         alt="textile image"
                         className="object-cover object-center transition-all ease-in-out hover:scale-110 duration-400"

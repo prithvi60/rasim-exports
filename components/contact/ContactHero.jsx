@@ -24,7 +24,7 @@ const ContactHero = () => {
                         loading={"eager"}
                         alt="bg image"
                         src={
-                            "https://cdn.webibee.com/Rasim%20exports/contact_page/contactherobg.jpeg"
+                            "https://cdn.shopifyapp.shop/Rasim%20exports/contact_page/contactherobg.jpeg"
                         }
                         style={{ objectFit: "cover", objectPosition: "center" }}
                         fill
@@ -37,7 +37,7 @@ const ContactHero = () => {
                     alt="Contact bg image"
                     ref={loadingImage}
                     src={
-                        "https://cdn.webibee.com/Rasim%20exports/contact_page/contactherobg.jpeg"
+                        "https://cdn.shopifyapp.shop/Rasim%20exports/contact_page/contactherobg.jpeg"
                     }
                     fill
                     className="object-cover object-top md:object-top scale-110"

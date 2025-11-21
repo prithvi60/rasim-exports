@@ -59,7 +59,7 @@ const Navbar = () => {
                         alt="Rasim Exports Logo"
                         className={`object-contain object-center rounded-full`}
                         fill
-                        src={"https://cdn.webibee.com/Rasim%20exports/RE-logo.png"}
+                        src={"https://cdn.shopifyapp.shop/Rasim%20exports/RE-logo.png"}
                     />
                     {/* <h4 className={`absolute -bottom-0.5 md:-bottom-0.5 right-2.5 lg:right-[15px] xl:right-[18px] ${val && pathname === "/" ? "text-primary " : "text-primary"} text-[10px] font-figtree font-semibold`}>EST. 2002</h4> */}
                 </Link>

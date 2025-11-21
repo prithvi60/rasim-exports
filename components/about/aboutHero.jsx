@@ -10,16 +10,16 @@ const AboutHero = () => {
             </div>
             <div className='relative w-full h-[420px]'>
                 <div className='absolute top-5 sm:top-4 lg:top-[20px] right-40 sm:right-44 lg:right-56 xl:right-64 w-[150px] lg:w-[210px] overflow-hidden h-[120px] sm:h-[150px] lg:h-[180px] customBorder'>
-                    <Image priority loading='eager' alt='product image' src={"https://cdn.webibee.com/Rasim%20exports/gallery_page/gallery3.jpg"} fill className='object-cover object-center' />
+                    <Image priority loading='eager' alt='product image' src={"https://cdn.shopifyapp.shop/Rasim%20exports/gallery_page/gallery3.jpg"} fill className='object-cover object-center' />
                 </div>
                 <div className='absolute top-36 sm:top-48 lg:top-[220px] right-40 sm:right-44 lg:right-56 xl:right-64 w-[150px] lg:w-[210px] h-[150px] sm:h-[190px] lg:h-[230px] overflow-hidden customBorder'>
-                    <Image priority loading='eager' alt='product image' src={"https://cdn.webibee.com/Rasim%20exports/service_page/serviceherobg.jpeg"} fill className='object-cover object-right' />
+                    <Image priority loading='eager' alt='product image' src={"https://cdn.shopifyapp.shop/Rasim%20exports/service_page/serviceherobg.jpeg"} fill className='object-cover object-right' />
                 </div>
                 <div className='absolute top-3 right-0 w-[150px] lg:w-[210px] overflow-hidden h-[150px] sm:h-[190px] lg:h-[230px] customBorder'>
-                    <Image priority loading='eager' src={"https://cdn.webibee.com/Rasim%20exports/aboutUs_page/goods.jpg"} alt='product image' fill className='object-cover object-left' />
+                    <Image priority loading='eager' src={"https://cdn.shopifyapp.shop/Rasim%20exports/aboutUs_page/goods.jpg"} alt='product image' fill className='object-cover object-left' />
                 </div>
                 <div className='absolute top-[170px] sm:top-56 lg:top-[270px] right-0 w-[150px] lg:w-[210px] overflow-hidden h-[120px] sm:h-[150px] lg:h-[180px] customBorder'>
-                    <Image priority loading='eager' alt='product image' src={"https://cdn.webibee.com/Rasim%20exports/aboutUs_page/cads.jpg"} fill className='object-cover object-center' />
+                    <Image priority loading='eager' alt='product image' src={"https://cdn.shopifyapp.shop/Rasim%20exports/aboutUs_page/cads.jpg"} fill className='object-cover object-center' />
                 </div>
             </div>
 

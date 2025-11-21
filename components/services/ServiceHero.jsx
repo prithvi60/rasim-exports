@@ -9,7 +9,7 @@ const ServiceHero = () => {
                 <p className='text-base font-normal font-figtree md:text-lg'>Rasim Exports provides end-to-end garment production, specializing in men’s, women’s, and children’s wear. From concept development to final output, our expertise ensures seamless execution at every stage. Whether it’s custom designs or large-scale orders, we prioritize craftsmanship, timely delivery, and the specific needs of our clients to create standout apparel for global markets.</p>
             </div>
             <div className='relative w-full overflow-hidden h-[320px] lg:h-[500px] customBorder'>
-                <Image priority loading='eager' alt='product image' src={"https://cdn.webibee.com/Rasim%20exports/service_page/serviceherobg.jpeg"} fill className='object-cover object-left md:object-center' />
+                <Image priority loading='eager' alt='product image' src={"https://cdn.shopifyapp.shop/Rasim%20exports/service_page/serviceherobg.jpeg"} fill className='object-cover object-left md:object-center' />
             </div>
 
         </section>

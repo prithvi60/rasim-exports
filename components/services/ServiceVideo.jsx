@@ -13,7 +13,7 @@ const ServiceVideo = () => {
             >
                 <source
                     src={
-                        "https://cdn.webibee.com/Rasim%20exports/service_page/service-video.mp4"
+                        "https://cdn.shopifyapp.shop/Rasim%20exports/service_page/service-video.mp4"
                     }
                     type="video/mp4"
                 />

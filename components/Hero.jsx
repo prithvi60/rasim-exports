@@ -38,7 +38,7 @@ const Hero = () => {
             loading={"eager"}
             alt="bg image"
             src={
-              "https://cdn.webibee.com/Rasim%20exports/herosection-img.png"
+              "https://cdn.shopifyapp.shop/Rasim%20exports/herosection-img.png"
             }
             style={{ objectFit: "cover", objectPosition: "center" }}
             fill
@@ -49,7 +49,7 @@ const Hero = () => {
             loading={"eager"}
             alt="bg image"
             src={
-              "https://cdn.webibee.com/Rasim%20exports/mobileplaceholder.jpg"
+              "https://cdn.shopifyapp.shop/Rasim%20exports/mobileplaceholder.jpg"
             }
             style={{ objectFit: "cover", objectPosition: "center" }}
             fill
@@ -112,7 +112,7 @@ const HeroVideo = forwardRef((props, ref) => {
         className="hidden sm:block h-screen w-full object-cover object-center translate-y-0 transition-all duration-700 ease-linear -z-10"
       >
         <source
-          src="https://cdn.webibee.com/Rasim%20exports/herosection-web.mp4"
+          src="https://cdn.shopifyapp.shop/Rasim%20exports/herosection-web.mp4"
           type="video/mp4"
         />
       </video>
@@ -127,7 +127,7 @@ const HeroVideo = forwardRef((props, ref) => {
         className="block sm:hidden  w-full h-screen object-cover  object-center translate-y-0 transition-all duration-700 ease-linear -z-10"
       >
         <source
-          src="https://cdn.webibee.com/Rasim%20exports/herosection-mobile.mp4"
+          src="https://cdn.shopifyapp.shop/Rasim%20exports/herosection-mobile.mp4"
           type="video/mp4"
         />
       </video>

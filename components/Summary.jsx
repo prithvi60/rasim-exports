@@ -11,7 +11,7 @@ const Summary = () => {
                     <Image
                         fill
                         src={
-                            "https://cdn.webibee.com/Rasim%20exports/summary-bg.jpg"
+                            "https://cdn.shopifyapp.shop/Rasim%20exports/summary-bg.jpg"
                         }
                         alt="textile image"
                         className="object-cover object-center transition-all ease-in-out scale-110 hover:scale-125 duration-400"

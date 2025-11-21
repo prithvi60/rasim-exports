@@ -37,7 +37,7 @@ const Hero = () => {
                         priority
                         loading={"eager"}
                         alt="bg image"
-                        src={"https://cdn.webibee.com/Rasim%20exports/Initiatives_Page/initiativesBgHero.jpeg"}
+                        src={"https://cdn.shopifyapp.shop/Rasim%20exports/Initiatives_Page/initiativesBgHero.jpeg"}
                         style={{ objectFit: "cover", objectPosition: "center" }}
                         fill
                         className="blur-md"
@@ -48,7 +48,7 @@ const Hero = () => {
                 <Image
                     alt="Contact bg image"
                     ref={loadingImage}
-                    src={"https://cdn.webibee.com/Rasim%20exports/Initiatives_Page/initiativesBgHero.jpeg"}
+                    src={"https://cdn.shopifyapp.shop/Rasim%20exports/Initiatives_Page/initiativesBgHero.jpeg"}
                     style={{ objectFit: "cover", objectPosition: "center" }}
                     fill
                     className='brightness-[0.65]'
