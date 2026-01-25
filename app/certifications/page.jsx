@@ -32,12 +32,12 @@ const ESGOutcomes = () => {
                         <li><strong>Sedex Certification:</strong> Validates ethical business practices to customers globally.</li>
                     </ul>
                 </li>
-                <li>
+                {/* <li>
                     <strong className='text-lg'>Management Systems:</strong>
                     <ul className='list-disc pl-5'>
                         <li><strong>SA8000:</strong> A management-systems approach for social performance emphasizing continuous improvement over mere checklist audits.</li>
                     </ul>
-                </li>
+                </li> */}
                 <li>
                     <strong className='text-lg'>Organic Standards:</strong>
                     <ul className='list-disc pl-5'>

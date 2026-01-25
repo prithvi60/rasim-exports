@@ -55,13 +55,13 @@ export const certification = [
     img: "https://cdn.shopifyapp.shop/Rasim%20exports/certification%20logo/sedex-logo.webp",
     link: "More",
   },
-  {
-    title: "ECCC",
-    desc: "",
-    ref: "/certifications#certificate",
-    img: "https://cdn.shopifyapp.shop/Rasim%20exports/certification%20logo/sa8000-logo.webp",
-    link: "More",
-  },
+  // {
+  //   title: "ECCC",
+  //   desc: "",
+  //   ref: "/certifications#certificate",
+  //   img: "https://cdn.shopifyapp.shop/Rasim%20exports/certification%20logo/sa8000-logo.webp",
+  //   link: "More",
+  // },
   {
     title: "GOTS",
     desc: "",
@@ -760,10 +760,10 @@ export const certificatePageLogos = [
     alt: "Accordia",
     src: "https://cdn.shopifyapp.shop/Rasim%20exports/logo/rasimcertificates/Rectangle%2027.svg",
   },
-  {
-    alt: "ECCC",
-    src: "https://cdn.shopifyapp.shop/Rasim%20exports/logo/rasimcertificates/Rectangle%2021.svg",
-  },
+  // {
+  //   alt: "ECCC",
+  //   src: "https://cdn.shopifyapp.shop/Rasim%20exports/logo/rasimcertificates/Rectangle%2021.svg",
+  // },
   {
     alt: "GOTS",
     src: "https://cdn.shopifyapp.shop/Rasim%20exports/logo/rasimcertificates/Rectangle%2020.svg",
