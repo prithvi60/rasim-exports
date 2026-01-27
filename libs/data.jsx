@@ -69,13 +69,13 @@ export const certification = [
     img: "https://cdn.shopifyapp.shop/Rasim%20exports/certification%20logo/gots-logo.jpg",
     link: "More",
   },
-  {
-    title: "Accordia",
-    desc: "",
-    ref: "/certifications#certificate",
-    img: "https://cdn.shopifyapp.shop/Rasim%20exports/certification%20logo/accordia-logo.png",
-    link: "More",
-  },
+  // {
+  //   title: "Accordia",
+  //   desc: "",
+  //   ref: "/certifications#certificate",
+  //   img: "https://cdn.shopifyapp.shop/Rasim%20exports/certification%20logo/accordia-logo.png",
+  //   link: "More",
+  // },
   {
     title: "Oek Tex",
     desc: "",
@@ -756,10 +756,10 @@ export const certificatePageLogos = [
     alt: "Wrap",
     src: "https://cdn.shopifyapp.shop/Rasim%20exports/logo/rasimcertificates/Rectangle%2022.svg",
   },
-  {
-    alt: "Accordia",
-    src: "https://cdn.shopifyapp.shop/Rasim%20exports/logo/rasimcertificates/Rectangle%2027.svg",
-  },
+  // {
+  //   alt: "Accordia",
+  //   src: "https://cdn.shopifyapp.shop/Rasim%20exports/logo/rasimcertificates/Rectangle%2027.svg",
+  // },
   // {
   //   alt: "ECCC",
   //   src: "https://cdn.shopifyapp.shop/Rasim%20exports/logo/rasimcertificates/Rectangle%2021.svg",
