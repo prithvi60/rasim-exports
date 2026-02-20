@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+        loader: 'custom',
+    loaderFile: './cloudflareLoader.js',
     // This stops Vercel from optimizing images and charging you
-    unoptimized: true,
+    // unoptimized: true,
+
     remotePatterns: [
       {
         protocol: "https",

@@ -94,7 +94,7 @@ export const certification = [
     title: "organic blend",
     desc: "",
     ref: "/certifications#certificate",
-    img: "https://mywebibeeworld.b-cdn.net/Rasim%20exports/certification%20logo/organic-logo.png",
+    img: "https://cdn.shopifyapp.shop/Rasim%20exports/certification%20logo/organic-logo.png",
     link: "More",
   },
 ];
