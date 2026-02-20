@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    // This stops Vercel from optimizing images and charging you
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
